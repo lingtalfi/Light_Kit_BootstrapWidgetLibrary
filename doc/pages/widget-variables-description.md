@@ -1,0 +1,155 @@
+Bootstrap Widget Library
+=============
+2019-05-01
+
+
+
+Below is the documentation for the widgets of the Bootstrap Widget Library.
+The variables of the widgets described in this document represent the front variables of
+a [Picasso widget array](https://github.com/lingtalfi/Kit_PicassoWidget#the-picasso-widget-array), referenced by the **vars** key.
+For more information about the variables representation, please refer to the [widget variables description](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/pages/widget-variables-description.md) page.
+
+
+
+Summary
+=========
+
+- [MainNavWidget](#mainnavwidget)
+
+
+
+
+
+
+MainNavWidget
+==============
+
+The MainNavWidget is a bootstrap 4 widget representing the top navigation on a website.
+You can configure the title of the nav with or without a logo, and you can create two separate
+sets of links, with various options for each link, such as adding an icon, or a dropdown menu.
+
+
+
+
+
+
+MainNavWidget screenshots
+----------
+
+- ![Screenshot MainNavWidget-01.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MainNavWidget/MainNavWidget-01.png)
+
+
+
+MainNavWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: null
+    - **description**: The title of the nav widget. It's usually the name of the company or website.
+- **title_logo**
+    - **type**: array
+    - **default_value**: null
+    - **description**: Adds a logo to the title.
+    - **properties**
+        - **url**
+            - **type**: string
+            - **default_value**: null
+            - **description**: The url of the logo image (the value to put into the src attribute of the img tag).
+        - **width**
+            - **type**: string
+            - **default_value**: 50
+            - **description**: The width of the logo image.
+        - **height**
+            - **type**: string
+            - **default_value**: 50
+            - **description**: The height of the logo image.
+        - **alt**
+            - **type**: string
+            - **default_value**: null
+            - **description**: The value of the alt attribute of the logo img tag.
+- **fixed_top**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether the nav is fixed on the top, or scrolls along with the content.
+- **title_url**
+    - **type**: string
+    - **default_value**: /
+    - **description**: The string to put in the href attribute of the title link. It can be an anchor if necessary (starting with a hash symbol).
+- **expand_size**
+    - **type**: string
+    - **default_value**: sm
+    - **description**: Defines at which size does the burger menu expand.
+    - **choices**
+        - sm
+        - md
+        - lg
+- **links**
+    - **type**: item_list
+    - **default_value**
+    - **description**: An array of link items to display in the nav.
+    - **item_properties**
+        - **text**
+            - **type**: string
+            - **default_value**: null
+            - **description**: The text of the link item.
+        - **url**
+            - **type**: string
+            - **default_value**: null
+            - **description**: The url of the link item (anchors are accepted).
+        - **icon**
+            - **type**: string
+            - **default_value**: null
+            - **description**: The css class for the icon.
+            - **example**: fas fa-user
+- **links_align_right**
+    - **type**: bool
+    - **default_value**: false
+    - **description**: Whether to align the links to the right.
+- **links_item_class**
+    - **type**: string
+    - **default_value**: null
+    - **description**: An additional css class expression to add to all link items.
+    - **example**: px-2
+- **links2**: same as links
+- **links2_align_right**: same as links_align_right
+- **links2_item_class**: same as links_item_class
+
+
+
+
+MainNavWidget configuration example
+----------------
+
+```yaml
+title: LoopLab
+
+# Whether the top nav is fixed on the top
+fixed_top: true
+
+# the string to put in the href attribute of the title link.
+# It can be an anchor if necessary
+# The default value is slash
+title_url: /
+
+# If not set, the title will not use a logo
+# If set, the title_logo must define all parameters as the example below
+#title_logo:
+#    url: /plugins/Light_Kit_Demo/mizuxe/img/mlogo.png
+#    width: 50
+#    height: 50
+#    alt: Mizuxe logo
+expand_size: sm
+```
+
+
+
+
+
+
+
+
+
+
+
+
