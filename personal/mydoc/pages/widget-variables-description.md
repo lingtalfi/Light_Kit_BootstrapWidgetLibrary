@@ -36,7 +36,8 @@ sets of links, with various options for each link, such as adding an icon, or a 
 MainNavWidget screenshots
 ----------
 
-- ![Screenshot MainNavWidget-01.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MainNavWidget/MainNavWidget-01.png)
+![Screenshot MainNavWidget-01.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MainNavWidget/MainNavWidget-01.png)
+
 
 
 
