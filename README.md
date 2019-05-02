@@ -45,6 +45,10 @@ Summary
 History Log
 =============
 
+- 0.1.1 -- 2019-05-02
+
+    - fix widget documentation
+    
 - 0.1.0 -- 2019-05-02
 
     - adding widget documentation
