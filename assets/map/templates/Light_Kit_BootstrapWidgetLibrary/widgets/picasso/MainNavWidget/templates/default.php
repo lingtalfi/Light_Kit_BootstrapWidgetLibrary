@@ -14,6 +14,9 @@ $fixedTop = $z['fixed_top'] ?? true;
 $titleUrl = $z['title_url'] ?? "/";
 
 
+
+
+
 $links = $z['links'] ?? [];
 $linksItemClass = $z['links_item_class'] ?? "";
 $linksAlignRight = $z['links_align_right'] ?? false;
@@ -81,8 +84,11 @@ $linksCallback = function (array $links, array $options) {
 
 
 <!-- MainNavWidget -->
-<nav class="kit-bwl-mainnav navbar navbar-expand-<?php echo $z['expand_size'] ?? 'md'; ?> bg-dark navbar-dark
+<nav
+        class="kit-bwl-mainnav
+        navbar navbar-expand-<?php echo $z['expand_size'] ?? 'md'; ?>
 <?php if (true === $fixedTop): ?>
+
 fixed-top
 <?php endif; ?>
 

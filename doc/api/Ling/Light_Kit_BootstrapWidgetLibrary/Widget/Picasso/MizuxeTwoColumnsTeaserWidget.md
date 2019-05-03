@@ -2,7 +2,7 @@
 
 
 
-The MainNavWidget class
+The MizuxeTwoColumnsTeaserWidget class
 ================
 2019-04-26 --> 2019-05-03
 
@@ -14,7 +14,7 @@ The MainNavWidget class
 Introduction
 ============
 
-The MainNavWidget class.
+The MizuxeTwoColumnsTeaserWidget class.
 
 
 
@@ -22,19 +22,17 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">MainNavWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">MizuxeTwoColumnsTeaserWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
     - protected array [PicassoWidget::$attr](#property-attr) ;
 
-- Methods
-    - public [prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget/prepare.md)(array $widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
-
 - Inherited methods
     - public PicassoWidget::__construct() : void
     - public PicassoWidget::getLibraries() : array
     - public PicassoWidget::renderFile(string $filePath, array $variables = []) : false | string
+    - public PicassoWidget::prepare(array $widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
     - protected PicassoWidget::getAttributesHtml(bool $excludeClass = true) : string
     - protected PicassoWidget::getCssClass() : string
     - protected PicassoWidget::registerLibrary(string $libraryName, array $css, array $js) : void
@@ -54,10 +52,10 @@ class <span class="pl-k">MainNavWidget</span> extends PicassoWidget implements U
 Methods
 ==============
 
-- [MainNavWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
 - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
 - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
 - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+- PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
 - PicassoWidget::getAttributesHtml &ndash; Returns the string of html attributes defined in the widget attributes (attr property in the widget configuration array).
 - PicassoWidget::getCssClass &ndash; 
 - PicassoWidget::registerLibrary &ndash; Registers an (external) library that this widget uses.
@@ -73,9 +71,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsTeaserWidget
 
 
 SeeAlso
 ==============
-Previous class: [LoopLabTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsTeaserWidget.md)<br>Next class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>
+Previous class: [MainNavWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget.md)<br>

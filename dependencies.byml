@@ -1,6 +1,7 @@
 dependencies: 
     Ling: 
         - Kit_PicassoWidget
+        - HtmlPageTools
     
 
 post_install: 

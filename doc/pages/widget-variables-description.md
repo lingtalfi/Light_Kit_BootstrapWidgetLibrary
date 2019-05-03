@@ -658,6 +658,9 @@ The MainNavWidget is a bootstrap 4 widget representing the top navigation on a w
 You can configure the title of the nav with or without a logo, and you can create two separate
 sets of links, with various options for each link, such as adding an icon, or a dropdown menu.
 
+You can also enable spyscroll and smooth scrolling to enhance your navigation if your theme is a one page theme.
+
+
 
 
 
@@ -674,7 +677,7 @@ MainNavWidget screenshots
 MainNavWidget templates and skins
 -----------
 - **Templates**: default.php
-- **Skins**: default.css
+- **Skins**: looplab-nav.css, mizuxe-nav.css, mizuxe-nav.scss
 
 
 MainNavWidget configuration example
@@ -749,6 +752,29 @@ links2_align_right: true
 MainNavWidget variables description
 -----------
 
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: bg-light text-muted py-5
+            - **description**: The css class to add to the widget container. We recommend using bootstrap css classes.
+            - **example**: bg-dark navbar-dark looplab-nav
+        - **id**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css id to add to the widget container. It's required if you are using the spyscroll or the smooth scrolling feature.
+            - **example**: main-nav
+- **use_scrollspy**
+    - **type**: bool
+    - **default_value**: false
+    - **description**: Whether to activate the scroll spy. If so, you must define a css id. See the bootstrap documentation for more info.
+- **use_smooth_scrolling**
+    - **type**: bool
+    - **default_value**: false
+    - **description**: Whether to smoothly scroll to the desired anchor when you the user clicks a link item (this only works on one page themes). To use this feature you must define a css id.
 - **title**
     - **type**: string
     - **default_value**: null
