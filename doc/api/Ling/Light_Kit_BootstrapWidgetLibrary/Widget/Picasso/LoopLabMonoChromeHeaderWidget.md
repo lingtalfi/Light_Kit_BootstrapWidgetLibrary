@@ -2,7 +2,7 @@
 
 
 
-The LoopLabTwoColumnsSignupFormWidget class
+The LoopLabMonoChromeHeaderWidget class
 ================
 2019-04-26 --> 2019-05-03
 
@@ -14,7 +14,7 @@ The LoopLabTwoColumnsSignupFormWidget class
 Introduction
 ============
 
-The LoopLabTwoColumnsSignupFormWidget class.
+The LoopLabMonoChromeHeaderWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LoopLabTwoColumnsSignupFormWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">LoopLabMonoChromeHeaderWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -69,9 +69,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabTwoColumnsSignupFormWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabMonoChromeHeaderWidget
 
 
 SeeAlso
 ==============
-Previous class: [LoopLabMonoChromeHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabMonoChromeHeaderWidget.md)<br>Next class: [MainNavWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget.md)<br>
+Next class: [LoopLabTwoColumnsSignupFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsSignupFormWidget.md)<br>

@@ -45,6 +45,10 @@ Summary
 History Log
 =============
 
+- 0.3.0 -- 2019-05-03
+
+    - add LoopLabMonoChromeHeaderWidget
+    
 - 0.2.0 -- 2019-05-03
 
     - add LoopLabTwoColumnsSignupFormWidget to widget documentation
