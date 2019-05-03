@@ -3,4 +3,5 @@ dependencies:
         - Kit_PicassoWidget
     
 
-post_install: []
+post_install: 
+    map: true
