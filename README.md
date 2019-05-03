@@ -45,6 +45,10 @@ Summary
 History Log
 =============
 
+- 0.4.0 -- 2019-05-03
+
+    - add LoopLabTwoColumnsTeaserWidget
+    
 - 0.3.0 -- 2019-05-03
 
     - add LoopLabMonoChromeHeaderWidget

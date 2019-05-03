@@ -74,4 +74,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget
 
 SeeAlso
 ==============
-Previous class: [LoopLabTwoColumnsSignupFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsSignupFormWidget.md)<br>
+Previous class: [LoopLabTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsTeaserWidget.md)<br>
