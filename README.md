@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.7.0 -- 2019-05-03
+
+    - add MizuxeTwoColumnsTeaserWidget
+    
 - 0.6.0 -- 2019-05-03
 
     - update MainNavWidget, add use_scrollspy and use_smooth_scrolling features
