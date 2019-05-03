@@ -14,6 +14,7 @@ For more information about the variables representation, please refer to the [wi
 Summary
 =========
 
+- [LoopLabFooterWithContactUseButtonWidget](#looplabfooterwithcontactusebuttonwidget)
 - [LoopLabMonoChromeHeaderWidget](#looplabmonochromeheaderwidget)
 - [LoopLabTwoColumnsSignupFormWidget](#looplabtwocolumnssignupformwidget)
 - [LoopLabTwoColumnsTeaserWidget](#looplabtwocolumnsteaserwidget)
@@ -24,14 +25,196 @@ Summary
 
 
 
+LoopLabFooterWithContactUseButtonWidget
+==============
+
+
+- [Screenshots](#looplabfooterwithcontactusebuttonwidget-screenshots)
+- [Templates and skins](#looplabfooterwithcontactusebuttonwidget-templates-and-skins)
+- [Example](#looplabfooterwithcontactusebuttonwidget-configuration-example)
+- [Variables descriptions](#looplabfooterwithcontactusebuttonwidget-variables-description)
+
+
+
+LoopLabFooterWithContactUseButtonWidget is a bootstrap 4 widget representing a footer with a button opening a "contact us" modal form.
+
+It's composed of two parts: the footer, and the form.
+
+The footer has a title, a text, and a button.
+
+In the footer text, you can use the $year variable to add an always up-to-date copyright year.
+
+The form has a title, some customizable fields, and a submit button.
+
+Each customizable field has a type which can be one of the following:
+
+- text: an input tag with type text
+- email: an input tag with type email
+- textarea: a textarea tag
+
+
+
+
+
+
+
+
+LoopLabFooterWithContactUseButtonWidget screenshots
+----------
+
+![Screenshot looplab_footer_with_contact_us_button.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabFooterWithContactUseButtonWidget/looplab_footer_with_contact_us_button.png)
+
+
+
+
+
+LoopLabFooterWithContactUseButtonWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: default.css
+
+
+LoopLabFooterWithContactUseButtonWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: bg-dark
+
+footer_title: LoopLab
+footer_text: Copyright &copy; $year
+footer_button_class: btn btn-primary
+footer_button_text: Contact Us
+modal_title: Contact Us
+modal_form_action: ""
+modal_form_method: post
+modal_fields:
+    -
+        label: Name
+        name: name
+        type: text
+
+    -
+        label: Email
+        name: email
+        type: email
+
+    -
+        label: Message
+        name: message
+        type: textarea
+
+
+modal_btn_text: Submit
+modal_btn_class: btn btn-primary btn-block
+```
+
+
+
+LoopLabFooterWithContactUseButtonWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the widget container tag. We recommend using bootstrap 4 css classes.
+            - **example**: bg-dark
+- **footer_title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title of the footer.
+    - **example**: LoopLab
+- **footer_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the footer. You can use the **$year** variable to indicate the year dynamically.
+    - **example**: Copyright &copy; $year
+- **footer_button_class**
+    - **type**: string
+    - **default_value**: btn btn-primary
+    - **description**: todo: here
+    - **example**: btn btn-primary
+- **footer_button_text**
+    - **type**: string
+    - **default_value**: Contact Us
+    - **description**: The footer button text.
+    - **example**: Contact Us
+- **modal_title**
+    - **type**: string
+    - **default_value**: Contact Us
+    - **description**: The modal form text.
+    - **example**: Contact Us
+- **modal_form_action**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the modal form **action** attribute.
+    - **example**: 
+- **modal_form_method**
+    - **type**: string
+    - **default_value**: post
+    - **description**: The value of the modal form **method** attribute.
+    - **example**: post
+- **modal_fields**
+    - **type**: item_list
+    - **default_value**
+    - **description**: A list of fields to display in the modal form.
+    - **item_properties**
+        - **label**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The label of the field.
+            - **example**: Name
+        - **name**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The value of the name attribute of the field.
+            - **example**: name
+        - **type**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The type of the field. See the possible value in the choices property.
+            - **choices**
+                - text
+                - email
+                - textarea
+            - **example**: text
+- **modal_btn_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the modal form's submit button.
+    - **example**: Submit
+- **modal_btn_class**
+    - **type**: string
+    - **default_value**: btn btn-primary btn-block
+    - **description**: The css class for the modal form's submit button.
+    - **example**: btn btn-primary btn-block
+
+
+
+
+
+
+
 LoopLabMonoChromeHeaderWidget
 ==============
+
+
+- [Screenshots](#looplabmonochromeheaderwidget-screenshots)
+- [Templates and skins](#looplabmonochromeheaderwidget-templates-and-skins)
+- [Example](#looplabmonochromeheaderwidget-configuration-example)
+- [Variables descriptions](#looplabmonochromeheaderwidget-variables-description)
+
+
 
 LoopLabMonoChromeHeaderWidget is a bootstrap 4 widget representing a monochrome header.
 It contains a title, a text, and a button.
 
 We can change the background color using bootstrap css classes (or custom classes).
-
 
 
 
@@ -44,6 +227,29 @@ LoopLabMonoChromeHeaderWidget screenshots
 
 ![Screenshot looplab_monochrome_header.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabMonoChromeHeaderWidget/looplab_monochrome_header.png)
 
+
+
+
+
+LoopLabMonoChromeHeaderWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: looplab-dark.css
+
+
+LoopLabMonoChromeHeaderWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: text-white bg-dark
+
+title: Explore
+text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
+button_url: "#"
+button_class: btn btn-outline-secondary
+button_text: Find Out More
+```
 
 
 
@@ -89,27 +295,19 @@ LoopLabMonoChromeHeaderWidget variables description
 
 
 
-LoopLabMonoChromeHeaderWidget configuration example
-----------------
-
-```yaml
-attr:
-    class: text-white bg-dark
-
-title: Explore
-text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
-button_url: "#"
-button_class: btn btn-outline-secondary
-button_text: Find Out More
-```
-
-
-
 
 
 
 LoopLabTwoColumnsSignupFormWidget
 ==============
+
+
+- [Screenshots](#looplabtwocolumnssignupformwidget-screenshots)
+- [Templates and skins](#looplabtwocolumnssignupformwidget-templates-and-skins)
+- [Example](#looplabtwocolumnssignupformwidget-configuration-example)
+- [Variables descriptions](#looplabtwocolumnssignupformwidget-variables-description)
+
+
 
 The LoopLabTwoColumnsSignupFormWidget is a bootstrap 4 widget representing a two columns signup form.
 
@@ -152,12 +350,71 @@ The submit button has its own variables and is not considered as a regular form 
 
 
 
-
 LoopLabTwoColumnsSignupFormWidget screenshots
 ----------
 
 ![Screenshot looplab_two_columns_signup_form.jpg](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsSignupFormWidget/looplab_two_columns_signup_form.jpg)
 
+
+
+
+
+LoopLabTwoColumnsSignupFormWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: default.css.php
+
+
+LoopLabTwoColumnsSignupFormWidget configuration example
+----------------
+
+```yaml
+showTeaser: true
+form_align_right: false
+teaser_visible_size: lg
+teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
+teaser_items:
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+
+
+form_title: Sign up Today
+form_subtitle: Please fill out this form to register
+form_fields:
+    -
+        name: username
+        placeholder: Username
+        type: text
+
+    -
+        name: email
+        placeholder: Email
+        type: text
+
+    -
+        name: password
+        placeholder: Password
+        type: password
+
+    -
+        name: confirm_password
+        placeholder: Confirm Password
+        type: password
+
+
+form_submit_value: Submit
+form_submit_class: btn btn-outline-light btn-block
+background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+```
 
 
 
@@ -253,64 +510,19 @@ LoopLabTwoColumnsSignupFormWidget variables description
 
 
 
-LoopLabTwoColumnsSignupFormWidget configuration example
-----------------
-
-```yaml
-showTeaser: true
-form_align_right: false
-teaser_visible_size: lg
-teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
-teaser_items:
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
-
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
-
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
-
-
-form_title: Sign up Today
-form_subtitle: Please fill out this form to register
-form_fields:
-    -
-        name: username
-        placeholder: Username
-        type: text
-
-    -
-        name: email
-        placeholder: Email
-        type: text
-
-    -
-        name: password
-        placeholder: Password
-        type: password
-
-    -
-        name: confirm_password
-        placeholder: Confirm Password
-        type: password
-
-
-form_submit_value: Submit
-form_submit_class: btn btn-outline-light btn-block
-background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
-```
-
-
-
 
 
 
 LoopLabTwoColumnsTeaserWidget
 ==============
+
+
+- [Screenshots](#looplabtwocolumnsteaserwidget-screenshots)
+- [Templates and skins](#looplabtwocolumnsteaserwidget-templates-and-skins)
+- [Example](#looplabtwocolumnsteaserwidget-configuration-example)
+- [Variables descriptions](#looplabtwocolumnsteaserwidget-variables-description)
+
+
 
 LoopLabTwoColumnsTeaserWidget is a bootstrap 4 widget representing a two columns teaser header.
 It's composed of two parts: the image and the teaser.
@@ -318,7 +530,6 @@ By default, the image is on the left.
 You can change this using the **img_on_left** property.
 If you don't want it rounded, set the **img_rounded** property to false.
 The teaser part contains a title, a text, and a list with an arbitrary number of items with icons.
-
 
 
 
@@ -333,6 +544,39 @@ LoopLabTwoColumnsTeaserWidget screenshots
 
 ![Screenshot looplab_two_columns_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser.png)
 
+
+
+
+
+LoopLabTwoColumnsTeaserWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: default.css, looplab-dark.css
+
+
+LoopLabTwoColumnsTeaserWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: bg-light text-muted py-5
+
+img_on_left: true
+img_rounded: true
+img_src: img/explore-section1.jpg
+img_alt: Explore & Connect
+teaser_title: Explore & Connect
+teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
+teaser_items:
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+
+```
 
 
 
@@ -396,42 +640,23 @@ LoopLabTwoColumnsTeaserWidget variables description
 
 
 
-LoopLabTwoColumnsTeaserWidget configuration example
-----------------
-
-```yaml
-attr:
-    class: bg-light text-muted py-5
-
-img_on_left: true
-img_rounded: true
-img_src: img/explore-section1.jpg
-img_alt: Explore & Connect
-teaser_title: Explore & Connect
-teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
-teaser_items:
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
-
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
-
-```
-
-
-
 
 
 
 MainNavWidget
 ==============
 
+
+- [Screenshots](#mainnavwidget-screenshots)
+- [Templates and skins](#mainnavwidget-templates-and-skins)
+- [Example](#mainnavwidget-configuration-example)
+- [Variables descriptions](#mainnavwidget-variables-description)
+
+
+
 The MainNavWidget is a bootstrap 4 widget representing the top navigation on a website.
 You can configure the title of the nav with or without a logo, and you can create two separate
 sets of links, with various options for each link, such as adding an icon, or a dropdown menu.
-
 
 
 
@@ -442,6 +667,82 @@ MainNavWidget screenshots
 
 ![Screenshot MainNavWidget-01.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MainNavWidget/MainNavWidget-01.png)
 
+
+
+
+
+MainNavWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: default.css
+
+
+MainNavWidget configuration example
+----------------
+
+```yaml
+
+title: LoopLab
+
+# Whether the top nav is fixed on the top
+fixed_top: true
+
+# the string to put in the href attribute of the title link.
+# It can be an anchor if necessary
+# The default value is slash
+title_url: /
+
+# If not set, the title will not use a logo
+# If set, the title_logo must define all parameters as the example below
+#title_logo:
+#    url: /plugins/Light_Kit_Demo/mizuxe/img/mlogo.png
+#    width: 50
+#    height: 50
+#    alt: Mizuxe logo
+expand_size: sm # at which size does the burger menu expand (sm | md | lg) = sm
+links:
+    -
+        text: Home
+        url: "#home"
+#        icon: fas fa-user
+    -
+        text: Explore
+        url: "#explore-head-section"
+
+    -
+        text: Create
+        url: "#create-head-section"
+    -
+        text: Share
+        url: "#share-head-section"
+
+# An additional css class to add to all link items. Example: px-2
+#links_item_class: px-2
+
+# Whether to push the links on the right. Note: if you use links2.
+links_align_right: false
+
+links2:
+    -
+        text: Welcome Ling
+        url: "#"
+        icon: fas fa-user
+        children:
+            -
+                text: Profile
+                url: "#create-head-section"
+                icon: fas fa-user-circle
+            -
+                text: Settings
+                url: "#create-head-section"
+                icon: fas fa-cog
+    -
+        text: Log out
+        url: "#share-head-section"
+        icon: fas fa-user-times
+links2_align_right: true
+
+```
 
 
 
@@ -520,75 +821,6 @@ MainNavWidget variables description
 - **links2_align_right**: same as links_align_right
 - **links2_item_class**: same as links_item_class
 
-
-
-
-MainNavWidget configuration example
-----------------
-
-```yaml
-
-title: LoopLab
-
-# Whether the top nav is fixed on the top
-fixed_top: true
-
-# the string to put in the href attribute of the title link.
-# It can be an anchor if necessary
-# The default value is slash
-title_url: /
-
-# If not set, the title will not use a logo
-# If set, the title_logo must define all parameters as the example below
-#title_logo:
-#    url: /plugins/Light_Kit_Demo/mizuxe/img/mlogo.png
-#    width: 50
-#    height: 50
-#    alt: Mizuxe logo
-expand_size: sm # at which size does the burger menu expand (sm | md | lg) = sm
-links:
-    -
-        text: Home
-        url: "#home"
-#        icon: fas fa-user
-    -
-        text: Explore
-        url: "#explore-head-section"
-
-    -
-        text: Create
-        url: "#create-head-section"
-    -
-        text: Share
-        url: "#share-head-section"
-
-# An additional css class to add to all link items. Example: px-2
-#links_item_class: px-2
-
-# Whether to push the links on the right. Note: if you use links2.
-links_align_right: false
-
-links2:
-    -
-        text: Welcome Ling
-        url: "#"
-        icon: fas fa-user
-        children:
-            -
-                text: Profile
-                url: "#create-head-section"
-                icon: fas fa-user-circle
-            -
-                text: Settings
-                url: "#create-head-section"
-                icon: fas fa-cog
-    -
-        text: Log out
-        url: "#share-head-section"
-        icon: fas fa-user-times
-links2_align_right: true
-
-```
 
 
 

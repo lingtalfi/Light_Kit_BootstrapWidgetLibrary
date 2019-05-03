@@ -2,7 +2,7 @@
 
 
 
-The LoopLabMonoChromeHeaderWidget class
+The LoopLabFooterWithContactUseButtonWidget class
 ================
 2019-04-26 --> 2019-05-03
 
@@ -14,7 +14,7 @@ The LoopLabMonoChromeHeaderWidget class
 Introduction
 ============
 
-The LoopLabMonoChromeHeaderWidget class.
+The LoopLabFooterWithContactUseButtonWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LoopLabMonoChromeHeaderWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">LoopLabFooterWithContactUseButtonWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -69,9 +69,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabMonoChromeHeaderWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabFooterWithContactUseButtonWidget
 
 
 SeeAlso
 ==============
-Previous class: [LoopLabFooterWithContactUseButtonWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabFooterWithContactUseButtonWidget.md)<br>Next class: [LoopLabTwoColumnsSignupFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsSignupFormWidget.md)<br>
+Next class: [LoopLabMonoChromeHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabMonoChromeHeaderWidget.md)<br>

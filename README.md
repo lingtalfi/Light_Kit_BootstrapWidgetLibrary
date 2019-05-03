@@ -10,7 +10,7 @@ WORK IN PROGRESS, COME BACK IN A FEW MONTHS...
 
 
 
-Some tools to build common php based webservices.
+A bootstrap widget library for the [Light_Kit](https://github.com/lingtalfi/Light_Kit) planet. 
 
 
 This is part of the [universe framework](https://github.com/karayabin/universe-snapshot).
@@ -40,11 +40,18 @@ Summary
 
 
 
+Related
+=========
+- [Light_Kit_Demo](https://github.com/lingtalfi/Light_Kit_Demo/): a planet showing some demos made with Light_Kit_BootstrapWidgetLibrary. 
 
 
 History Log
 =============
 
+- 0.5.0 -- 2019-05-03
+
+    - add LoopLabFooterWithContactUseButtonWidget
+    
 - 0.4.1 -- 2019-05-03
 
     - fix indentation problem in widget documentation examples.
