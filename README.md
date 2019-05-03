@@ -45,6 +45,10 @@ Summary
 History Log
 =============
 
+- 0.2.0 -- 2019-05-03
+
+    - add LoopLabTwoColumnsSignupFormWidget to widget documentation
+    
 - 0.1.1 -- 2019-05-02
 
     - fix widget documentation

@@ -8,8 +8,9 @@ use Ling\Kit_PicassoWidget\Widget\PicassoWidget;
 
 
 /**
- * The MainNavWidget class.
+ * The LoopLabTwoColumnsSignupFormWidget class.
  */
-class MainNavWidget extends PicassoWidget {
+class LoopLabTwoColumnsSignupFormWidget extends PicassoWidget
+{
 
 }
