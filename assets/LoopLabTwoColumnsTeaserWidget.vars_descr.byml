@@ -65,22 +65,22 @@ vars:
 
 
 example: <
-attr: 
-    class: bg-light text-muted py-5
+    attr:
+        class: bg-light text-muted py-5
 
-img_on_left: true
-img_rounded: true
-img_src: img/explore-section1.jpg
-img_alt: Explore & Connect
-teaser_title: Explore & Connect
-teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
-teaser_items: 
-    - 
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
-    
-    - 
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+    img_on_left: true
+    img_rounded: true
+    img_src: img/explore-section1.jpg
+    img_alt: Explore & Connect
+    teaser_title: Explore & Connect
+    teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
+    teaser_items:
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
     
 >

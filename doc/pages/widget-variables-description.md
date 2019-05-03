@@ -94,7 +94,7 @@ LoopLabMonoChromeHeaderWidget configuration example
 
 ```yaml
 attr:
-class: text-white bg-dark
+    class: text-white bg-dark
 
 title: Explore
 text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
@@ -262,41 +262,41 @@ form_align_right: false
 teaser_visible_size: lg
 teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
 teaser_items:
--
-    icon: fas fa-check fa-2x
-    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
--
-    icon: fas fa-check fa-2x
-    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
--
-    icon: fas fa-check fa-2x
-    text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
 
 form_title: Sign up Today
 form_subtitle: Please fill out this form to register
 form_fields:
--
-    name: username
-    placeholder: Username
-    type: text
+    -
+        name: username
+        placeholder: Username
+        type: text
 
--
-    name: email
-    placeholder: Email
-    type: text
+    -
+        name: email
+        placeholder: Email
+        type: text
 
--
-    name: password
-    placeholder: Password
-    type: password
+    -
+        name: password
+        placeholder: Password
+        type: password
 
--
-    name: confirm_password
-    placeholder: Confirm Password
-    type: password
+    -
+        name: confirm_password
+        placeholder: Confirm Password
+        type: password
 
 
 form_submit_value: Submit
@@ -401,7 +401,7 @@ LoopLabTwoColumnsTeaserWidget configuration example
 
 ```yaml
 attr:
-class: bg-light text-muted py-5
+    class: bg-light text-muted py-5
 
 img_on_left: true
 img_rounded: true
@@ -410,13 +410,13 @@ img_alt: Explore & Connect
 teaser_title: Explore & Connect
 teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
 teaser_items:
--
-    icon: fas fa-check fa-2x
-    text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
 
--
-    icon: fas fa-check fa-2x
-    text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+    -
+        icon: fas fa-check fa-2x
+        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
 
 ```
 
@@ -547,20 +547,20 @@ title_url: /
 #    alt: Mizuxe logo
 expand_size: sm # at which size does the burger menu expand (sm | md | lg) = sm
 links:
--
-    text: Home
-    url: "#home"
+    -
+        text: Home
+        url: "#home"
 #        icon: fas fa-user
--
-    text: Explore
-    url: "#explore-head-section"
+    -
+        text: Explore
+        url: "#explore-head-section"
 
--
-    text: Create
-    url: "#create-head-section"
--
-    text: Share
-    url: "#share-head-section"
+    -
+        text: Create
+        url: "#create-head-section"
+    -
+        text: Share
+        url: "#share-head-section"
 
 # An additional css class to add to all link items. Example: px-2
 #links_item_class: px-2
@@ -569,23 +569,23 @@ links:
 links_align_right: false
 
 links2:
--
-    text: Welcome Ling
-    url: "#"
-    icon: fas fa-user
-    children:
-        -
-            text: Profile
-            url: "#create-head-section"
-            icon: fas fa-user-circle
-        -
-            text: Settings
-            url: "#create-head-section"
-            icon: fas fa-cog
--
-    text: Log out
-    url: "#share-head-section"
-    icon: fas fa-user-times
+    -
+        text: Welcome Ling
+        url: "#"
+        icon: fas fa-user
+        children:
+            -
+                text: Profile
+                url: "#create-head-section"
+                icon: fas fa-user-circle
+            -
+                text: Settings
+                url: "#create-head-section"
+                icon: fas fa-cog
+    -
+        text: Log out
+        url: "#share-head-section"
+        icon: fas fa-user-times
 links2_align_right: true
 
 ```

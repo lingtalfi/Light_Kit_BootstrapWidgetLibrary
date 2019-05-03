@@ -45,12 +45,12 @@ vars:
 
 
 example: <
-attr: 
-    class: text-white bg-dark
+    attr:
+        class: text-white bg-dark
 
-title: Explore
-text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
-button_url: "#"
-button_class: btn btn-outline-secondary
-button_text: Find Out More
+    title: Explore
+    text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
+    button_url: "#"
+    button_class: btn btn-outline-secondary
+    button_text: Find Out More
 >

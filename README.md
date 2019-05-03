@@ -45,6 +45,10 @@ Summary
 History Log
 =============
 
+- 0.4.1 -- 2019-05-03
+
+    - fix indentation problem in widget documentation examples.
+    
 - 0.4.0 -- 2019-05-03
 
     - add LoopLabTwoColumnsTeaserWidget
