@@ -20,6 +20,7 @@ Summary
 - [LoopLabTwoColumnsSignupFormWidget](#looplabtwocolumnssignupformwidget)
 - [LoopLabTwoColumnsTeaserWidget](#looplabtwocolumnsteaserwidget)
 - [MainNavWidget](#mainnavwidget)
+- [MizuxeFourColumnsOurStaffWidget](#mizuxefourcolumnsourstaffwidget)
 - [MizuxeNewsletterSignupHeaderWidget](#mizuxenewslettersignupheaderwidget)
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
 - [OneColumnAccordionWidget](#onecolumnaccordionwidget)
@@ -1010,6 +1011,250 @@ MainNavWidget variables description
 - **links2**: same as links
 - **links2_align_right**: same as links_align_right
 - **links2_item_class**: same as links_item_class
+
+
+
+
+
+
+
+MizuxeFourColumnsOurStaffWidget
+==============
+
+
+- [Screenshots](#mizuxefourcolumnsourstaffwidget-screenshots)
+- [Templates and skins](#mizuxefourcolumnsourstaffwidget-templates-and-skins)
+- [Example](#mizuxefourcolumnsourstaffwidget-configuration-example)
+- [Variables descriptions](#mizuxefourcolumnsourstaffwidget-variables-description)
+
+
+
+MizuxeFourColumnsOurStaffWidget is a bootstrap 4 widget showing your staff members.
+
+It's composed of 3 parts:
+- the title
+- the text
+- the items
+
+You can show/hide each parts individually with the show_xxx properties.
+
+Each item is composed of an image, the name of the member, the role, a description, and a list of social icon links.
+
+By default, the member items are displayed in a 4 columns grid on large screens, and 2 columns grid for medium screens (and they
+stack on each other for small screens).
+This can be changed with the "column_class" property, which leverages the bootstrap 4 framework responsive capabilities.
+
+See the grid system of bootstrap 4 for more details (https://getbootstrap.com/docs/4.0/layout/grid/).
+
+
+
+
+
+
+
+MizuxeFourColumnsOurStaffWidget screenshots
+----------
+
+![Screenshot mizuxe_four_columns_our_staff_header.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeFourColumnsOurStaffWidget/mizuxe_four_columns_our_staff_header.png)
+
+
+
+
+
+MizuxeFourColumnsOurStaffWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: 
+
+
+MizuxeFourColumnsOurStaffWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: my-5 text-center
+    id: authors
+
+column_class: col-lg-3 col-md-6
+show_title: true
+show_text: true
+show_items: true
+title: Meet The Authors
+text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis ea ipsam laborum officia quo.
+items:
+    -
+        img_url: img/person1.jpg
+        img_alt: Lead Writer Susan Williams
+        name: Susan Wiliams
+        role: Lead Writer
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+        icons:
+            -
+                icon: fab fa-facebook
+                url: http://facebook.com
+
+            -
+                icon: fab fa-twitter
+                url: http://twitter.com
+
+            -
+                icon: fab fa-instagram
+                url: http://instagram.com
+
+
+
+    -
+        img_url: img/person2.jpg
+        img_alt: Co-Writer Grace Smith
+        name: Grace Smith
+        role: Co-Writer
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+        icons:
+            -
+                icon: fab fa-facebook
+                url: http://facebook.com
+
+            -
+                icon: fab fa-twitter
+                url: http://twitter.com
+
+            -
+                icon: fab fa-instagram
+                url: http://instagram.com
+
+
+
+    -
+        img_url: img/person3.jpg
+        img_alt: Editor John Doe
+        name: John Doe
+        role: Editor
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+        icons:
+            -
+                icon: fab fa-facebook
+                url: http://facebook.com
+
+            -
+                icon: fab fa-twitter
+                url: http://twitter.com
+
+            -
+                icon: fab fa-instagram
+                url: http://instagram.com
+
+
+
+    -
+        img_url: img/person4.jpg
+        img_alt: Designer Kevin Swanson
+        name: Kevin Swanson
+        role: Designer
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+        icons:
+            -
+                icon: fab fa-facebook
+                url: http://facebook.com
+
+            -
+                icon: fab fa-twitter
+                url: http://twitter.com
+
+            -
+                icon: fab fa-instagram
+                url: http://instagram.com
+
+
+
+```
+
+
+
+MizuxeFourColumnsOurStaffWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: my-5 text-center
+            - **description**: The css class to apply to the widget container tag.
+            - **example**: my-5 text-center
+- **column_class**
+    - **type**: string
+    - **default_value**: col-lg-3 col-md-6
+    - **description**: The boostrap 4 grid responsive class for each column containing a card. See https://getbootstrap.com/docs/4.0/layout/grid/ for more info.
+    - **example**: col-lg-3 col-md-6
+- **show_title**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the title.
+- **show_text**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the text.
+- **show_items**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the items.
+- **title**
+    - **type**: string
+    - **default_value**: No title
+    - **description**: The title.
+    - **example**: Meet The Authors
+- **text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis ea ipsam laborum officia quo.
+- **items**
+    - **type**: item_list
+    - **default_value**
+    - **description**: An array of member items.
+    - **item_properties**
+        - **img_url**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The value of the src attribute of the img tag.
+            - **example**: img/person1.jpg
+        - **img_alt**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The value of the alt attribute of the img tag.
+            - **example**: Lead Writer Susan Williams
+        - **name**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The name of the member.
+            - **example**: Susan Wiliams
+        - **role**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The role of the member.
+            - **example**: Lead Writer
+        - **description**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The description of the member.
+            - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+        - **icons**
+            - **type**: item_list
+            - **default_value**
+            - **description**: The social icon items for this member.
+            - **item_properties**
+                - **icon**
+                    - **type**: string
+                    - **default_value**: 
+                    - **description**: The css class for the social icon.
+                    - **example**: fab fa-facebook
+                - **url**
+                    - **type**: string
+                    - **default_value**: 
+                    - **description**: The url for the social icon.
+                    - **example**: http://facebook.com
 
 
 

@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.9.0 -- 2019-05-10
+
+    - add MizuxeFourColumnsOurStaffWidget
+    
 - 0.8.0 -- 2019-05-10
 
     - add MizuxeNewsletterSignupHeaderWidget
