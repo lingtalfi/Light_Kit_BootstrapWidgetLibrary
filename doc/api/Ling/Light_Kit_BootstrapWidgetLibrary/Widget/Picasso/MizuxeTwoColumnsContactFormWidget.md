@@ -2,7 +2,7 @@
 
 
 
-The MizuxeNewsletterSignupHeaderWidget class
+The MizuxeTwoColumnsContactFormWidget class
 ================
 2019-04-26 --> 2019-05-10
 
@@ -14,7 +14,7 @@ The MizuxeNewsletterSignupHeaderWidget class
 Introduction
 ============
 
-The MizuxeNewsletterSignupHeaderWidget class.
+The MizuxeTwoColumnsContactFormWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">MizuxeNewsletterSignupHeaderWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">MizuxeTwoColumnsContactFormWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -71,9 +71,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeNewsletterSignupHeaderWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsContactFormWidget
 
 
 SeeAlso
 ==============
-Previous class: [MizuxeFourColumnsOurStaffWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeFourColumnsOurStaffWidget.md)<br>Next class: [MizuxeTwoColumnsContactFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsContactFormWidget.md)<br>
+Previous class: [MizuxeNewsletterSignupHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeNewsletterSignupHeaderWidget.md)<br>Next class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>

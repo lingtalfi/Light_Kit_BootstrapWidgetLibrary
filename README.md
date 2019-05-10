@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.10.0 -- 2019-05-10
+
+    - add MizuxeTwoColumnsContactFormWidget
+    
 - 0.9.1 -- 2019-05-10
 
     - fix images not having right content-type
