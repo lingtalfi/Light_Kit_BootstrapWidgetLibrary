@@ -54,9 +54,9 @@ and align the text on the left, center or right.
 ColoredBoxesWidget screenshots
 ----------
 
-![Screenshot glozzom_three_columns_colored_icon_cards.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ColoredBoxesWidget/glozzom_three_columns_colored_icon_cards.png)
+![Screenshot glozzom_three_columns_colored_icon_cards.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ColoredBoxesWidget/glozzom_three_columns_colored_icon_cards.png)
 
-![Screenshot mizuxe_four_columns_card_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ColoredBoxesWidget/mizuxe_four_columns_card_teaser.png)
+![Screenshot mizuxe_four_columns_card_teaser.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ColoredBoxesWidget/mizuxe_four_columns_card_teaser.png)
 
 
 
@@ -227,7 +227,7 @@ Each customizable field has a type which can be one of the following:
 LoopLabFooterWithContactUseButtonWidget screenshots
 ----------
 
-![Screenshot looplab_footer_with_contact_us_button.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabFooterWithContactUseButtonWidget/looplab_footer_with_contact_us_button.png)
+![Screenshot looplab_footer_with_contact_us_button.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabFooterWithContactUseButtonWidget/looplab_footer_with_contact_us_button.png)
 
 
 
@@ -388,9 +388,9 @@ We can change the background color using bootstrap css classes (or custom classe
 LoopLabMonoChromeHeaderWidget screenshots
 ----------
 
-![Screenshot looplab_monochrome_header-dark.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabMonoChromeHeaderWidget/looplab_monochrome_header-dark.png)
+![Screenshot looplab_monochrome_header-dark.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabMonoChromeHeaderWidget/looplab_monochrome_header-dark.png)
 
-![Screenshot looplab_monochrome_header.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabMonoChromeHeaderWidget/looplab_monochrome_header.png)
+![Screenshot looplab_monochrome_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabMonoChromeHeaderWidget/looplab_monochrome_header.png)
 
 
 
@@ -518,7 +518,7 @@ The submit button has its own variables and is not considered as a regular form 
 LoopLabTwoColumnsSignupFormWidget screenshots
 ----------
 
-![Screenshot looplab_two_columns_signup_form.jpg](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsSignupFormWidget/looplab_two_columns_signup_form.jpg)
+![Screenshot looplab_two_columns_signup_form.jpg](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsSignupFormWidget/looplab_two_columns_signup_form.jpg)
 
 
 
@@ -703,11 +703,11 @@ The teaser part contains a title, a text, and a list with an arbitrary number of
 LoopLabTwoColumnsTeaserWidget screenshots
 ----------
 
-![Screenshot looplab_two_columns_teaser-alt.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser-alt.png)
+![Screenshot looplab_two_columns_teaser-alt.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser-alt.png)
 
-![Screenshot looplab_two_columns_teaser-dark.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser-dark.png)
+![Screenshot looplab_two_columns_teaser-dark.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser-dark.png)
 
-![Screenshot looplab_two_columns_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser.png)
+![Screenshot looplab_two_columns_teaser.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser.png)
 
 
 
@@ -833,7 +833,7 @@ You can also enable spyscroll and smooth scrolling to enhance your navigation if
 MainNavWidget screenshots
 ----------
 
-![Screenshot MainNavWidget-01.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MainNavWidget/MainNavWidget-01.png)
+![Screenshot MainNavWidget-01.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MainNavWidget/MainNavWidget-01.png)
 
 
 
@@ -1055,7 +1055,7 @@ See the grid system of bootstrap 4 for more details (https://getbootstrap.com/do
 MizuxeFourColumnsOurStaffWidget screenshots
 ----------
 
-![Screenshot mizuxe_four_columns_our_staff_header.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeFourColumnsOurStaffWidget/mizuxe_four_columns_our_staff_header.png)
+![Screenshot mizuxe_four_columns_our_staff_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeFourColumnsOurStaffWidget/mizuxe_four_columns_our_staff_header.png)
 
 
 
@@ -1286,7 +1286,7 @@ We can disable the name field to only collect the email using the **field_name_a
 MizuxeNewsletterSignupHeaderWidget screenshots
 ----------
 
-![Screenshot mizuxe_newsletter_signup_header.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeNewsletterSignupHeaderWidget/mizuxe_newsletter_signup_header.png)
+![Screenshot mizuxe_newsletter_signup_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeNewsletterSignupHeaderWidget/mizuxe_newsletter_signup_header.png)
 
 
 
@@ -1413,7 +1413,7 @@ The background is composed of a background image and a background overlay used a
 MizuxeTwoColumnsTeaserWidget screenshots
 ----------
 
-![Screenshot mizuxe_two_columns_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeTwoColumnsTeaserWidget/mizuxe_two_columns_teaser.png)
+![Screenshot mizuxe_two_columns_teaser.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeTwoColumnsTeaserWidget/mizuxe_two_columns_teaser.png)
 
 
 
@@ -1574,7 +1574,7 @@ The accordion items can have icons.
 OneColumnAccordionWidget screenshots
 ----------
 
-![Screenshot mizuxe_one_column_accordion_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/OneColumnAccordionWidget/mizuxe_one_column_accordion_teaser.png)
+![Screenshot mizuxe_one_column_accordion_teaser.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/OneColumnAccordionWidget/mizuxe_one_column_accordion_teaser.png)
 
 
 
