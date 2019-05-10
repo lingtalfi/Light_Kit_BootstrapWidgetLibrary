@@ -68,7 +68,7 @@ $image = function () use (
 ?>
 
 
-<!-- MizuxeTwoColumnsTeaserWidget -->
+
 <section class="kit-bwl-mizuxe_2c_teaser <?php echo htmlspecialchars($this->getCssClass()); ?>"
     <?php echo $this->getAttributesHtml(); ?>
          style="background: <?php echo htmlspecialchars($bgStyle); ?>"

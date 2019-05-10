@@ -2,7 +2,7 @@
 
 
 
-The LoopLabTwoColumnsSignupFormWidget class
+The OneColumnAccordionWidget class
 ================
 2019-04-26 --> 2019-05-10
 
@@ -14,7 +14,7 @@ The LoopLabTwoColumnsSignupFormWidget class
 Introduction
 ============
 
-The LoopLabTwoColumnsSignupFormWidget class.
+The OneColumnAccordionWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LoopLabTwoColumnsSignupFormWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">OneColumnAccordionWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -71,9 +71,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabTwoColumnsSignupFormWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\OneColumnAccordionWidget
 
 
 SeeAlso
 ==============
-Previous class: [LoopLabMonoChromeHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabMonoChromeHeaderWidget.md)<br>Next class: [LoopLabTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsTeaserWidget.md)<br>
+Previous class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>

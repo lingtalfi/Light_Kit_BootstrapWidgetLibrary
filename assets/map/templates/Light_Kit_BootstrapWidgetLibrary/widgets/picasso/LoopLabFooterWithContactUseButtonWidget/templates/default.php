@@ -29,7 +29,7 @@ $modalBtnClass = $z['modal_btn_class'] ?? "btn btn-primary btn-block";
 $modalId = StringTool::getUniqueCssId("contact-modal-");
 
 ?>
-<!-- LoopLabFooterWithContactUseButtonWidget -->
+
 <footer id="main-footer" class="kit-bwl-looplab_footer <?php echo htmlspecialchars($this->getCssClass()); ?>"
     <?php echo $this->getAttributesHtml(); ?>>
     <div class="container">

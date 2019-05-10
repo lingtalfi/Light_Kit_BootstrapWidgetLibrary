@@ -56,7 +56,7 @@ $teaser = function () use (
 ?>
 
 
-<!-- LoopLabTwoColumnsTeaserWidget -->
+
 <section class="kit-bwl-2c_teaser <?php echo htmlspecialchars($this->getCssClass()); ?>"
     <?php echo $this->getAttributesHtml(); ?>>
     <div class="container">

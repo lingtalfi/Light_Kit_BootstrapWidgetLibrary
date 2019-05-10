@@ -48,6 +48,12 @@ Related
 History Log
 =============
 
+- 0.8.0 -- 2019-05-10
+
+    - add MizuxeNewsletterSignupHeaderWidget
+    - add ColoredBoxesWidget
+    - add OneColumnAccordionWidget
+    
 - 0.7.0 -- 2019-05-03
 
     - add MizuxeTwoColumnsTeaserWidget

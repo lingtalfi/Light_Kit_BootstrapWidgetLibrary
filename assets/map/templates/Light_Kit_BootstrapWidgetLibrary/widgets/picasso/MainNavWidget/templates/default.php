@@ -83,7 +83,7 @@ $linksCallback = function (array $links, array $options) {
 ?>
 
 
-<!-- MainNavWidget -->
+
 <nav
         class="kit-bwl-mainnav
         navbar navbar-expand-<?php echo $z['expand_size'] ?? 'md'; ?>

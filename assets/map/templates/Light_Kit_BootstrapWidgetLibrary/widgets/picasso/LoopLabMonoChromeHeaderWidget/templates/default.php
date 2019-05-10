@@ -18,7 +18,6 @@ $buttonText = $z['button_text'] ?? "Find Out More";
 ?>
 
 
-<!-- LoopLabMonoChromeHeaderWidget -->
 <section class="kit-bwl-monochrome_header <?php echo htmlspecialchars($this->getCssClass()); ?>" <?php echo $this->getAttributesHtml(); ?>>
     <div class="container">
         <div class="row">

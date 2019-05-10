@@ -90,7 +90,6 @@ $form = function () use (
 ?>
 
 
-<!-- LoopLabTwoColumnsSignupFormWidget -->
 <section <?php echo $this->getAttributesHtml(); ?>
         class="kit-bwl-2c_signup_form <?php echo htmlspecialchars($this->getCssClass()); ?>">
     <div class="dark-overlay">

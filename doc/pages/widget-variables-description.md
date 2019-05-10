@@ -14,12 +14,175 @@ For more information about the variables representation, please refer to the [wi
 Summary
 =========
 
+- [ColoredBoxesWidget](#coloredboxeswidget)
 - [LoopLabFooterWithContactUseButtonWidget](#looplabfooterwithcontactusebuttonwidget)
 - [LoopLabMonoChromeHeaderWidget](#looplabmonochromeheaderwidget)
 - [LoopLabTwoColumnsSignupFormWidget](#looplabtwocolumnssignupformwidget)
 - [LoopLabTwoColumnsTeaserWidget](#looplabtwocolumnsteaserwidget)
 - [MainNavWidget](#mainnavwidget)
+- [MizuxeNewsletterSignupHeaderWidget](#mizuxenewslettersignupheaderwidget)
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
+- [OneColumnAccordionWidget](#onecolumnaccordionwidget)
+
+
+
+
+
+
+ColoredBoxesWidget
+==============
+
+
+- [Screenshots](#coloredboxeswidget-screenshots)
+- [Templates and skins](#coloredboxeswidget-templates-and-skins)
+- [Example](#coloredboxeswidget-configuration-example)
+- [Variables descriptions](#coloredboxeswidget-variables-description)
+
+
+
+ColoredBoxesWidget is a bootstrap 4 widget used to display colored boxes.
+We can change the number of columns using the **column_class** property.
+Each box contains an optional icon, a title and a text.
+We can change the css class and the background style for each box,
+and align the text on the left, center or right.
+
+
+
+
+
+ColoredBoxesWidget screenshots
+----------
+
+![Screenshot glozzom_three_columns_colored_icon_cards.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ColoredBoxesWidget/glozzom_three_columns_colored_icon_cards.png)
+
+![Screenshot mizuxe_four_columns_card_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ColoredBoxesWidget/mizuxe_four_columns_card_teaser.png)
+
+
+
+
+
+ColoredBoxesWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: 
+
+
+ColoredBoxesWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: py-5
+
+column_class: col-md-3
+boxes:
+    -
+        class: border-primary mb-resp
+        text_align: center
+        title: Be Better
+        title_class: text-primary
+        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+        text_class: text-muted
+        icon: ""
+
+    -
+        class: bg-primary mb-resp text-white
+        text_align: center
+        title: Be Smarter
+        title_class: ""
+        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+        text_class: ""
+        icon: ""
+
+    -
+        class: border-primary mb-resp
+        text_align: center
+        title: Be Faster
+        title_class: text-primary
+        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+        text_class: text-muted
+        icon: ""
+
+    -
+        class: bg-primary mb-resp text-white
+        text_align: center
+        title: Be Stronger
+        title_class: ""
+        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+        text_class: ""
+        icon: ""
+
+```
+
+
+
+ColoredBoxesWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: py-5
+            - **description**: The css class to add to the widget container tag.
+            - **example**: py-5
+- **column_class**
+    - **type**: string
+    - **default_value**: col-md-3
+    - **description**: Defines the width and responsiveness of the columns containing the boxes.
+This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layout/grid/.
+    - **example**: col-md-3
+- **boxes**
+    - **type**: item_list
+    - **default_value**
+    - **description**: An array of boxes.
+    - **item_properties**
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the box outer container.
+            - **example**
+                - border-primary mb-resp
+                - bg-dark text-white
+                - bg-primary mb-resp
+        - **text_align**
+            - **type**: string
+            - **default_value**: center
+            - **description**: The alignment to apply to the box content (including title and text).
+            - **example**: center
+            - **choices**
+                - left
+                - center
+                - right
+        - **title**
+            - **type**: string
+            - **default_value**: No title
+            - **description**: The title of the box.
+            - **example**: Be Better
+        - **title_class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to add to the title of the box.
+            - **example**: text-primary
+        - **text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of the box
+            - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+        - **text_class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to add to the text of the box.
+            - **example**: text-muted
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class for the icon of the box. If empty, the icon will not be displayed.
+            - **example**: fas fa-box fa-3x
+
 
 
 
@@ -854,6 +1017,120 @@ MainNavWidget variables description
 
 
 
+MizuxeNewsletterSignupHeaderWidget
+==============
+
+
+- [Screenshots](#mizuxenewslettersignupheaderwidget-screenshots)
+- [Templates and skins](#mizuxenewslettersignupheaderwidget-templates-and-skins)
+- [Example](#mizuxenewslettersignupheaderwidget-configuration-example)
+- [Variables descriptions](#mizuxenewslettersignupheaderwidget-variables-description)
+
+
+
+MizuxeNewsletterSignupHeaderWidget is a bootstrap 4 widget.
+It's an epurated newsletter signup form with two fields and a submit button.
+The two fields are name and email.
+We can disable the name field to only collect the email using the **field_name_active** property.
+
+
+
+
+
+
+MizuxeNewsletterSignupHeaderWidget screenshots
+----------
+
+![Screenshot mizuxe_newsletter_signup_header.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeNewsletterSignupHeaderWidget/mizuxe_newsletter_signup_header.png)
+
+
+
+
+
+MizuxeNewsletterSignupHeaderWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: 
+
+
+MizuxeNewsletterSignupHeaderWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: bg-dark text-white py-5
+
+field_name_active: true
+field_name_name: name
+field_name_label: Enter Name
+field_email_name: email
+field_email_label: Enter Email
+btn_class: btn btn-primary btn-lg btn-block
+btn_icon: fas fa-envelope-open
+btn_text: Subscribe
+```
+
+
+
+MizuxeNewsletterSignupHeaderWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: bg-dark text-white py-5
+            - **description**: The css class to apply to the widget's container tag.
+            - **example**: bg-dark text-white py-5
+- **field_name_active**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the name field.
+- **field_name_name**
+    - **type**: string
+    - **default_value**: name
+    - **description**: The value of the name attribute for the **name** field.
+    - **example**: name
+- **field_name_label**
+    - **type**: string
+    - **default_value**: Enter Name
+    - **description**: The label for the **name** field.
+    - **example**: Enter Name
+- **field_email_name**
+    - **type**: string
+    - **default_value**: email
+    - **description**: The value of the name attribute for the **email** field.
+    - **example**: email
+- **field_email_label**
+    - **type**: string
+    - **default_value**: Enter Email
+    - **description**: The label for the **email** field.
+    - **example**: Enter Email
+- **btn_class**
+    - **type**: string
+    - **default_value**: btn btn-primary btn-lg btn-block
+    - **description**: The css class to use on the button.
+    - **example**: btn btn-primary btn-lg btn-block
+- **btn_icon**
+    - **type**: string
+    - **default_value**: fas fa-envelope-open
+    - **description**: The css class of the button icon.
+    - **example**: fas fa-envelope-open
+- **btn_text**
+    - **type**: string
+    - **default_value**: Subscribe
+    - **description**: The text of the button.
+    - **example**: Subscribe
+
+
+
+
+
+
+
 MizuxeTwoColumnsTeaserWidget
 ==============
 
@@ -1018,6 +1295,179 @@ MizuxeTwoColumnsTeaserWidget variables description
     - **default_value**: 
     - **description**: The css class to add to the background overlay.
     - **example**: text-white
+
+
+
+
+
+
+
+OneColumnAccordionWidget
+==============
+
+
+- [Screenshots](#onecolumnaccordionwidget-screenshots)
+- [Templates and skins](#onecolumnaccordionwidget-templates-and-skins)
+- [Example](#onecolumnaccordionwidget-configuration-example)
+- [Variables descriptions](#onecolumnaccordionwidget-variables-description)
+
+
+
+OneColumnAccordionWidget is a bootstrap 4 widget composed of three parts:
+    - the title
+    - the text
+    - the accordion
+
+We can show/hide each of those parts.
+
+The accordion items can have icons.
+
+
+
+
+
+OneColumnAccordionWidget screenshots
+----------
+
+![Screenshot mizuxe_one_column_accordion_teaser.png](http://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/OneColumnAccordionWidget/mizuxe_one_column_accordion_teaser.png)
+
+
+
+
+
+OneColumnAccordionWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: 
+
+
+OneColumnAccordionWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: py-5 text-center bg-light
+
+title_visible: true
+title: Why This Book?
+title_class: text-primary pb-3
+text_visible: true
+text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore laboriosam nisi reiciendis sint sunt?
+text_class: lead pb-3
+accordion_visible: true
+accordion_items:
+    -
+        icon: fas fa-arrow-circle-down
+        title: Get Inspired
+        is_open: true
+        text: <
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+            at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+            repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+            excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+            ut vero vitae voluptas, voluptatem voluptatibus.
+        >
+    -
+        icon: fas fa-arrow-circle-down
+        title: Gain The Knowledge
+        is_open: false
+        text: <
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+            at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+            repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+            excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+            ut vero vitae voluptas, voluptatem voluptatibus.
+        >
+
+    -
+        icon: fas fa-arrow-circle-down
+        title: Open Your Mind
+        is_open: false
+        text: <
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+            at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+            repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+            excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+            ut vero vitae voluptas, voluptatem voluptatibus.
+        >
+
+```
+
+
+
+OneColumnAccordionWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: py-5 text-center bg-light
+            - **description**: The css class to add to the widget container tag.
+            - **example**: py-5 text-center bg-light
+- **title_visible**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to display the title.
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title.
+    - **example**: Why This Book?
+- **title_class**
+    - **type**: string
+    - **default_value**: text-primary pb-3
+    - **description**: The css class of the title.
+    - **example**: text-primary pb-3
+- **text_visible**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to display the text.
+- **text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text below the title.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore laboriosam nisi reiciendis sint sunt?
+- **text_class**
+    - **type**: string
+    - **default_value**: lead pb-3
+    - **description**: The css class of the text.
+    - **example**: lead pb-3
+- **accordion_visible**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to display the accordion.
+- **accordion_items**
+    - **type**: item_list
+    - **default_value**
+    - **description**: An array of accordion items.
+    - **item_properties**
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class of the icon. If empty, the icon won't be displayed.
+            - **example**: fas fa-arrow-circle-down
+        - **title**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The title of the accordion item.
+            - **example**: Get Inspired
+        - **is_open**
+            - **type**: bool
+            - **default_value**: true
+            - **description**: Whether to open the accordion item by default.
+        - **text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of the accordion item.
+            - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+ut vero vitae voluptas, voluptatem voluptatibus.
 
 
 
