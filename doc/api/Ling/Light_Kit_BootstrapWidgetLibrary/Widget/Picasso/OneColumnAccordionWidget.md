@@ -76,4 +76,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\OneColumnAccordionWidget
 
 SeeAlso
 ==============
-Previous class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>Next class: [ShowCaseCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget.md)<br>
+Previous class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>Next class: [ParallaxHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWidget.md)<br>

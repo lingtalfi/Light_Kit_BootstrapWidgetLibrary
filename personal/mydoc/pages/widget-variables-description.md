@@ -26,6 +26,7 @@ Summary
 - [MizuxeTwoColumnsContactFormWidget](#mizuxetwocolumnscontactformwidget)
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
 - [OneColumnAccordionWidget](#onecolumnaccordionwidget)
+- [ParallaxHeaderWidget](#parallaxheaderwidget)
 - [ShowCaseCarouselWidget](#showcasecarouselwidget)
 - [SimpleFooterWidget](#simplefooterwidget)
 
@@ -246,7 +247,7 @@ IconTeaserWidget templates, skins, presets
 -----------
 - **Templates**: default.php
 - **Skins**: 
-- **Presets**: 
+- **Presets**: glozzom.byml
 
 
 IconTeaserWidget configuration example
@@ -2107,6 +2108,121 @@ at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
 repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
 excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
 ut vero vitae voluptas, voluptatem voluptatibus.
+
+
+
+
+
+
+
+ParallaxHeaderWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#parallaxheaderwidget-screenshots)
+- [Templates and skins](#parallaxheaderwidget-templates-and-skins)
+- [Example](#parallaxheaderwidget-configuration-example)
+- [Variables descriptions](#parallaxheaderwidget-variables-description)
+
+
+
+ParallaxHeaderWidget is a bootstrap 4 widget to display a header with a parallax effect.
+The parallax header is composed of four elements:
+- the background image
+- an overlay to tint/attenuate the background image
+- a title
+- a text
+
+By default, the text only shows up if the screen is medium size or larger.
+We can control at which size the text shows up by using the "text_visible_size" property.
+
+If the title is empty, it will not be displayed.
+
+If the text is empty, it will not be displayed.
+
+
+
+
+
+ParallaxHeaderWidget screenshots
+----------
+
+![Screenshot glozzom_parallax_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ParallaxHeaderWidget/glozzom_parallax_header.png)
+
+
+
+
+
+ParallaxHeaderWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css
+- **Presets**: glozzom.byml
+
+
+ParallaxHeaderWidget configuration example
+----------------
+
+```yaml
+name: parallax_header
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ParallaxHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ParallaxHeaderWidget
+template: default.php
+vars:
+    attr:
+        id: home-heading
+        class: p-5
+
+    background_url: /plugins/Light_Kit_Demo/glozzom/img/lights.jpg
+    background_height: 200px
+    overlay_color: rgba(0,0,0,0.7)
+    title: Are You Ready To Get Started?
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore illum in ipsum iste odio perferendis quia quidem quos sit?
+    text_visible_size: md
+```
+
+
+
+ParallaxHeaderWidget variables description
+-----------
+
+- **background_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url of the background image.
+    - **example**: /plugins/Light_Kit_Demo/glozzom/img/lights.jpg
+- **background_height**
+    - **type**: string
+    - **default_value**: 200px
+    - **description**: The css height of the background image.
+    - **example**: 200px
+- **overlay_color**
+    - **type**: string
+    - **default_value**: rgba(0,0,0,0.7)
+    - **description**: The background color of the overlay covering the background image.
+    - **example**: rgba(0,0,0,0.7)
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If empty, it will not be displayed.
+    - **example**: Are You Ready To Get Started?
+- **text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text. If empty, it will not be displayed.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore illum in ipsum iste odio perferendis quia quidem quos sit?
+- **text_visible_size**
+    - **type**: string
+    - **default_value**: md
+    - **description**: The bootstrap size at which the text should start to be visible.
+    - **example**: md
+    - **choices**
+        - sm
+        - md
+        - lg
 
 
 

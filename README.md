@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.15.0 -- 2019-05-13
+
+    - add ParallaxHeaderWidget 
+    
 - 0.14.0 -- 2019-05-13
 
     - add IconTeaserWidget 
