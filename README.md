@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.11.1 -- 2019-05-13
+
+    - update widget doc, now list presets
+    
 - 0.11.0 -- 2019-05-13
 
     - add SimpleFooterWidget
