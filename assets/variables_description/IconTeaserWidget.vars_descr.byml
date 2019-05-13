@@ -57,21 +57,6 @@ example: <
     className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\IconTeaserWidget
     widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/IconTeaserWidget
     template: default.php
-    _descr: <
-        IconTeaserWidget is a bootstrap 4 widget to display some boxes with icons.
-        Each box is composed of 3 elements:
-        - icon
-        - title
-        - text
-    
-        If an element is empty, it's not displayed.
-    
-        We can choose how many boxes we want per line using the "column_class" property,
-        which takes a bootstrap 4 grid system css class as the input.
-    
-        More info at https://getbootstrap.com/docs/4.0/layout/grid/
-    
-    >
     vars: 
         attr: 
             class: py-5
