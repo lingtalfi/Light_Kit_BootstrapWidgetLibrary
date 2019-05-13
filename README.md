@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.14.0 -- 2019-05-13
+
+    - add IconTeaserWidget 
+
 - 0.13.2 -- 2019-05-13
 
     - update widget doc with more convoluted examples 

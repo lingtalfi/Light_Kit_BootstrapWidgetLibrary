@@ -2,7 +2,7 @@
 
 
 
-The LoopLabFooterWithContactUseButtonWidget class
+The IconTeaserWidget class
 ================
 2019-04-26 --> 2019-05-13
 
@@ -14,7 +14,7 @@ The LoopLabFooterWithContactUseButtonWidget class
 Introduction
 ============
 
-The LoopLabFooterWithContactUseButtonWidget class.
+The IconTeaserWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LoopLabFooterWithContactUseButtonWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">IconTeaserWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -71,9 +71,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabFooterWithContactUseButtonWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\IconTeaserWidget
 
 
 SeeAlso
 ==============
-Previous class: [IconTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/IconTeaserWidget.md)<br>Next class: [LoopLabMonoChromeHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabMonoChromeHeaderWidget.md)<br>
+Previous class: [ColoredBoxesWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ColoredBoxesWidget.md)<br>Next class: [LoopLabFooterWithContactUseButtonWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabFooterWithContactUseButtonWidget.md)<br>

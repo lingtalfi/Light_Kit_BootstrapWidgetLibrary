@@ -1,3 +1,8 @@
+name: main_nav
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MainNavWidget
+template: default.php
 skin: glozzom
 vars:
     attr:

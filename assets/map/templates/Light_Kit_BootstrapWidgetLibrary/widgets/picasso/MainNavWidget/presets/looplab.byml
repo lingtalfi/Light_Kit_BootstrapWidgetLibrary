@@ -1,3 +1,8 @@
+name: main_nav
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MainNavWidget
+template: default.php
 skin: looplab-nav
 vars:
     attr:
@@ -25,3 +30,6 @@ vars:
             text: Share
             url: "#share-head-section"
     links_align_right: true
+
+
+TODO: HERE do other presets for mainNav, then go to colored boxes for glozzom

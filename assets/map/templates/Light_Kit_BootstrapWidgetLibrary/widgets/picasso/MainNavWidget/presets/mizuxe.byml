@@ -1,3 +1,8 @@
+name: mizuxe_large_main_nav_with_logo
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MainNavWidget
+template: default.php
 skin: mizuxe-nav
 vars:
     attr:
