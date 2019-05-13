@@ -25,6 +25,7 @@ Summary
 - [MizuxeTwoColumnsContactFormWidget](#mizuxetwocolumnscontactformwidget)
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
 - [OneColumnAccordionWidget](#onecolumnaccordionwidget)
+- [SimpleFooterWidget](#simplefooterwidget)
 
 
 
@@ -1899,6 +1900,101 @@ at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
 repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
 excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
 ut vero vitae voluptas, voluptatem voluptatibus.
+
+
+
+
+
+
+
+SimpleFooterWidget
+==============
+
+
+- [Screenshots](#simplefooterwidget-screenshots)
+- [Templates and skins](#simplefooterwidget-templates-and-skins)
+- [Example](#simplefooterwidget-configuration-example)
+- [Variables descriptions](#simplefooterwidget-variables-description)
+
+
+
+SimpleFooterWidget is a bootstrap 4 widget representing a footer.
+
+It is composed of a text, which we can align horizontally using the "text_align" property.
+
+In the footer text, we can use the $year string, which will be replaced by the current year.
+
+
+
+
+
+
+SimpleFooterWidget screenshots
+----------
+
+![Screenshot blogen_footer.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/SimpleFooterWidget/blogen_footer.png)
+
+![Screenshot glozzom_simple_copyright_footer.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/SimpleFooterWidget/glozzom_simple_copyright_footer.png)
+
+![Screenshot mizuxe_right_aligned_monochrome_footer.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/SimpleFooterWidget/mizuxe_right_aligned_monochrome_footer.png)
+
+
+
+
+
+SimpleFooterWidget templates and skins
+-----------
+- **Templates**: default.php
+- **Skins**: 
+
+
+SimpleFooterWidget configuration example
+----------------
+
+```yaml
+attr:
+    class: py-5 bg-primary text-white
+    id: main-footer
+
+text_align: right
+text_class: ""
+text: Copyright &copy; $year
+```
+
+
+
+SimpleFooterWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**: null
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the widget container.
+            - **example**: py-5 bg-primary text-white
+- **text_align**
+    - **type**: string
+    - **default_value**: right
+    - **description**: How to align the text of the widget.
+    - **example**: right
+    - **choices**
+        - left
+        - center
+        - right
+- **text_class**
+    - **type**: string
+    - **default_value**: lead
+    - **description**: The css class to apply to the text of the widget.
+    - **example**: lead
+- **text**
+    - **type**: string
+    - **default_value**: Copyright &copy; $year
+    - **description**: The text of the widget.
+    - **example**: Copyright &copy; $year
 
 
 

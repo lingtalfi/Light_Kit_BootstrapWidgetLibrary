@@ -1,13 +1,13 @@
 [Back to the Ling/Light_Kit_BootstrapWidgetLibrary api](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary.md)<br>
-[Back to the Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget class](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget.md)
+[Back to the Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\SimpleFooterWidget class](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md)
 
 
-MainNavWidget::prepare
+SimpleFooterWidget::prepare
 ================
 
 
 
-MainNavWidget::prepare — Prepares the widget according to the given widget configuration.
+SimpleFooterWidget::prepare — Prepares the widget according to the given widget configuration.
 
 
 
@@ -16,7 +16,7 @@ Description
 ================
 
 
-public [MainNavWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
+public [SimpleFooterWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
 
 
 
@@ -66,7 +66,7 @@ Returns void.
 See Also
 ================
 
-The [MainNavWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget.md) class.
+The [SimpleFooterWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md) class.
 
 
 

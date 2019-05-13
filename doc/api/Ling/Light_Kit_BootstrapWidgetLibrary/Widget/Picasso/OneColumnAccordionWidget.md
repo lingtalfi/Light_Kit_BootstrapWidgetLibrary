@@ -4,7 +4,7 @@
 
 The OneColumnAccordionWidget class
 ================
-2019-04-26 --> 2019-05-10
+2019-04-26 --> 2019-05-13
 
 
 
@@ -32,7 +32,7 @@ class <span class="pl-k">OneColumnAccordionWidget</span> extends PicassoWidget i
     - public PicassoWidget::__construct() : void
     - public PicassoWidget::getLibraries() : array
     - public PicassoWidget::renderFile(string $filePath, array $variables = []) : false | string
-    - public PicassoWidget::prepare(array $widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
+    - public PicassoWidget::prepare(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
     - protected PicassoWidget::getAttributesHtml(bool $excludeClass = true) : string
     - protected PicassoWidget::getCssClass() : string
     - protected PicassoWidget::registerLibrary(string $libraryName, array $css, array $js) : void
@@ -76,4 +76,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\OneColumnAccordionWidget
 
 SeeAlso
 ==============
-Previous class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>
+Previous class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>Next class: [SimpleFooterWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md)<br>

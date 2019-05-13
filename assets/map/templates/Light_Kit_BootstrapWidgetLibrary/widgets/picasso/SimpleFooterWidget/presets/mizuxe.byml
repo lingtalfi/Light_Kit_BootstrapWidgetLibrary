@@ -1,0 +1,7 @@
+vars:
+    attr:
+        class: py-5 bg-primary text-white
+        id: main-footer
+    text_align: right
+    text_class: lead
+    text: Copyright &copy; $year

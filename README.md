@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.11.0 -- 2019-05-13
+
+    - add SimpleFooterWidget
+    
 - 0.10.0 -- 2019-05-10
 
     - add MizuxeTwoColumnsContactFormWidget

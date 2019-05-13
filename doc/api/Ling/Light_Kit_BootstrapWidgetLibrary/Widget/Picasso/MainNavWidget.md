@@ -4,7 +4,7 @@
 
 The MainNavWidget class
 ================
-2019-04-26 --> 2019-05-10
+2019-04-26 --> 2019-05-13
 
 
 
@@ -29,7 +29,7 @@ class <span class="pl-k">MainNavWidget</span> extends PicassoWidget implements U
     - protected array [PicassoWidget::$attr](#property-attr) ;
 
 - Methods
-    - public [prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget/prepare.md)(array $widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
+    - public [prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
 
 - Inherited methods
     - public PicassoWidget::__construct() : void

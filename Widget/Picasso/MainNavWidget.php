@@ -18,7 +18,7 @@ class MainNavWidget extends PicassoWidget
     /**
      * @overrides
      */
-    public function prepare(array $widgetConf, HtmlPageCopilot $copilot)
+    public function prepare(array &$widgetConf, HtmlPageCopilot $copilot)
     {
         $vars = $widgetConf['vars'];
         $attr = $vars['attr'] ?? [];

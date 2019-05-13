@@ -1,0 +1,7 @@
+vars:
+    attr:
+        class: bg-dark text-white mt-5 p-5
+        id: main-footer
+    text_align: center
+    text_class: ""
+    text: Copyright &copy; $year
