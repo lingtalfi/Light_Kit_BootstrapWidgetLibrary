@@ -68,6 +68,7 @@ ColoredBoxesWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: 
+- **Presets**: 
 
 
 ColoredBoxesWidget configuration example
@@ -239,6 +240,7 @@ LoopLabFooterWithContactUseButtonWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: default.css
+- **Presets**: 
 
 
 LoopLabFooterWithContactUseButtonWidget configuration example
@@ -402,6 +404,7 @@ LoopLabMonoChromeHeaderWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: looplab-dark.css
+- **Presets**: 
 
 
 LoopLabMonoChromeHeaderWidget configuration example
@@ -530,6 +533,7 @@ LoopLabTwoColumnsSignupFormWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: default.css.php
+- **Presets**: 
 
 
 LoopLabTwoColumnsSignupFormWidget configuration example
@@ -719,6 +723,7 @@ LoopLabTwoColumnsTeaserWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: default.css, looplab-dark.css
+- **Presets**: 
 
 
 LoopLabTwoColumnsTeaserWidget configuration example
@@ -845,6 +850,7 @@ MainNavWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: looplab-nav.css, mizuxe-nav.css, mizuxe-nav.scss
+- **Presets**: 
 
 
 MainNavWidget configuration example
@@ -1067,6 +1073,7 @@ MizuxeFourColumnsOurStaffWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: 
+- **Presets**: 
 
 
 MizuxeFourColumnsOurStaffWidget configuration example
@@ -1298,6 +1305,7 @@ MizuxeNewsletterSignupHeaderWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: 
+- **Presets**: 
 
 
 MizuxeNewsletterSignupHeaderWidget configuration example
@@ -1424,6 +1432,7 @@ MizuxeTwoColumnsContactFormWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: 
+- **Presets**: 
 
 
 MizuxeTwoColumnsContactFormWidget configuration example
@@ -1610,6 +1619,7 @@ MizuxeTwoColumnsTeaserWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: default.css
+- **Presets**: 
 
 
 MizuxeTwoColumnsTeaserWidget configuration example
@@ -1771,6 +1781,7 @@ OneColumnAccordionWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: 
+- **Presets**: 
 
 
 OneColumnAccordionWidget configuration example
@@ -1946,6 +1957,7 @@ SimpleFooterWidget templates and skins
 -----------
 - **Templates**: default.php
 - **Skins**: 
+- **Presets**: blogen.byml, glozzom.byml, mizuxe.byml
 
 
 SimpleFooterWidget configuration example
