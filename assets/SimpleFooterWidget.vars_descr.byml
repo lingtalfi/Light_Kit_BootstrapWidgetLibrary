@@ -11,7 +11,7 @@ description: <
 vars:
     attr:
         type: array
-        default_value: null
+        default_value: []
         description: The attributes to add to the widget's container tag.
         properties: 
             class:

@@ -96,6 +96,14 @@ Table of contents
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [ShowCaseCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget.md) &ndash; The ShowCaseCarouselWidget class.
+    - [ShowCaseCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget/prepare.md) &ndash; The prepare method
+    - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
+    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
+    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
 - [SimpleFooterWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md) &ndash; The SimpleFooterWidget class.
     - [SimpleFooterWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
@@ -110,5 +118,6 @@ Dependencies
 ============
 - [Kit_PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget)
 - [HtmlPageTools](https://github.com/lingtalfi/HtmlPageTools)
+- [Bat](https://github.com/lingtalfi/Bat)
 
 

@@ -13,7 +13,7 @@ vars:
 
     attr:
         type: array
-        default_value: null
+        default_value: []
         description: The attributes to add to the widget's container tag.
         properties:
             class:
@@ -45,7 +45,7 @@ vars:
 
     title_logo:
         type: array
-        default_value: null
+        default_value: []
         description: Adds a logo to the title.
         properties:
             url:
@@ -105,6 +105,11 @@ vars:
                 default_value: null
                 description: The css class for the icon.
                 example: fas fa-user
+            active:
+                type: bool
+                default_value: false
+                description: Whether to add the active class to the item.
+                example: true
 
     links_align_right:
         type: bool

@@ -9,12 +9,9 @@ use Ling\Kit_PicassoWidget\Widget\PicassoWidget;
 
 
 $title = $z['title'] ?? "No title";
-$titleLogo = $z['title_logo'] ?? null;
+$titleLogo = $z['title_logo'] ?? [];
 $fixedTop = $z['fixed_top'] ?? true;
 $titleUrl = $z['title_url'] ?? "/";
-
-
-
 
 
 $links = $z['links'] ?? [];
@@ -42,10 +39,14 @@ $linksCallback = function (array $links, array $options) {
 ">
 
         <?php foreach ($links as $item):
+            $active = $item['active'] ?? false;
             $children = $item['children'] ?? null;
+
+            $sActive = (true === $active) ? 'active' : '';
+
             ?>
             <?php if (is_array($children)): ?>
-            <li class="nav-item dropdown <?php echo $links_item_class; ?>">
+            <li class="nav-item dropdown <?php echo $links_item_class; ?> <?php echo $sActive; ?>">
                 <a href="<?php echo htmlspecialchars($item['url']); ?>"
                    class="nav-link dropdown-toggle" data-toggle="dropdown">
                     <?php if (array_key_exists("icon", $item) && $item['icon']): ?>
@@ -65,7 +66,7 @@ $linksCallback = function (array $links, array $options) {
             </li>
         <?php else: ?>
 
-            <li class="nav-item <?php echo $links_item_class; ?>">
+            <li class="nav-item <?php echo $links_item_class; ?> <?php echo $sActive; ?>">
                 <a href="<?php echo htmlspecialchars($item['url']); ?>"
                    class="nav-link">
                     <?php if (array_key_exists("icon", $item) && $item['icon']): ?>
@@ -83,7 +84,6 @@ $linksCallback = function (array $links, array $options) {
 ?>
 
 
-
 <nav
         class="kit-bwl-mainnav
         navbar navbar-expand-<?php echo $z['expand_size'] ?? 'md'; ?>
@@ -98,7 +98,7 @@ fixed-top
     <?php echo $this->getAttributesHtml(); ?>
 >
     <div class="container">
-        <?php if (null === $titleLogo): ?>
+        <?php if (empty($titleLogo)): ?>
             <a href="<?php echo htmlspecialchars($titleUrl); ?>" class="navbar-brand"><?php echo $title; ?></a>
         <?php else: ?>
             <a href="<?php echo htmlspecialchars($titleUrl); ?>" class="navbar-brand">

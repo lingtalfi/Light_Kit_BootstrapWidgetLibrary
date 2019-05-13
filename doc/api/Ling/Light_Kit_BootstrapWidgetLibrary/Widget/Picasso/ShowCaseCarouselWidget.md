@@ -2,7 +2,7 @@
 
 
 
-The SimpleFooterWidget class
+The ShowCaseCarouselWidget class
 ================
 2019-04-26 --> 2019-05-13
 
@@ -14,7 +14,7 @@ The SimpleFooterWidget class
 Introduction
 ============
 
-The SimpleFooterWidget class.
+The ShowCaseCarouselWidget class.
 
 
 
@@ -22,14 +22,14 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">SimpleFooterWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">ShowCaseCarouselWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
     - protected array [PicassoWidget::$attr](#property-attr) ;
 
 - Methods
-    - public [prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
+    - public [prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
 
 - Inherited methods
     - public PicassoWidget::__construct() : void
@@ -54,7 +54,7 @@ class <span class="pl-k">SimpleFooterWidget</span> extends PicassoWidget impleme
 Methods
 ==============
 
-- [SimpleFooterWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
+- [ShowCaseCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget/prepare.md) &ndash; 
 - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
 - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
 - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
@@ -73,9 +73,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\SimpleFooterWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ShowCaseCarouselWidget
 
 
 SeeAlso
 ==============
-Previous class: [ShowCaseCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget.md)<br>
+Previous class: [OneColumnAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/OneColumnAccordionWidget.md)<br>Next class: [SimpleFooterWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md)<br>

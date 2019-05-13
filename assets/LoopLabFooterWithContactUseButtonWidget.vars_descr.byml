@@ -23,7 +23,7 @@ Each customizable field has a type which can be one of the following:
 vars:
     attr:
         type: array
-        default_value: null
+        default_value: []
         description: The attributes to add to the widget's container tag.
         properties: 
             class:
