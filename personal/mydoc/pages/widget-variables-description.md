@@ -36,6 +36,7 @@ Summary
 ColoredBoxesWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#coloredboxeswidget-screenshots)
 - [Templates and skins](#coloredboxeswidget-templates-and-skins)
@@ -197,6 +198,7 @@ This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layo
 LoopLabFooterWithContactUseButtonWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#looplabfooterwithcontactusebuttonwidget-screenshots)
 - [Templates and skins](#looplabfooterwithcontactusebuttonwidget-templates-and-skins)
@@ -373,6 +375,7 @@ LoopLabFooterWithContactUseButtonWidget variables description
 LoopLabMonoChromeHeaderWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#looplabmonochromeheaderwidget-screenshots)
 - [Templates and skins](#looplabmonochromeheaderwidget-templates-and-skins)
@@ -472,6 +475,7 @@ LoopLabMonoChromeHeaderWidget variables description
 LoopLabTwoColumnsSignupFormWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#looplabtwocolumnssignupformwidget-screenshots)
 - [Templates and skins](#looplabtwocolumnssignupformwidget-templates-and-skins)
@@ -688,6 +692,7 @@ LoopLabTwoColumnsSignupFormWidget variables description
 LoopLabTwoColumnsTeaserWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#looplabtwocolumnsteaserwidget-screenshots)
 - [Templates and skins](#looplabtwocolumnsteaserwidget-templates-and-skins)
@@ -819,6 +824,7 @@ LoopLabTwoColumnsTeaserWidget variables description
 MainNavWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#mainnavwidget-screenshots)
 - [Templates and skins](#mainnavwidget-templates-and-skins)
@@ -1035,6 +1041,7 @@ MainNavWidget variables description
 MizuxeFourColumnsOurStaffWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#mizuxefourcolumnsourstaffwidget-screenshots)
 - [Templates and skins](#mizuxefourcolumnsourstaffwidget-templates-and-skins)
@@ -1280,6 +1287,7 @@ MizuxeFourColumnsOurStaffWidget variables description
 MizuxeNewsletterSignupHeaderWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#mizuxenewslettersignupheaderwidget-screenshots)
 - [Templates and skins](#mizuxenewslettersignupheaderwidget-templates-and-skins)
@@ -1395,6 +1403,7 @@ MizuxeNewsletterSignupHeaderWidget variables description
 MizuxeTwoColumnsContactFormWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#mizuxetwocolumnscontactformwidget-screenshots)
 - [Templates and skins](#mizuxetwocolumnscontactformwidget-templates-and-skins)
@@ -1581,6 +1590,7 @@ MizuxeTwoColumnsContactFormWidget variables description
 MizuxeTwoColumnsTeaserWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#mizuxetwocolumnsteaserwidget-screenshots)
 - [Templates and skins](#mizuxetwocolumnsteaserwidget-templates-and-skins)
@@ -1753,6 +1763,7 @@ MizuxeTwoColumnsTeaserWidget variables description
 OneColumnAccordionWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#onecolumnaccordionwidget-screenshots)
 - [Templates and skins](#onecolumnaccordionwidget-templates-and-skins)
@@ -1927,6 +1938,7 @@ ut vero vitae voluptas, voluptatem voluptatibus.
 ShowCaseCarouselWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#showcasecarouselwidget-screenshots)
 - [Templates and skins](#showcasecarouselwidget-templates-and-skins)
@@ -2152,6 +2164,7 @@ relevant if the automatic_cycle option is set to true.
 SimpleFooterWidget
 ==============
 
+[Back to top](#summary)
 
 - [Screenshots](#simplefooterwidget-screenshots)
 - [Templates and skins](#simplefooterwidget-templates-and-skins)

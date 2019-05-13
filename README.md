@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.13.1 -- 2019-05-13
+
+    - update widget doc with "back to top" links 
+    
 - 0.13.0 -- 2019-05-13
 
     - add ShowCaseCarouselWidget 
