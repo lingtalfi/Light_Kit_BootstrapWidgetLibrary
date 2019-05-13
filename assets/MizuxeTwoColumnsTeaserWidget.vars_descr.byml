@@ -111,21 +111,29 @@ vars:
 
 
 example: <
-    attr: 
-        class: py-5
-    
-    teaser_title: Do What You Dream Of...
-    teaser_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, voluptatibus?
-    teaser_text_align: center
-    teaser_button_text: Read More
-    teaser_button_icon: fas fa-arrow-right
-    teaser_button_class: btn btn-outline-secondary btn-lg text-white
-    teaser_button_url: "#"
-    img_on_right: true
-    img_size_visible: lg
-    img_src: /plugins/Light_Kit_Demo/mizuxe/img/book.png
-    img_alt: Mizuxe Mountains Book
-    bg_style: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
-    bg_overlay_style: rgba(50, 146, 166, 0.8);
-    bg_overlay_class: text-white
+    name: mizuxe_two_columns_teaser
+    type: picasso
+    active: true
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsTeaserWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeTwoColumnsTeaserWidget
+    template: default.php
+    vars:
+        attr:
+            id: showcase
+            class: py-5
+
+        teaser_title: Do What You Dream Of...
+        teaser_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, voluptatibus?
+        teaser_text_align: center
+        teaser_button_text: Read More
+        teaser_button_icon: fas fa-arrow-right
+        teaser_button_class: btn btn-outline-secondary btn-lg text-white
+        teaser_button_url: "#"
+        img_on_right: true
+        img_size_visible: lg
+        img_src: /plugins/Light_Kit_Demo/mizuxe/img/book.png
+        img_alt: Mizuxe Mountains Book
+        bg_style: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
+        bg_overlay_style: rgba(50, 146, 166, 0.8);
+        bg_overlay_class: text-white
 >

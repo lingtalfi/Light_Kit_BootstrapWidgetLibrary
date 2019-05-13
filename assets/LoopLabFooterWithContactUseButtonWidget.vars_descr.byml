@@ -103,33 +103,39 @@ vars:
 
 
 example: <
-    attr: 
-        class: bg-dark
-    
-    footer_title: LoopLab
-    footer_text: Copyright &copy; $year
-    footer_button_class: btn btn-primary
-    footer_button_text: Contact Us
-    modal_title: Contact Us
-    modal_form_action: ""
-    modal_form_method: post
-    modal_fields: 
-        - 
-            label: Name
-            name: name
-            type: text
-        
-        - 
-            label: Email
-            name: email
-            type: email
-        
-        - 
-            label: Message
-            name: message
-            type: textarea
-        
-    
-    modal_btn_text: Submit
-    modal_btn_class: btn btn-primary btn-block
+    name: looplab_footer_with_contact_us_button
+    type: picasso
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabFooterWithContactUseButtonWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabFooterWithContactUseButtonWidget
+    template: default.php
+    vars:
+        attr:
+            class: bg-dark
+
+        footer_title: LoopLab
+        footer_text: Copyright &copy; $year
+        footer_button_class: btn btn-primary
+        footer_button_text: Contact Us
+        modal_title: Contact Us
+        modal_form_action: ""
+        modal_form_method: post
+        modal_fields:
+            -
+                label: Name
+                name: name
+                type: text
+
+            -
+                label: Email
+                name: email
+                type: email
+
+            -
+                label: Message
+                name: message
+                type: textarea
+
+
+        modal_btn_text: Submit
+        modal_btn_class: btn btn-primary btn-block
 >

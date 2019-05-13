@@ -77,46 +77,54 @@ ColoredBoxesWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: py-5
+name: colored_boxes
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ColoredBoxesWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ColoredBoxesWidget
+template: default.php
+vars:
+    attr:
+        class: py-5
 
-column_class: col-md-3
-boxes:
-    -
-        class: border-primary mb-resp
-        text_align: center
-        title: Be Better
-        title_class: text-primary
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
-        text_class: text-muted
-        icon: ""
+    column_class: col-md-3
+    boxes:
+        -
+            class: border-primary mb-resp
+            text_align: center
+            title: Be Better
+            title_class: text-primary
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+            text_class: text-muted
+            icon: ""
 
-    -
-        class: bg-primary mb-resp text-white
-        text_align: center
-        title: Be Smarter
-        title_class: ""
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
-        text_class: ""
-        icon: ""
+        -
+            class: bg-primary mb-resp text-white
+            text_align: center
+            title: Be Smarter
+            title_class: ""
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+            text_class: ""
+            icon: ""
 
-    -
-        class: border-primary mb-resp
-        text_align: center
-        title: Be Faster
-        title_class: text-primary
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
-        text_class: text-muted
-        icon: ""
+        -
+            class: border-primary mb-resp
+            text_align: center
+            title: Be Faster
+            title_class: text-primary
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+            text_class: text-muted
+            icon: ""
 
-    -
-        class: bg-primary mb-resp text-white
-        text_align: center
-        title: Be Stronger
-        title_class: ""
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
-        text_class: ""
-        icon: ""
+        -
+            class: bg-primary mb-resp text-white
+            text_align: center
+            title: Be Stronger
+            title_class: ""
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, totam.
+            text_class: ""
+            icon: ""
+
 
 ```
 
@@ -250,35 +258,41 @@ LoopLabFooterWithContactUseButtonWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: bg-dark
+name: looplab_footer_with_contact_us_button
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabFooterWithContactUseButtonWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabFooterWithContactUseButtonWidget
+template: default.php
+vars:
+    attr:
+        class: bg-dark
 
-footer_title: LoopLab
-footer_text: Copyright &copy; $year
-footer_button_class: btn btn-primary
-footer_button_text: Contact Us
-modal_title: Contact Us
-modal_form_action: ""
-modal_form_method: post
-modal_fields:
-    -
-        label: Name
-        name: name
-        type: text
+    footer_title: LoopLab
+    footer_text: Copyright &copy; $year
+    footer_button_class: btn btn-primary
+    footer_button_text: Contact Us
+    modal_title: Contact Us
+    modal_form_action: ""
+    modal_form_method: post
+    modal_fields:
+        -
+            label: Name
+            name: name
+            type: text
 
-    -
-        label: Email
-        name: email
-        type: email
+        -
+            label: Email
+            name: email
+            type: email
 
-    -
-        label: Message
-        name: message
-        type: textarea
+        -
+            label: Message
+            name: message
+            type: textarea
 
 
-modal_btn_text: Submit
-modal_btn_class: btn btn-primary btn-block
+    modal_btn_text: Submit
+    modal_btn_class: btn btn-primary btn-block
 ```
 
 
@@ -415,14 +429,22 @@ LoopLabMonoChromeHeaderWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: text-white bg-dark
+name: looplab_monochrome_header
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabMonoChromeHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabMonoChromeHeaderWidget
+template: default.php
+skin: looplab-dark
+vars:
+    attr:
+        class: looplab-dark
+        id: explore-head-section
 
-title: Explore
-text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
-button_url: "#"
-button_class: btn btn-outline-secondary
-button_text: Find Out More
+    title: Explore
+    text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
+    button_url: "#"
+    button_class: btn btn-outline-secondary
+    button_text: Find Out More
 ```
 
 
@@ -545,51 +567,60 @@ LoopLabTwoColumnsSignupFormWidget configuration example
 ----------------
 
 ```yaml
-showTeaser: true
-form_align_right: false
-teaser_visible_size: lg
-teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
-teaser_items:
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+name: looplab_two_columns_signup_form
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabTwoColumnsSignupFormWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabTwoColumnsSignupFormWidget
+template: default.php
+vars:
+    attr:
+        id: home
 
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+    showTeaser: true
+    form_align_right: false
+    teaser_visible_size: lg
+    teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
+    teaser_items:
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
-
-form_title: Sign up Today
-form_subtitle: Please fill out this form to register
-form_fields:
-    -
-        name: username
-        placeholder: Username
-        type: text
-
-    -
-        name: email
-        placeholder: Email
-        type: text
-
-    -
-        name: password
-        placeholder: Password
-        type: password
-
-    -
-        name: confirm_password
-        placeholder: Confirm Password
-        type: password
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
 
-form_submit_value: Submit
-form_submit_class: btn btn-outline-light btn-block
-background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+    form_title: Sign up Today
+    form_subtitle: Please fill out this form to register
+    form_fields:
+        -
+            name: username
+            placeholder: Username
+            type: text
+
+        -
+            name: email
+            placeholder: Email
+            type: text
+
+        -
+            name: password
+            placeholder: Password
+            type: password
+
+        -
+            name: confirm_password
+            placeholder: Confirm Password
+            type: password
+
+
+    form_submit_value: Submit
+    form_submit_class: btn btn-outline-light btn-block
+    background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
 ```
 
 
@@ -736,23 +767,30 @@ LoopLabTwoColumnsTeaserWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: bg-light text-muted py-5
+name: looplab_two_columns_teaser
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabTwoColumnsTeaserWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabTwoColumnsTeaserWidget
+template: default.php
+vars:
+    attr:
+        class: bg-light text-muted py-5
 
-img_on_left: true
-img_rounded: true
-img_src: img/explore-section1.jpg
-img_alt: Explore & Connect
-teaser_title: Explore & Connect
-teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
-teaser_items:
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+    img_on_left: true
+    img_rounded: true
+    img_src: img/explore-section1.jpg
+    img_alt: Explore & Connect
+    teaser_title: Explore & Connect
+    teaser_text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
+    teaser_items:
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
 
-    -
-        icon: fas fa-check fa-2x
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+        -
+            icon: fas fa-check fa-2x
+            text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio iusto, perspiciatis mollitia natus harum?
+
 
 ```
 
@@ -864,67 +902,42 @@ MainNavWidget configuration example
 ----------------
 
 ```yaml
+name: main_nav
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MainNavWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MainNavWidget
+template: default.php
+skin: looplab-nav
+vars:
+    attr:
+        id: main-nav
+        class: bg-dark navbar-dark looplab-nav
 
-title: LoopLab
+    title: LoopLAB
+    fixed_top: true
+    use_scrollspy: true
+    use_smooth_scrolling: true
+    title_url: /
+    expand_size: sm
+    links:
+        -
+            text: Home
+            url: "#home"
 
-# Whether the top nav is fixed on the top
-fixed_top: true
+        -
+            text: Explore
+            url: "#explore-head-section"
 
-# the string to put in the href attribute of the title link.
-# It can be an anchor if necessary
-# The default value is slash
-title_url: /
+        -
+            text: Create
+            url: "#create-head-section"
 
-# If not set, the title will not use a logo
-# If set, the title_logo must define all parameters as the example below
-#title_logo:
-#    url: /plugins/Light_Kit_Demo/mizuxe/img/mlogo.png
-#    width: 50
-#    height: 50
-#    alt: Mizuxe logo
-expand_size: sm # at which size does the burger menu expand (sm | md | lg) = sm
-links:
-    -
-        text: Home
-        url: "#home"
-#        icon: fas fa-user
-    -
-        text: Explore
-        url: "#explore-head-section"
+        -
+            text: Share
+            url: "#share-head-section"
 
-    -
-        text: Create
-        url: "#create-head-section"
-    -
-        text: Share
-        url: "#share-head-section"
 
-# An additional css class to add to all link items. Example: px-2
-#links_item_class: px-2
-
-# Whether to push the links on the right. Note: if you use links2.
-links_align_right: false
-
-links2:
-    -
-        text: Welcome Ling
-        url: "#"
-        icon: fas fa-user
-        children:
-            -
-                text: Profile
-                url: "#create-head-section"
-                icon: fas fa-user-circle
-            -
-                text: Settings
-                url: "#create-head-section"
-                icon: fas fa-cog
-    -
-        text: Log out
-        url: "#share-head-section"
-        icon: fas fa-user-times
-links2_align_right: true
-
+    links_align_right: true
 ```
 
 
@@ -1093,98 +1106,106 @@ MizuxeFourColumnsOurStaffWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: my-5 text-center
-    id: authors
+name: mizuxe_four_columns_our_staff_header
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeFourColumnsOurStaffWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeFourColumnsOurStaffWidget
+template: default.php
+vars:
+    attr:
+        class: my-5 text-center
+        id: authors
 
-column_class: col-lg-3 col-md-6
-show_title: true
-show_text: true
-show_items: true
-title: Meet The Authors
-text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis ea ipsam laborum officia quo.
-items:
-    -
-        img_url: img/person1.jpg
-        img_alt: Lead Writer Susan Williams
-        name: Susan Wiliams
-        role: Lead Writer
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-        icons:
-            -
-                icon: fab fa-facebook
-                url: http://facebook.com
+    column_class: col-lg-3 col-md-6
+    show_title: true
+    show_text: true
+    show_items: true
+    title: Meet The Authors
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis ea ipsam laborum officia quo.
+    items:
+        -
+            img_url: img/person1.jpg
+            img_alt: Lead Writer Susan Williams
+            name: Susan Wiliams
+            role: Lead Writer
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+            icons:
+                -
+                    icon: fab fa-facebook
+                    url: http://facebook.com
 
-            -
-                icon: fab fa-twitter
-                url: http://twitter.com
+                -
+                    icon: fab fa-twitter
+                    url: http://twitter.com
 
-            -
-                icon: fab fa-instagram
-                url: http://instagram.com
-
-
-
-    -
-        img_url: img/person2.jpg
-        img_alt: Co-Writer Grace Smith
-        name: Grace Smith
-        role: Co-Writer
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-        icons:
-            -
-                icon: fab fa-facebook
-                url: http://facebook.com
-
-            -
-                icon: fab fa-twitter
-                url: http://twitter.com
-
-            -
-                icon: fab fa-instagram
-                url: http://instagram.com
+                -
+                    icon: fab fa-instagram
+                    url: http://instagram.com
 
 
 
-    -
-        img_url: img/person3.jpg
-        img_alt: Editor John Doe
-        name: John Doe
-        role: Editor
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-        icons:
-            -
-                icon: fab fa-facebook
-                url: http://facebook.com
+        -
+            img_url: img/person2.jpg
+            img_alt: Co-Writer Grace Smith
+            name: Grace Smith
+            role: Co-Writer
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+            icons:
+                -
+                    icon: fab fa-facebook
+                    url: http://facebook.com
 
-            -
-                icon: fab fa-twitter
-                url: http://twitter.com
+                -
+                    icon: fab fa-twitter
+                    url: http://twitter.com
 
-            -
-                icon: fab fa-instagram
-                url: http://instagram.com
+                -
+                    icon: fab fa-instagram
+                    url: http://instagram.com
 
 
 
-    -
-        img_url: img/person4.jpg
-        img_alt: Designer Kevin Swanson
-        name: Kevin Swanson
-        role: Designer
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-        icons:
-            -
-                icon: fab fa-facebook
-                url: http://facebook.com
+        -
+            img_url: img/person3.jpg
+            img_alt: Editor John Doe
+            name: John Doe
+            role: Editor
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+            icons:
+                -
+                    icon: fab fa-facebook
+                    url: http://facebook.com
 
-            -
-                icon: fab fa-twitter
-                url: http://twitter.com
+                -
+                    icon: fab fa-twitter
+                    url: http://twitter.com
 
-            -
-                icon: fab fa-instagram
-                url: http://instagram.com
+                -
+                    icon: fab fa-instagram
+                    url: http://instagram.com
+
+
+
+        -
+            img_url: img/person4.jpg
+            img_alt: Designer Kevin Swanson
+            name: Kevin Swanson
+            role: Designer
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+            icons:
+                -
+                    icon: fab fa-facebook
+                    url: http://facebook.com
+
+                -
+                    icon: fab fa-twitter
+                    url: http://twitter.com
+
+                -
+                    icon: fab fa-instagram
+                    url: http://instagram.com
+
 
 
 
@@ -1326,17 +1347,24 @@ MizuxeNewsletterSignupHeaderWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: bg-dark text-white py-5
+name: mizuxe_newsletter_signup_header
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeNewsletterSignupHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeNewsletterSignupHeaderWidget
+template: default.php
+vars:
+    attr:
+        class: bg-dark text-white py-5
 
-field_name_active: true
-field_name_name: name
-field_name_label: Enter Name
-field_email_name: email
-field_email_label: Enter Email
-btn_class: btn btn-primary btn-lg btn-block
-btn_icon: fas fa-envelope-open
-btn_text: Subscribe
+    field_name_active: true
+    field_name_name: name
+    field_name_label: Enter Name
+    field_email_name: email
+    field_email_label: Enter Email
+    btn_class: btn btn-primary btn-lg btn-block
+    btn_icon: fas fa-envelope-open
+    btn_text: Subscribe
 ```
 
 
@@ -1454,39 +1482,46 @@ MizuxeTwoColumnsContactFormWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: bg-light py-5
-    id: contact
+name: mizuxe_one_column_contact_form
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsContactFormWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeTwoColumnsContactFormWidget
+template: default.php
+vars:
+    attr:
+        class: bg-light py-5
+        id: contact
 
-show_image: true
-image_url: img/mlogo.png
-image_alt: our company logo
-form_action: ""
-form_method: post
-form_title: Get In Touch
-form_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
-form_fields:
-    -
-        icon: fas fa-user
-        name: name
-        label: Name
-        type: text
+    show_image: true
+    image_url: img/mlogo.png
+    image_alt: our company logo
+    form_action: ""
+    form_method: post
+    form_title: Get In Touch
+    form_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
+    form_fields:
+        -
+            icon: fas fa-user
+            name: name
+            label: Name
+            type: text
 
-    -
-        icon: fas fa-envelope
-        name: email
-        label: Email
-        type: email
+        -
+            icon: fas fa-envelope
+            name: email
+            label: Email
+            type: email
 
-    -
-        icon: fas fa-pencil-alt
-        name: message
-        label: Message
-        type: textarea
+        -
+            icon: fas fa-pencil-alt
+            name: message
+            label: Message
+            type: textarea
 
 
-submit_btn_text: Submit
-submit_btn_class: btn btn-primary btn-block btn-lg
+    submit_btn_text: Submit
+    submit_btn_class: btn btn-primary btn-block btn-lg
 ```
 
 
@@ -1642,23 +1677,31 @@ MizuxeTwoColumnsTeaserWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: py-5
+name: mizuxe_two_columns_teaser
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsTeaserWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeTwoColumnsTeaserWidget
+template: default.php
+vars:
+    attr:
+        id: showcase
+        class: py-5
 
-teaser_title: Do What You Dream Of...
-teaser_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, voluptatibus?
-teaser_text_align: center
-teaser_button_text: Read More
-teaser_button_icon: fas fa-arrow-right
-teaser_button_class: btn btn-outline-secondary btn-lg text-white
-teaser_button_url: "#"
-img_on_right: true
-img_size_visible: lg
-img_src: /plugins/Light_Kit_Demo/mizuxe/img/book.png
-img_alt: Mizuxe Mountains Book
-bg_style: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
-bg_overlay_style: rgba(50, 146, 166, 0.8);
-bg_overlay_class: text-white
+    teaser_title: Do What You Dream Of...
+    teaser_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, voluptatibus?
+    teaser_text_align: center
+    teaser_button_text: Read More
+    teaser_button_icon: fas fa-arrow-right
+    teaser_button_class: btn btn-outline-secondary btn-lg text-white
+    teaser_button_url: "#"
+    img_on_right: true
+    img_size_visible: lg
+    img_src: /plugins/Light_Kit_Demo/mizuxe/img/book.png
+    img_alt: Mizuxe Mountains Book
+    bg_style: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
+    bg_overlay_style: rgba(50, 146, 166, 0.8);
+    bg_overlay_class: text-white
 ```
 
 
@@ -1805,51 +1848,60 @@ OneColumnAccordionWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: py-5 text-center bg-light
+name: one_column_accordion
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\OneColumnAccordionWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/OneColumnAccordionWidget
+template: default.php
+vars:
+    attr:
+        class: py-5 text-center bg-light
 
-title_visible: true
-title: Why This Book?
-title_class: text-primary pb-3
-text_visible: true
-text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore laboriosam nisi reiciendis sint sunt?
-text_class: lead pb-3
-accordion_visible: true
-accordion_items:
-    -
-        icon: fas fa-arrow-circle-down
-        title: Get Inspired
-        is_open: true
-        text: <
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
-            at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
-            repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
-            excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
-            ut vero vitae voluptas, voluptatem voluptatibus.
-        >
-    -
-        icon: fas fa-arrow-circle-down
-        title: Gain The Knowledge
-        is_open: false
-        text: <
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
-            at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
-            repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
-            excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
-            ut vero vitae voluptas, voluptatem voluptatibus.
-        >
+    title_visible: true
+    title: Why This Book?
+    title_class: text-primary pb-3
+    text_visible: true
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore laboriosam nisi reiciendis sint sunt?
+    text_class: lead pb-3
+    accordion_visible: true
+    accordion_items:
+        -
+            icon: fas fa-arrow-circle-down
+            title: Get Inspired
+            is_open: true
+            text: <
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+                at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+                repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+                excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+                ut vero vitae voluptas, voluptatem voluptatibus.
+            >
 
-    -
-        icon: fas fa-arrow-circle-down
-        title: Open Your Mind
-        is_open: false
-        text: <
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
-            at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
-            repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
-            excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
-            ut vero vitae voluptas, voluptatem voluptatibus.
-        >
+        -
+            icon: fas fa-arrow-circle-down
+            title: Gain The Knowledge
+            is_open: false
+            text: <
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+                at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+                repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+                excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+                ut vero vitae voluptas, voluptatem voluptatibus.
+            >
+
+        -
+            icon: fas fa-arrow-circle-down
+            title: Open Your Mind
+            is_open: false
+            text: <
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+                at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+                repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+                excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+                ut vero vitae voluptas, voluptatem voluptatibus.
+            >
+
 
 ```
 
@@ -2005,51 +2057,58 @@ ShowCaseCarouselWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    id: showcase
+name: glozzom_showcase_carousel
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ShowCaseCarouselWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ShowCaseCarouselWidget
+template: default.php
+vars:
+    attr:
+        id: showcase
 
-js:
-    automatic_cycle: true
-    interval: 6000
-    pause_on_hover: true
+    js:
+        automatic_cycle: true
+        interval: 6000
+        pause_on_hover: true
 
-show_nav_arrows: true
-show_nav_indicators: true
-captions_visible_size: sm
-items:
-    -
-        img_url: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
-        caption_align: right
-        title: Heading One
-        title_class: display-3
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
-        text_class: lead
-        btn_text: Sign Up Now
-        btn_url: "#"
-        btn_class: btn btn-danger btn-lg
-        active: true
+    show_nav_arrows: true
+    show_nav_indicators: true
+    captions_visible_size: sm
+    items:
+        -
+            img_url: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
+            caption_align: right
+            title: Heading One
+            title_class: display-3
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
+            text_class: lead
+            btn_text: Sign Up Now
+            btn_url: "#"
+            btn_class: btn btn-danger btn-lg
+            active: true
 
-    -
-        img_url: /plugins/Light_Kit_Demo/glozzom/img/image2.jpg
-        caption_align: center
-        title: Heading Two
-        title_class: display-3
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
-        text_class: lead
-        btn_text: Learn More
-        btn_url: "#"
-        btn_class: btn btn-primary btn-lg
+        -
+            img_url: /plugins/Light_Kit_Demo/glozzom/img/image2.jpg
+            caption_align: center
+            title: Heading Two
+            title_class: display-3
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
+            text_class: lead
+            btn_text: Learn More
+            btn_url: "#"
+            btn_class: btn btn-primary btn-lg
 
-    -
-        caption_align: right
-        img_url: /plugins/Light_Kit_Demo/glozzom/img/image3.jpg
-        title: Heading Three
-        title_class: display-3
-        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
-        text_class: lead
-        btn_text: Learn More
-        btn_url: "#"
-        btn_class: btn btn-success btn-lg
+        -
+            caption_align: right
+            img_url: /plugins/Light_Kit_Demo/glozzom/img/image3.jpg
+            title: Heading Three
+            title_class: display-3
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
+            text_class: lead
+            btn_text: Learn More
+            btn_url: "#"
+            btn_class: btn btn-success btn-lg
+
 
 ```
 
@@ -2208,13 +2267,20 @@ SimpleFooterWidget configuration example
 ----------------
 
 ```yaml
-attr:
-    class: py-5 bg-primary text-white
-    id: main-footer
+name: mizuxe_right_aligned_monochrome_footer
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\SimpleFooterWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/SimpleFooterWidget
+template: default.php
+vars:
+    attr:
+        class: py-5 bg-primary text-white
+        id: main-footer
 
-text_align: right
-text_class: ""
-text: Copyright &copy; $year
+    text_align: right
+    text_class: ""
+    text: Copyright &copy; $year
 ```
 
 

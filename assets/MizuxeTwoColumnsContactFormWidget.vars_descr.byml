@@ -111,37 +111,44 @@ vars:
 
 
 example: <
-    attr: 
-        class: bg-light py-5
-        id: contact
-    
-    show_image: true
-    image_url: img/mlogo.png
-    image_alt: our company logo
-    form_action: ""
-    form_method: post
-    form_title: Get In Touch
-    form_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
-    form_fields: 
-        - 
-            icon: fas fa-user
-            name: name
-            label: Name
-            type: text
-        
-        - 
-            icon: fas fa-envelope
-            name: email
-            label: Email
-            type: email
-        
-        - 
-            icon: fas fa-pencil-alt
-            name: message
-            label: Message
-            type: textarea
-        
-    
-    submit_btn_text: Submit
-    submit_btn_class: btn btn-primary btn-block btn-lg
+    name: mizuxe_one_column_contact_form
+    type: picasso
+    active: true
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsContactFormWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeTwoColumnsContactFormWidget
+    template: default.php
+    vars:
+        attr:
+            class: bg-light py-5
+            id: contact
+
+        show_image: true
+        image_url: img/mlogo.png
+        image_alt: our company logo
+        form_action: ""
+        form_method: post
+        form_title: Get In Touch
+        form_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
+        form_fields:
+            -
+                icon: fas fa-user
+                name: name
+                label: Name
+                type: text
+
+            -
+                icon: fas fa-envelope
+                name: email
+                label: Email
+                type: email
+
+            -
+                icon: fas fa-pencil-alt
+                name: message
+                label: Message
+                type: textarea
+
+
+        submit_btn_text: Submit
+        submit_btn_class: btn btn-primary btn-block btn-lg
 >

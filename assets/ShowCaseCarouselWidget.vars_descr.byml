@@ -136,50 +136,57 @@ vars:
                 description: If true, indicates that this carousel item should be displayed first when the page opens.
 
 example: <
-    attr: 
-        id: showcase
-    
-    js: 
-        automatic_cycle: true
-        interval: 6000
-        pause_on_hover: true
-    
-    show_nav_arrows: true
-    show_nav_indicators: true
-    captions_visible_size: sm
-    items: 
-        - 
-            img_url: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
-            caption_align: right
-            title: Heading One
-            title_class: display-3
-            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
-            text_class: lead
-            btn_text: Sign Up Now
-            btn_url: "#"
-            btn_class: btn btn-danger btn-lg
-            active: true
-        
-        - 
-            img_url: /plugins/Light_Kit_Demo/glozzom/img/image2.jpg
-            caption_align: center
-            title: Heading Two
-            title_class: display-3
-            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
-            text_class: lead
-            btn_text: Learn More
-            btn_url: "#"
-            btn_class: btn btn-primary btn-lg
-        
-        - 
-            caption_align: right
-            img_url: /plugins/Light_Kit_Demo/glozzom/img/image3.jpg
-            title: Heading Three
-            title_class: display-3
-            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
-            text_class: lead
-            btn_text: Learn More
-            btn_url: "#"
-            btn_class: btn btn-success btn-lg
+    name: glozzom_showcase_carousel
+    type: picasso
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ShowCaseCarouselWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ShowCaseCarouselWidget
+    template: default.php
+    vars:
+        attr:
+            id: showcase
+
+        js:
+            automatic_cycle: true
+            interval: 6000
+            pause_on_hover: true
+
+        show_nav_arrows: true
+        show_nav_indicators: true
+        captions_visible_size: sm
+        items:
+            -
+                img_url: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
+                caption_align: right
+                title: Heading One
+                title_class: display-3
+                text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
+                text_class: lead
+                btn_text: Sign Up Now
+                btn_url: "#"
+                btn_class: btn btn-danger btn-lg
+                active: true
+
+            -
+                img_url: /plugins/Light_Kit_Demo/glozzom/img/image2.jpg
+                caption_align: center
+                title: Heading Two
+                title_class: display-3
+                text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
+                text_class: lead
+                btn_text: Learn More
+                btn_url: "#"
+                btn_class: btn btn-primary btn-lg
+
+            -
+                caption_align: right
+                img_url: /plugins/Light_Kit_Demo/glozzom/img/image3.jpg
+                title: Heading Three
+                title_class: display-3
+                text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
+                text_class: lead
+                btn_text: Learn More
+                btn_url: "#"
+                btn_class: btn btn-success btn-lg
+
         
 >

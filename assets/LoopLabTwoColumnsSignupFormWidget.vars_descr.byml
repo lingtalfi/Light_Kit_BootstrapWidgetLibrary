@@ -127,49 +127,58 @@ vars:
 
 
 example: <
-    showTeaser: true
-    form_align_right: false
-    teaser_visible_size: lg
-    teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
-    teaser_items:
-        -
-            icon: fas fa-check fa-2x
-            text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+    name: looplab_two_columns_signup_form
+    type: picasso
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabTwoColumnsSignupFormWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabTwoColumnsSignupFormWidget
+    template: default.php
+    vars:
+        attr:
+            id: home
 
-        -
-            icon: fas fa-check fa-2x
-            text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+        showTeaser: true
+        form_align_right: false
+        teaser_visible_size: lg
+        teaser_title: Build <strong>social profiles</strong> and gain revenue <strong>profits</strong>
+        teaser_items:
+            -
+                icon: fas fa-check fa-2x
+                text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
-        -
-            icon: fas fa-check fa-2x
-            text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
+            -
+                icon: fas fa-check fa-2x
+                text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
-
-    form_title: Sign up Today
-    form_subtitle: Please fill out this form to register
-    form_fields:
-        -
-            name: username
-            placeholder: Username
-            type: text
-
-        -
-            name: email
-            placeholder: Email
-            type: text
-
-        -
-            name: password
-            placeholder: Password
-            type: password
-
-        -
-            name: confirm_password
-            placeholder: Confirm Password
-            type: password
+            -
+                icon: fas fa-check fa-2x
+                text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, tempore iusto in minima facere dolorem!
 
 
-    form_submit_value: Submit
-    form_submit_class: btn btn-outline-light btn-block
-    background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+        form_title: Sign up Today
+        form_subtitle: Please fill out this form to register
+        form_fields:
+            -
+                name: username
+                placeholder: Username
+                type: text
+
+            -
+                name: email
+                placeholder: Email
+                type: text
+
+            -
+                name: password
+                placeholder: Password
+                type: password
+
+            -
+                name: confirm_password
+                placeholder: Confirm Password
+                type: password
+
+
+        form_submit_value: Submit
+        form_submit_class: btn btn-outline-light btn-block
+        background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
 >

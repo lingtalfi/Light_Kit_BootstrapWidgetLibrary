@@ -107,98 +107,106 @@ vars:
 
 
 example: <
-    attr: 
-        class: my-5 text-center
-        id: authors
-    
-    column_class: col-lg-3 col-md-6
-    show_title: true
-    show_text: true
-    show_items: true
-    title: Meet The Authors
-    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis ea ipsam laborum officia quo.
-    items: 
-        - 
-            img_url: img/person1.jpg
-            img_alt: Lead Writer Susan Williams
-            name: Susan Wiliams
-            role: Lead Writer
-            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-            icons: 
-                - 
-                    icon: fab fa-facebook
-                    url: http://facebook.com
-                
-                - 
-                    icon: fab fa-twitter
-                    url: http://twitter.com
-                
-                - 
-                    icon: fab fa-instagram
-                    url: http://instagram.com
-                
-            
-        
-        - 
-            img_url: img/person2.jpg
-            img_alt: Co-Writer Grace Smith
-            name: Grace Smith
-            role: Co-Writer
-            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-            icons: 
-                - 
-                    icon: fab fa-facebook
-                    url: http://facebook.com
-                
-                - 
-                    icon: fab fa-twitter
-                    url: http://twitter.com
-                
-                - 
-                    icon: fab fa-instagram
-                    url: http://instagram.com
-                
-            
-        
-        - 
-            img_url: img/person3.jpg
-            img_alt: Editor John Doe
-            name: John Doe
-            role: Editor
-            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-            icons: 
-                - 
-                    icon: fab fa-facebook
-                    url: http://facebook.com
-                
-                - 
-                    icon: fab fa-twitter
-                    url: http://twitter.com
-                
-                - 
-                    icon: fab fa-instagram
-                    url: http://instagram.com
-                
-            
-        
-        - 
-            img_url: img/person4.jpg
-            img_alt: Designer Kevin Swanson
-            name: Kevin Swanson
-            role: Designer
-            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
-            icons: 
-                - 
-                    icon: fab fa-facebook
-                    url: http://facebook.com
-                
-                - 
-                    icon: fab fa-twitter
-                    url: http://twitter.com
-                
-                - 
-                    icon: fab fa-instagram
-                    url: http://instagram.com
+    name: mizuxe_four_columns_our_staff_header
+    type: picasso
+    active: true
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeFourColumnsOurStaffWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeFourColumnsOurStaffWidget
+    template: default.php
+    vars:
+        attr:
+            class: my-5 text-center
+            id: authors
+
+        column_class: col-lg-3 col-md-6
+        show_title: true
+        show_text: true
+        show_items: true
+        title: Meet The Authors
+        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis ea ipsam laborum officia quo.
+        items:
+            -
+                img_url: img/person1.jpg
+                img_alt: Lead Writer Susan Williams
+                name: Susan Wiliams
+                role: Lead Writer
+                description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+                icons:
+                    -
+                        icon: fab fa-facebook
+                        url: http://facebook.com
+
+                    -
+                        icon: fab fa-twitter
+                        url: http://twitter.com
+
+                    -
+                        icon: fab fa-instagram
+                        url: http://instagram.com
+
+
+
+            -
+                img_url: img/person2.jpg
+                img_alt: Co-Writer Grace Smith
+                name: Grace Smith
+                role: Co-Writer
+                description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+                icons:
+                    -
+                        icon: fab fa-facebook
+                        url: http://facebook.com
+
+                    -
+                        icon: fab fa-twitter
+                        url: http://twitter.com
+
+                    -
+                        icon: fab fa-instagram
+                        url: http://instagram.com
+
+
+
+            -
+                img_url: img/person3.jpg
+                img_alt: Editor John Doe
+                name: John Doe
+                role: Editor
+                description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+                icons:
+                    -
+                        icon: fab fa-facebook
+                        url: http://facebook.com
+
+                    -
+                        icon: fab fa-twitter
+                        url: http://twitter.com
+
+                    -
+                        icon: fab fa-instagram
+                        url: http://instagram.com
+
+
+
+            -
+                img_url: img/person4.jpg
+                img_alt: Designer Kevin Swanson
+                name: Kevin Swanson
+                role: Designer
+                description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus facere itaque soluta. Odio, voluptate.
+                icons:
+                    -
+                        icon: fab fa-facebook
+                        url: http://facebook.com
+
+                    -
+                        icon: fab fa-twitter
+                        url: http://twitter.com
+
+                    -
+                        icon: fab fa-instagram
+                        url: http://instagram.com
+
                 
             
         

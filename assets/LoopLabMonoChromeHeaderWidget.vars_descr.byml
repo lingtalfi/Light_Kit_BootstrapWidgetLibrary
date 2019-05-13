@@ -45,12 +45,20 @@ vars:
 
 
 example: <
-    attr:
-        class: text-white bg-dark
+    name: looplab_monochrome_header
+    type: picasso
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LoopLabMonoChromeHeaderWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/LoopLabMonoChromeHeaderWidget
+    template: default.php
+    skin: looplab-dark
+    vars:
+        attr:
+            class: looplab-dark
+            id: explore-head-section
 
-    title: Explore
-    text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
-    button_url: "#"
-    button_class: btn btn-outline-secondary
-    button_text: Find Out More
+        title: Explore
+        text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.
+        button_url: "#"
+        button_class: btn btn-outline-secondary
+        button_text: Find Out More
 >

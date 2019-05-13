@@ -60,15 +60,22 @@ vars:
 
 
 example: <
-    attr: 
-        class: bg-dark text-white py-5
-    
-    field_name_active: true
-    field_name_name: name
-    field_name_label: Enter Name
-    field_email_name: email
-    field_email_label: Enter Email
-    btn_class: btn btn-primary btn-lg btn-block
-    btn_icon: fas fa-envelope-open
-    btn_text: Subscribe
+    name: mizuxe_newsletter_signup_header
+    type: picasso
+    active: true
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeNewsletterSignupHeaderWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeNewsletterSignupHeaderWidget
+    template: default.php
+    vars:
+        attr:
+            class: bg-dark text-white py-5
+
+        field_name_active: true
+        field_name_name: name
+        field_name_label: Enter Name
+        field_email_name: email
+        field_email_label: Enter Email
+        btn_class: btn btn-primary btn-lg btn-block
+        btn_icon: fas fa-envelope-open
+        btn_text: Subscribe
 >

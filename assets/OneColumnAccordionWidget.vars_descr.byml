@@ -85,50 +85,59 @@ vars:
                 >
 
 example: <
-    attr: 
-        class: py-5 text-center bg-light
-    
-    title_visible: true
-    title: Why This Book?
-    title_class: text-primary pb-3
-    text_visible: true
-    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore laboriosam nisi reiciendis sint sunt?
-    text_class: lead pb-3
-    accordion_visible: true
-    accordion_items: 
-        - 
-            icon: fas fa-arrow-circle-down
-            title: Get Inspired
-            is_open: true
-            text: <
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
-                at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
-                repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
-                excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
-                ut vero vitae voluptas, voluptatem voluptatibus.
-            >
-        - 
-            icon: fas fa-arrow-circle-down
-            title: Gain The Knowledge
-            is_open: false
-            text: <
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
-                at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
-                repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
-                excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
-                ut vero vitae voluptas, voluptatem voluptatibus.
-            >
-        
-        - 
-            icon: fas fa-arrow-circle-down
-            title: Open Your Mind
-            is_open: false
-            text: <
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
-                at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
-                repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
-                excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
-                ut vero vitae voluptas, voluptatem voluptatibus.
-            >
+    name: one_column_accordion
+    type: picasso
+    active: true
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\OneColumnAccordionWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/OneColumnAccordionWidget
+    template: default.php
+    vars:
+        attr:
+            class: py-5 text-center bg-light
+
+        title_visible: true
+        title: Why This Book?
+        title_class: text-primary pb-3
+        text_visible: true
+        text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolore laboriosam nisi reiciendis sint sunt?
+        text_class: lead pb-3
+        accordion_visible: true
+        accordion_items:
+            -
+                icon: fas fa-arrow-circle-down
+                title: Get Inspired
+                is_open: true
+                text: <
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+                    at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+                    repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+                    excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+                    ut vero vitae voluptas, voluptatem voluptatibus.
+                >
+
+            -
+                icon: fas fa-arrow-circle-down
+                title: Gain The Knowledge
+                is_open: false
+                text: <
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+                    at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+                    repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+                    excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+                    ut vero vitae voluptas, voluptatem voluptatibus.
+                >
+
+            -
+                icon: fas fa-arrow-circle-down
+                title: Open Your Mind
+                is_open: false
+                text: <
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi asperiores
+                    at culpa, deserunt ducimus facilis ipsa minima, obcaecati, quod reprehenderit
+                    repudiandae sed voluptates. Amet at autem commodi dicta dolore dolorum error esse et
+                    excepturi fugiat fugit labore laboriosam molestiae odit provident quisquam, repellendus
+                    ut vero vitae voluptas, voluptatem voluptatibus.
+                >
+
         
 >
