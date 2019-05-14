@@ -42,8 +42,9 @@ $cpt = 0;
             </div>
 
 
-
-            <?php if (null !== $nbBoxesPerRow && $cpt === (int)$nbBoxesPerRow): ?>
+            <?php if (null !== $nbBoxesPerRow && $cpt === (int)$nbBoxesPerRow):
+            $cpt = 0;
+            ?>
         </div>
         <div class="row <?php echo htmlspecialchars($rowClass); ?>">
             <?php endif; ?>

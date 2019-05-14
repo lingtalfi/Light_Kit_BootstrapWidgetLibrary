@@ -2,7 +2,7 @@
 
 
 
-The ColoredBoxesWidget class
+The BlogCardsWidget class
 ================
 2019-04-26 --> 2019-05-14
 
@@ -14,7 +14,7 @@ The ColoredBoxesWidget class
 Introduction
 ============
 
-The ColoredBoxesWidget class.
+The BlogCardsWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">ColoredBoxesWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">BlogCardsWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -71,9 +71,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ColoredBoxesWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogCardsWidget
 
 
 SeeAlso
 ==============
-Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [GlozzomPricingTableWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomPricingTableWidget.md)<br>
+Next class: [ColoredBoxesWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ColoredBoxesWidget.md)<br>

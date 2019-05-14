@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.23.0 -- 2019-05-14
+
+    - add BlogCardsWidget
+
 - 0.22.0 -- 2019-05-14
 
     - add TwoColumnsAccordionWidget
