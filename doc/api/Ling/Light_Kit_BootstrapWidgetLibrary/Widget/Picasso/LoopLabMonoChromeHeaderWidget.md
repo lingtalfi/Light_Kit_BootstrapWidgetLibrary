@@ -4,7 +4,7 @@
 
 The LoopLabMonoChromeHeaderWidget class
 ================
-2019-04-26 --> 2019-05-13
+2019-04-26 --> 2019-05-14
 
 
 

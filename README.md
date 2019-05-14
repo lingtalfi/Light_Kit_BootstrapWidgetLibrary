@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.16.0 -- 2019-05-14
+
+    - add GlozzomTwoColumnsTeaserWidget 
+    
 - 0.15.0 -- 2019-05-13
 
     - add ParallaxHeaderWidget 

@@ -4,7 +4,7 @@
 
 The ParallaxHeaderWidget class
 ================
-2019-04-26 --> 2019-05-13
+2019-04-26 --> 2019-05-14
 
 
 
@@ -76,4 +76,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ParallaxHeaderWidget
 
 SeeAlso
 ==============
-Previous class: [OneColumnAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/OneColumnAccordionWidget.md)<br>Next class: [ShowCaseCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget.md)<br>
+Previous class: [OneColumnAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/OneColumnAccordionWidget.md)<br>Next class: [ParallaxHeaderWithVideoTriggerWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWithVideoTriggerWidget.md)<br>

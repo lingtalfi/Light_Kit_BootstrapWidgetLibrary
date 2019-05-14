@@ -15,6 +15,7 @@ Summary
 =========
 
 - [ColoredBoxesWidget](#coloredboxeswidget)
+- [GlozzomTwoColumnsTeaserWidget](#glozzomtwocolumnsteaserwidget)
 - [IconTeaserWidget](#iconteaserwidget)
 - [LoopLabFooterWithContactUseButtonWidget](#looplabfooterwithcontactusebuttonwidget)
 - [LoopLabMonoChromeHeaderWidget](#looplabmonochromeheaderwidget)
@@ -198,6 +199,134 @@ This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layo
             - **default_value**: 
             - **description**: The css class for the icon of the box. If empty, the icon will not be displayed.
             - **example**: fas fa-box fa-3x
+
+
+
+
+
+
+
+GlozzomTwoColumnsTeaserWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#glozzomtwocolumnsteaserwidget-screenshots)
+- [Templates and skins](#glozzomtwocolumnsteaserwidget-templates-and-skins)
+- [Example](#glozzomtwocolumnsteaserwidget-configuration-example)
+- [Variables descriptions](#glozzomtwocolumnsteaserwidget-variables-description)
+
+
+
+GlozzomTwoColumnsTeaserWidget is a bootstrap 4 widget composed of two parts:
+
+- the teaser
+- the image
+
+
+By default the teaser is on the left and the image on the right.
+
+We can have the teaser to the right by using the "teaser_align_left" property.
+
+The teaser is composed of three parts:
+
+- a title
+- a text
+- a button
+
+If you don't define them, they will not appear. So for instance if you don't define the title, or if
+your title is an empty string, it will not be displayed. Same for the text and the button (based on the button text).
+
+
+
+
+
+
+GlozzomTwoColumnsTeaserWidget screenshots
+----------
+
+![Screenshot glozzom_two_columns_teaser.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/GlozzomTwoColumnsTeaserWidget/glozzom_two_columns_teaser.png)
+
+
+
+
+
+GlozzomTwoColumnsTeaserWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: 
+
+
+GlozzomTwoColumnsTeaserWidget configuration example
+----------------
+
+```yaml
+name: glozzom_two_columns_teaser
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\GlozzomTwoColumnsTeaserWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/GlozzomTwoColumnsTeaserWidget
+template: default.php
+vars:
+    attr:
+        id: info
+        class: py-3
+
+    teaser_align_left: true
+    title: Lorem Ipsum
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure nisi numquam odio, omnis quas quis suscipit? Doloremque, ratione vel.
+    btn_url: ?page=about
+    btn_class: btn btn-outline-danger btn-lg
+    btn_text: Learn More
+    img_url: img/laptop.png
+    img_alt: My laptop
+```
+
+
+
+GlozzomTwoColumnsTeaserWidget variables description
+-----------
+
+- **teaser_align_left**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to align the teaser on the left or on the right.
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If it's an empty string, the title will not be displayed.
+    - **example**: Lorem Ipsum
+- **text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text. If it's an empty string, the text will not be displayed.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iure nisi numquam odio, omnis quas quis suscipit? Doloremque, ratione vel.
+- **btn_url**
+    - **type**: string
+    - **default_value**: #
+    - **description**: The url of the button.
+    - **example**: ?page=about
+- **btn_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class for the btn.
+    - **example**: btn btn-outline-danger btn-lg
+- **btn_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the button. If it's an empty string, the button will not be displayed.
+    - **example**: Learn More
+- **img_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url of the image.
+    - **example**: img/laptop.png
+- **img_alt**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the alt attribute of the image.
+    - **example**: My laptop
 
 
 
