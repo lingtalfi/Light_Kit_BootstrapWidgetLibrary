@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.19.0 -- 2019-05-14
+
+    - add NewsletterHeaderWidget 
+    
 - 0.18.0 -- 2019-05-14
 
     - add PhotoGalleryWidget 

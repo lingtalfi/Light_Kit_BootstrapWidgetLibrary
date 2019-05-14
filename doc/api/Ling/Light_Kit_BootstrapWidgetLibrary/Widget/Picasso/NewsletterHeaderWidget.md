@@ -2,7 +2,7 @@
 
 
 
-The OneColumnAccordionWidget class
+The NewsletterHeaderWidget class
 ================
 2019-04-26 --> 2019-05-14
 
@@ -14,7 +14,7 @@ The OneColumnAccordionWidget class
 Introduction
 ============
 
-The OneColumnAccordionWidget class.
+The NewsletterHeaderWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">OneColumnAccordionWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">NewsletterHeaderWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -71,9 +71,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\OneColumnAccordionWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\NewsletterHeaderWidget
 
 
 SeeAlso
 ==============
-Previous class: [NewsletterHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/NewsletterHeaderWidget.md)<br>Next class: [ParallaxHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWidget.md)<br>
+Previous class: [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md)<br>Next class: [OneColumnAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/OneColumnAccordionWidget.md)<br>

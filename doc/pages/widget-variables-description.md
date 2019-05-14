@@ -26,6 +26,7 @@ Summary
 - [MizuxeNewsletterSignupHeaderWidget](#mizuxenewslettersignupheaderwidget)
 - [MizuxeTwoColumnsContactFormWidget](#mizuxetwocolumnscontactformwidget)
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
+- [NewsletterHeaderWidget](#newsletterheaderwidget)
 - [OneColumnAccordionWidget](#onecolumnaccordionwidget)
 - [ParallaxHeaderWidget](#parallaxheaderwidget)
 - [ParallaxHeaderWithVideoTriggerWidget](#parallaxheaderwithvideotriggerwidget)
@@ -2055,6 +2056,140 @@ MizuxeTwoColumnsTeaserWidget variables description
     - **default_value**: 
     - **description**: The css class to add to the background overlay.
     - **example**: text-white
+
+
+
+
+
+
+
+NewsletterHeaderWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#newsletterheaderwidget-screenshots)
+- [Templates and skins](#newsletterheaderwidget-templates-and-skins)
+- [Example](#newsletterheaderwidget-configuration-example)
+- [Variables descriptions](#newsletterheaderwidget-variables-description)
+
+
+
+NewsletterHeaderWidget is a bootstrap 4 widget representing a newsletter signup form.
+
+
+It has three parts:
+
+- the title
+- the text
+- the form
+
+We can disable the title and text by setting their values to an empty string.
+
+The form is composed an arbitrary number of fields, and a submit button. Usually, only one field for collecting the email
+is required.
+
+
+
+
+
+NewsletterHeaderWidget screenshots
+----------
+
+![Screenshot glozzom_newsletter_signup_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/NewsletterHeaderWidget/glozzom_newsletter_signup_header.png)
+
+
+
+
+
+NewsletterHeaderWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: glozzom.byml
+
+
+NewsletterHeaderWidget configuration example
+----------------
+
+```yaml
+name: newsletter_header
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\NewsletterHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/NewsletterHeaderWidget
+template: default.php
+vars:
+    attr:
+        id: newsletter
+        class: text-center p-5 bg-dark text-white
+
+    title: Sign Up For Our Newsletter
+    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias aliquam amet eaque laudantium officia optio quas tempora voluptatum.
+    fields:
+        -
+            type: text
+            label: Enter Name
+            name: name
+
+        -
+            type: email
+            label: Enter Email
+            name: email
+
+
+    btn_class: btn btn-primary mb-2
+    btn_text: Submit
+```
+
+
+
+NewsletterHeaderWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If empty, will not be displayed.
+    - **example**: Sign Up For Our Newsletter
+- **text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text. If empty, will not be displayed.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias aliquam amet eaque laudantium officia optio quas tempora voluptatum.
+- **fields**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of form fields.
+    - **item_properties**
+        - **type**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The type of the input tag. It can be one of "text" or "email".
+            - **example**: text
+            - **choices**
+                - text
+                - email
+        - **label**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The label for this form field.
+            - **example**: Enter Name
+        - **name**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The name attribute for this form field.
+            - **example**: name
+- **btn_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the submit button.
+    - **example**: btn btn-primary mb-2
+- **btn_text**
+    - **type**: string
+    - **default_value**: Submit
+    - **description**: The text of the submit button.
+    - **example**: Submit
 
 
 
