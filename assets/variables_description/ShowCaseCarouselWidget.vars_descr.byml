@@ -83,7 +83,7 @@ vars:
                 type: string
                 default_value: ""
                 description: The url of the background image for this carousel item.
-                example: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
+                example: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image1.jpg
             caption_align:
                 type: string
                 default_value: right
@@ -155,7 +155,7 @@ example: <
         captions_visible_size: sm
         items:
             -
-                img_url: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
+                img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image1.jpg
                 caption_align: right
                 title: Heading One
                 title_class: display-3
@@ -167,7 +167,7 @@ example: <
                 active: true
 
             -
-                img_url: /plugins/Light_Kit_Demo/glozzom/img/image2.jpg
+                img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image2.jpg
                 caption_align: center
                 title: Heading Two
                 title_class: display-3
@@ -179,7 +179,7 @@ example: <
 
             -
                 caption_align: right
-                img_url: /plugins/Light_Kit_Demo/glozzom/img/image3.jpg
+                img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image3.jpg
                 title: Heading Three
                 title_class: display-3
                 text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?

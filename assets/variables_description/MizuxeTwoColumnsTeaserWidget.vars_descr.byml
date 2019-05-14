@@ -87,7 +87,7 @@ vars:
         type: string
         default_value: ""
         description: The value of the src attribute of the img tag for the image.
-        example: /plugins/Light_Kit_Demo/mizuxe/img/book.png
+        example: /plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/book.png
     img_alt:
         type: string
         default_value: ""
@@ -97,7 +97,7 @@ vars:
         type: string
         default_value: transparent
         description: The value of the background css property for the background image.
-        example: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
+        example: url('/plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/mountains.jpg')
     bg_overlay_style:
         type: string
         default_value: transparent
@@ -131,9 +131,9 @@ example: <
         teaser_button_url: "#"
         img_on_right: true
         img_size_visible: lg
-        img_src: /plugins/Light_Kit_Demo/mizuxe/img/book.png
+        img_src: /plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/book.png
         img_alt: Mizuxe Mountains Book
-        bg_style: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
+        bg_style: url('/plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/mountains.jpg')
         bg_overlay_style: rgba(50, 146, 166, 0.8);
         bg_overlay_class: text-white
 >

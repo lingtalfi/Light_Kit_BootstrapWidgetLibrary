@@ -20,7 +20,7 @@ vars:
         type: string
         default_value: ""
         description: The url of the background image.
-        example: /plugins/Light_Kit_Demo/glozzom/img/lights.jpg
+        example: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/lights.jpg
     background_height:
         type: string
         default_value: 200px
@@ -64,7 +64,7 @@ example: <
             id: home-heading
             class: p-5
         
-        background_url: /plugins/Light_Kit_Demo/glozzom/img/lights.jpg
+        background_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/lights.jpg
         background_height: 200px
         overlay_color: rgba(0,0,0,0.7)
         title: Are You Ready To Get Started?

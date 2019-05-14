@@ -28,6 +28,7 @@ Summary
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
 - [OneColumnAccordionWidget](#onecolumnaccordionwidget)
 - [ParallaxHeaderWidget](#parallaxheaderwidget)
+- [ParallaxHeaderWithVideoTriggerWidget](#parallaxheaderwithvideotriggerwidget)
 - [ShowCaseCarouselWidget](#showcasecarouselwidget)
 - [SimpleFooterWidget](#simplefooterwidget)
 
@@ -255,7 +256,7 @@ GlozzomTwoColumnsTeaserWidget templates, skins, presets
 -----------
 - **Templates**: default.php
 - **Skins**: 
-- **Presets**: 
+- **Presets**: glozzom.byml
 
 
 GlozzomTwoColumnsTeaserWidget configuration example
@@ -279,7 +280,7 @@ vars:
     btn_url: ?page=about
     btn_class: btn btn-outline-danger btn-lg
     btn_text: Learn More
-    img_url: img/laptop.png
+    img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/laptop.png
     img_alt: My laptop
 ```
 
@@ -321,7 +322,7 @@ GlozzomTwoColumnsTeaserWidget variables description
     - **type**: string
     - **default_value**: 
     - **description**: The url of the image.
-    - **example**: img/laptop.png
+    - **example**: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/laptop.png
 - **img_alt**
     - **type**: string
     - **default_value**: 
@@ -877,7 +878,7 @@ vars:
 
     form_submit_value: Submit
     form_submit_class: btn btn-outline-light btn-block
-    background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+    background_style: url('/plugins/Light_Kit_BootstrapWidgetLibrary/looplab/img/home.jpg')
 ```
 
 
@@ -969,7 +970,7 @@ LoopLabTwoColumnsSignupFormWidget variables description
     - **type**: string
     - **default_value**: 
     - **description**: The background css value. Note, you can use a simple color, or an image.
-    - **example**: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+    - **example**: url('/plugins/Light_Kit_BootstrapWidgetLibrary/looplab/img/home.jpg')
 
 
 
@@ -1954,9 +1955,9 @@ vars:
     teaser_button_url: "#"
     img_on_right: true
     img_size_visible: lg
-    img_src: /plugins/Light_Kit_Demo/mizuxe/img/book.png
+    img_src: /plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/book.png
     img_alt: Mizuxe Mountains Book
-    bg_style: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
+    bg_style: url('/plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/mountains.jpg')
     bg_overlay_style: rgba(50, 146, 166, 0.8);
     bg_overlay_class: text-white
 ```
@@ -2032,7 +2033,7 @@ MizuxeTwoColumnsTeaserWidget variables description
     - **type**: string
     - **default_value**: 
     - **description**: The value of the src attribute of the img tag for the image.
-    - **example**: /plugins/Light_Kit_Demo/mizuxe/img/book.png
+    - **example**: /plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/book.png
 - **img_alt**
     - **type**: string
     - **default_value**: 
@@ -2042,7 +2043,7 @@ MizuxeTwoColumnsTeaserWidget variables description
     - **type**: string
     - **default_value**: transparent
     - **description**: The value of the background css property for the background image.
-    - **example**: url('/plugins/Light_Kit_Demo/mizuxe/img/mountains.jpg')
+    - **example**: url('/plugins/Light_Kit_BootstrapWidgetLibrary/mizuxe/img/mountains.jpg')
 - **bg_overlay_style**
     - **type**: string
     - **default_value**: transparent
@@ -2305,7 +2306,7 @@ vars:
         id: home-heading
         class: p-5
 
-    background_url: /plugins/Light_Kit_Demo/glozzom/img/lights.jpg
+    background_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/lights.jpg
     background_height: 200px
     overlay_color: rgba(0,0,0,0.7)
     title: Are You Ready To Get Started?
@@ -2322,7 +2323,7 @@ ParallaxHeaderWidget variables description
     - **type**: string
     - **default_value**: 
     - **description**: The url of the background image.
-    - **example**: /plugins/Light_Kit_Demo/glozzom/img/lights.jpg
+    - **example**: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/lights.jpg
 - **background_height**
     - **type**: string
     - **default_value**: 200px
@@ -2352,6 +2353,118 @@ ParallaxHeaderWidget variables description
         - sm
         - md
         - lg
+
+
+
+
+
+
+
+ParallaxHeaderWithVideoTriggerWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#parallaxheaderwithvideotriggerwidget-screenshots)
+- [Templates and skins](#parallaxheaderwithvideotriggerwidget-templates-and-skins)
+- [Example](#parallaxheaderwithvideotriggerwidget-configuration-example)
+- [Variables descriptions](#parallaxheaderwithvideotriggerwidget-variables-description)
+
+
+
+ParallaxHeaderWithVideoTriggerWidget is a bootstrap 4 widget allows us to show a youtube video.
+
+It's composed of four parts:
+
+- the background, which is a background image with a parallax effect
+- the overlay, lays on top of the background image and tints/attenuates it
+- the text and icon to trigger the video
+- the video
+
+
+
+
+
+
+ParallaxHeaderWithVideoTriggerWidget screenshots
+----------
+
+![Screenshot glozzom_parallax_video_trigger_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ParallaxHeaderWithVideoTriggerWidget/glozzom_parallax_video_trigger_header.png)
+
+
+
+
+
+ParallaxHeaderWithVideoTriggerWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css
+- **Presets**: glozzom.byml
+
+
+ParallaxHeaderWithVideoTriggerWidget configuration example
+----------------
+
+```yaml
+name: parallax_header_with_video_trigger
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ParallaxHeaderWithVideoTriggerWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ParallaxHeaderWithVideoTriggerWidget
+template: default.php
+vars:
+    attr:
+        id: video-play
+
+    video_url: https://www.youtube.com/embed/HnwsG9a5riA
+    background_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/media.jpg
+    background_height: 200px
+    background_position: 0 -300px
+    overlay_color: rgba(0,0,0,0.7)
+    icon: fas fa-play fa-3x
+    text: See What We Do
+```
+
+
+
+ParallaxHeaderWithVideoTriggerWidget variables description
+-----------
+
+- **video_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url of the video.
+    - **example**: https://www.youtube.com/embed/HnwsG9a5riA
+- **background_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url of the background image.
+    - **example**: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/media.jpg
+- **background_height**
+    - **type**: string
+    - **default_value**: 200px
+    - **description**: The height of the background image.
+    - **example**: 200px
+- **background_position**
+    - **type**: string
+    - **default_value**: 0 -300px
+    - **description**: Use this to adjust the vertical position of the background. It expects the value of the css background-position property.
+    - **example**: 0 -300px
+- **overlay_color**
+    - **type**: string
+    - **default_value**: rgba(0,0,0,0.7)
+    - **description**: The css background-color to apply to the overlay.
+    - **example**: rgba(0,0,0,0.7)
+- **icon**
+    - **type**: string
+    - **default_value**: fas fa-play fa-3x
+    - **description**: The css class for the icon.
+    - **example**: fas fa-play fa-3x
+- **text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text
+    - **example**: See What We Do
 
 
 
@@ -2448,7 +2561,7 @@ vars:
     captions_visible_size: sm
     items:
         -
-            img_url: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
+            img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image1.jpg
             caption_align: right
             title: Heading One
             title_class: display-3
@@ -2460,7 +2573,7 @@ vars:
             active: true
 
         -
-            img_url: /plugins/Light_Kit_Demo/glozzom/img/image2.jpg
+            img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image2.jpg
             caption_align: center
             title: Heading Two
             title_class: display-3
@@ -2472,7 +2585,7 @@ vars:
 
         -
             caption_align: right
-            img_url: /plugins/Light_Kit_Demo/glozzom/img/image3.jpg
+            img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image3.jpg
             title: Heading Three
             title_class: display-3
             text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore ea, harum itaque maiores nihil perferendis quae sint tempore voluptates?
@@ -2534,7 +2647,7 @@ relevant if the automatic_cycle option is set to true.
             - **type**: string
             - **default_value**: 
             - **description**: The url of the background image for this carousel item.
-            - **example**: /plugins/Light_Kit_Demo/glozzom/img/image1.jpg
+            - **example**: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/image1.jpg
         - **caption_align**
             - **type**: string
             - **default_value**: right

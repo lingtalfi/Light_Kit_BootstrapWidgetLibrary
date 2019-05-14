@@ -123,7 +123,7 @@ vars:
         type: string
         default_value: ""
         description: The background css value. Note, you can use a simple color, or an image.
-        example: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+        example: url('/plugins/Light_Kit_BootstrapWidgetLibrary/looplab/img/home.jpg')
 
 
 example: <
@@ -180,5 +180,5 @@ example: <
 
         form_submit_value: Submit
         form_submit_class: btn btn-outline-light btn-block
-        background_style: url('/plugins/Light_Kit_Demo/looplab/img/home.jpg')
+        background_style: url('/plugins/Light_Kit_BootstrapWidgetLibrary/looplab/img/home.jpg')
 >

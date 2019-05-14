@@ -17,6 +17,9 @@ class ShowCaseCarouselWidget extends PicassoWidget
 {
 
 
+    /**
+     * @overrides
+     */
     public function prepare(array &$widgetConf, HtmlPageCopilot $copilot)
     {
         BDotTool::setDotValue("vars._carousel_id", StringTool::getUniqueCssId("showcase_carousel-"), $widgetConf);

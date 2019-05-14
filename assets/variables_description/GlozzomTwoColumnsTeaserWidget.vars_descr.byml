@@ -55,7 +55,7 @@ vars:
         type: string
         default_value: ""
         description: The url of the image.
-        example: img/laptop.png
+        example: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/laptop.png
     img_alt:
         type: string
         default_value: ""
@@ -81,6 +81,6 @@ example: <
         btn_url: ?page=about
         btn_class: btn btn-outline-danger btn-lg
         btn_text: Learn More
-        img_url: img/laptop.png
+        img_url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/laptop.png
         img_alt: My laptop
 >

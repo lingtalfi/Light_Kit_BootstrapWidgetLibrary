@@ -32,7 +32,7 @@ $image = function () use (
 
 ?>
 
-<section class="kit-bwl-simple_footer <?php echo htmlspecialchars($this->getCssClass()); ?>"
+<section class="kit-bwl-glozzom_2c_teaser <?php echo htmlspecialchars($this->getCssClass()); ?>"
     <?php echo $this->getAttributesHtml(); ?>
 >
     <div class="container">
