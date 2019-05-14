@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.21.0 -- 2019-05-14
+
+    - add GlozzomPricingTableWidget 
+    
 - 0.20.0 -- 2019-05-14
 
     - add SlickTestimonialCarouselWidget 

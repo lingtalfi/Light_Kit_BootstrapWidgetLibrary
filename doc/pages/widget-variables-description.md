@@ -15,6 +15,7 @@ Summary
 =========
 
 - [ColoredBoxesWidget](#coloredboxeswidget)
+- [GlozzomPricingTableWidget](#glozzompricingtablewidget)
 - [GlozzomTwoColumnsTeaserWidget](#glozzomtwocolumnsteaserwidget)
 - [IconTeaserWidget](#iconteaserwidget)
 - [LoopLabFooterWithContactUseButtonWidget](#looplabfooterwithcontactusebuttonwidget)
@@ -203,6 +204,249 @@ This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layo
             - **default_value**: 
             - **description**: The css class for the icon of the box. If empty, the icon will not be displayed.
             - **example**: fas fa-box fa-3x
+
+
+
+
+
+
+
+GlozzomPricingTableWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#glozzompricingtablewidget-screenshots)
+- [Templates and skins](#glozzompricingtablewidget-templates-and-skins)
+- [Example](#glozzompricingtablewidget-configuration-example)
+- [Variables descriptions](#glozzompricingtablewidget-variables-description)
+
+
+
+GlozzomPricingTableWidget is a bootstrap 4 widget representing a pricing table.
+
+
+The widget is composed of boxes, each of which having at most the following elements:
+
+- title
+- price
+- description
+- features, an array of features
+- button
+- footer
+
+
+Each feature is composed of:
+
+- icon
+- text
+
+
+We can define how we want to organize our pricing tables using the "column_class" property, which takes a bootstrap 4 grid css class.
+
+More info at: https://getbootstrap.com/docs/4.0/layout/grid/
+
+
+
+
+
+
+
+
+GlozzomPricingTableWidget screenshots
+----------
+
+![Screenshot glozzom_three_columns_pricing_table.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/GlozzomPricingTableWidget/glozzom_three_columns_pricing_table.png)
+
+
+
+
+
+GlozzomPricingTableWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: glozzom.byml
+
+
+GlozzomPricingTableWidget configuration example
+----------------
+
+```yaml
+name: glozzom_pricing_table
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\GlozzomPricingTableWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/GlozzomPricingTableWidget
+template: default.php
+vars:
+    attr:
+        id: services
+        class: py-5
+
+    column_class: col-md-4
+    boxes:
+        -
+            title: Service Plan One
+            price: $59.99/Month
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatibus.
+            features:
+                -
+                    icon: fas fa-check
+                    text: Feature One
+
+                -
+                    icon: fas fa-check
+                    text: Feature Two
+
+                -
+                    icon: fas fa-check
+                    text: Feature Three
+
+                -
+                    icon: fas fa-check
+                    text: Feature Four
+
+                -
+                    icon: fas fa-check
+                    text: Feature Five
+
+
+            btn_text: Get It
+            btn_class: btn btn-danger btn-block mt-2
+            btn_url: ""
+            footer_text: 1 Year Plan
+
+        -
+            title: Service Plan Two
+            price: $99.99/Month
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatibus.
+            features:
+                -
+                    icon: fas fa-check
+                    text: Feature One
+
+                -
+                    icon: fas fa-check
+                    text: Feature Two
+
+                -
+                    icon: fas fa-check
+                    text: Feature Three
+
+                -
+                    icon: fas fa-check
+                    text: Feature Four
+
+                -
+                    icon: fas fa-check
+                    text: Feature Five
+
+
+            btn_text: Get It
+            btn_class: btn btn-danger btn-block mt-2
+            btn_url: ""
+            footer_text: 1 Year Plan
+
+        -
+            title: Service Plan Three
+            price: $129.99/Month
+            description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatibus.
+            features:
+                -
+                    icon: fas fa-check
+                    text: Feature One
+
+                -
+                    icon: fas fa-check
+                    text: Feature Two
+
+                -
+                    icon: fas fa-check
+                    text: Feature Three
+
+                -
+                    icon: fas fa-check
+                    text: Feature Four
+
+                -
+                    icon: fas fa-check
+                    text: Feature Five
+
+
+            btn_text: Get It
+            btn_class: btn btn-danger btn-block mt-2
+            btn_url: ""
+            footer_text: 1 Year Plan
+
+
+```
+
+
+
+GlozzomPricingTableWidget variables description
+-----------
+
+- **column_class**
+    - **type**: string
+    - **default_value**: col-md-4
+    - **description**: The css class to apply to the container of each box.
+    - **example**: col-md-4
+- **boxes**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The boxes.
+    - **item_properties**
+        - **title**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The title of the box. If empty, will not be displayed.
+            - **example**: Service Plan One
+        - **price**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The price of the box. If empty, will not be displayed.
+            - **example**: $59.99/Month
+        - **description**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The description of the box. If empty, will not be displayed.
+            - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptatibus.
+        - **features**
+            - **type**: item_list
+            - **default_value**
+            - **description**: The array of features for this box.
+            - **item_properties**
+                - **icon**
+                    - **type**: string
+                    - **default_value**: 
+                    - **description**: The icon for this feature. If empty, will not be displayed.
+                    - **example**: fas fa-check
+                - **text**
+                    - **type**: string
+                    - **default_value**: 
+                    - **description**: The text for this feature. If empty, will not be displayed.
+                    - **example**: Feature One
+        - **btn_text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text for the button of the box. If empty, will not be displayed.
+            - **example**: Get It
+        - **btn_class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class for the button of the box.
+            - **example**: btn btn-danger btn-block mt-2
+        - **btn_url**
+            - **type**: string
+            - **default_value**: #
+            - **description**: The url of the button of this box.
+            - **example**: 
+        - **footer_text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The footer of the box. If empty, will not be displayed.
+            - **example**: 1 Year Plan
 
 
 
