@@ -26,10 +26,15 @@ vars:
         default_value: 200px
         description: The css height of the background image.
         example: 200px
+    background_position:
+        type: string
+        default_value: 0px 0px
+        description: The css background-position value to apply to the background image.
+        example: 0 -360px
     overlay_color:
         type: string
         default_value: rgba(0,0,0,0.7)
-        description: The background color of the overlay covering the background image.
+        description: The background color of the overlay covering the background image. Note: not all templates use overlay.
         example: rgba(0,0,0,0.7)
     title:
         type: string
@@ -41,15 +46,11 @@ vars:
         default_value: ""
         description: The text. If empty, it will not be displayed.
         example: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore illum in ipsum iste odio perferendis quia quidem quos sit?
-    text_visible_size:
+    text_class:
         type: string
-        default_value: md
-        description: The bootstrap size at which the text should start to be visible.
-        example: md
-        choices:
-            - sm
-            - md
-            - lg
+        default_value: ""
+        description: The css class to apply to the text.
+        example: d-none d-md-block
 
 
 example: <

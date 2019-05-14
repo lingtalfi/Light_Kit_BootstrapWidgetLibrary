@@ -33,6 +33,7 @@ Summary
 - [PhotoGalleryWidget](#photogallerywidget)
 - [ShowCaseCarouselWidget](#showcasecarouselwidget)
 - [SimpleFooterWidget](#simplefooterwidget)
+- [SlickTestimonialCarouselWidget](#slicktestimonialcarouselwidget)
 
 
 
@@ -139,22 +140,22 @@ vars:
 ColoredBoxesWidget variables description
 -----------
 
-- **attr**
-    - **type**: array
-    - **default_value**
-    - **description**: The attributes to add to the widget's container tag.
-    - **properties**
-        - **class**
-            - **type**: string
-            - **default_value**: py-5
-            - **description**: The css class to add to the widget container tag.
-            - **example**: py-5
 - **column_class**
     - **type**: string
     - **default_value**: col-md-3
     - **description**: Defines the width and responsiveness of the columns containing the boxes.
 This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layout/grid/.
     - **example**: col-md-3
+- **nb_boxes_per_row**
+    - **type**: number
+    - **default_value**: null
+    - **description**: The number of boxes per row. If null, all boxes are put into the same row.
+    - **example**: 3
+- **row_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to every row.
+    - **example**: mb-4
 - **boxes**
     - **type**: item_list
     - **default_value**
@@ -997,6 +998,9 @@ It's composed of two parts: the image and the teaser.
 By default, the image is on the left.
 You can change this using the **img_on_left** property.
 If you don't want it rounded, set the **img_rounded** property to false.
+
+You can also change the vertical position of the image using the "img_top_margin" property.
+
 The teaser part contains a title, a text, and a list with an arbitrary number of items with icons.
 
 
@@ -1005,6 +1009,8 @@ The teaser part contains a title, a text, and a list with an arbitrary number of
 
 LoopLabTwoColumnsTeaserWidget screenshots
 ----------
+
+![Screenshot glozzom_two_columns_teaser_with_overflowing_image.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/glozzom_two_columns_teaser_with_overflowing_image.png)
 
 ![Screenshot looplab_two_columns_teaser-alt.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/LoopLabTwoColumnsTeaserWidget/looplab_two_columns_teaser-alt.png)
 
@@ -1020,7 +1026,7 @@ LoopLabTwoColumnsTeaserWidget templates, skins, presets
 -----------
 - **Templates**: default.php
 - **Skins**: default.css, looplab-dark.css
-- **Presets**: 
+- **Presets**: glozzom.byml, looplab.byml
 
 
 LoopLabTwoColumnsTeaserWidget configuration example
@@ -1087,15 +1093,32 @@ LoopLabTwoColumnsTeaserWidget variables description
     - **default_value**: 
     - **description**: The value of the alt attribute of the img tag.
     - **example**: Explore & Connect
+- **img_top_margin**
+    - **type**: string
+    - **default_value**: 0px
+    - **description**: The css margin-top value to apply to the image. This can be useful to quickly offset the image vertically for instance.
+    - **example**: -50px
 - **teaser_title**
     - **type**: string
     - **default_value**: 
     - **description**: The teaser title.
     - **example**: Explore & Connect
+- **teaser_title_level**
+    - **type**: number
+    - **default_value**: 3
+    - **description**: The teaser title level, from 1 to 6, corresponding to h1 to h6.
+    - **example**: 3
+    - **choices**
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
 - **teaser_text**
     - **type**: string
     - **default_value**: 
-    - **description**: The teaser text.
+    - **description**: The teaser text, or an array of teaser texts (each item representing a paragraph for instance).
     - **example**: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
 - **teaser_items**
     - **type**: item_list
@@ -2422,9 +2445,9 @@ ParallaxHeaderWidget screenshots
 
 ParallaxHeaderWidget templates, skins, presets
 -----------
-- **Templates**: default.php
-- **Skins**: default.css
-- **Presets**: glozzom.byml
+- **Templates**: default.php, no-overlay.php
+- **Skins**: default.css, no-overlay.css
+- **Presets**: glozzom-home.byml, glozzom-no-overlay.byml
 
 
 ParallaxHeaderWidget configuration example
@@ -2465,10 +2488,15 @@ ParallaxHeaderWidget variables description
     - **default_value**: 200px
     - **description**: The css height of the background image.
     - **example**: 200px
+- **background_position**
+    - **type**: string
+    - **default_value**: 0px 0px
+    - **description**: The css background-position value to apply to the background image.
+    - **example**: 0 -360px
 - **overlay_color**
     - **type**: string
     - **default_value**: rgba(0,0,0,0.7)
-    - **description**: The background color of the overlay covering the background image.
+    - **description**: The background color of the overlay covering the background image. Note: not all templates use overlay.
     - **example**: rgba(0,0,0,0.7)
 - **title**
     - **type**: string
@@ -2480,15 +2508,11 @@ ParallaxHeaderWidget variables description
     - **default_value**: 
     - **description**: The text. If empty, it will not be displayed.
     - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore illum in ipsum iste odio perferendis quia quidem quos sit?
-- **text_visible_size**
+- **text_class**
     - **type**: string
-    - **default_value**: md
-    - **description**: The bootstrap size at which the text should start to be visible.
-    - **example**: md
-    - **choices**
-        - sm
-        - md
-        - lg
+    - **default_value**: 
+    - **description**: The css class to apply to the text.
+    - **example**: d-none d-md-block
 
 
 
@@ -3022,7 +3046,7 @@ SimpleFooterWidget screenshots
 SimpleFooterWidget templates, skins, presets
 -----------
 - **Templates**: default.php
-- **Skins**: 
+- **Skins**: dark-skin.css
 - **Presets**: blogen.byml, glozzom.byml, mizuxe.byml
 
 
@@ -3030,7 +3054,7 @@ SimpleFooterWidget configuration example
 ----------------
 
 ```yaml
-name: mizuxe_right_aligned_monochrome_footer
+name: simple_footer
 type: picasso
 active: true
 className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\SimpleFooterWidget
@@ -3080,6 +3104,143 @@ SimpleFooterWidget variables description
     - **default_value**: Copyright &copy; $year
     - **description**: The text of the widget.
     - **example**: Copyright &copy; $year
+
+
+
+
+
+
+
+SlickTestimonialCarouselWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#slicktestimonialcarouselwidget-screenshots)
+- [Templates and skins](#slicktestimonialcarouselwidget-templates-and-skins)
+- [Example](#slicktestimonialcarouselwidget-configuration-example)
+- [Variables descriptions](#slicktestimonialcarouselwidget-variables-description)
+
+
+
+SlickTestimonialCarouselWidget is a bootstrap 4 widget representing a carousel of testimonials.
+
+
+There are two parts:
+
+- the title
+- the items
+
+The title remains always visible on top of the testimonials and doesn't slide.
+
+If the title is empty, it will not be displayed.
+
+The items slide below the title.
+
+
+Each item is composed of a text and an author, both of which accept html strings.
+
+
+
+If the text is an empty string, it will not be displayed.
+Same for the author.
+
+
+We can decide to play the carousel automatically or manually, using the "autoplay" and "autoplay_speed" properties.
+
+
+Behind the scene, the slick js library is used: https://kenwheeler.github.io/slick/.
+
+
+
+
+
+
+
+SlickTestimonialCarouselWidget screenshots
+----------
+
+![Screenshot glozzom_slick_testimonial_carousel.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/SlickTestimonialCarouselWidget/glozzom_slick_testimonial_carousel.png)
+
+
+
+
+
+SlickTestimonialCarouselWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: glozzom.byml
+
+
+SlickTestimonialCarouselWidget configuration example
+----------------
+
+```yaml
+name: slick_testimonial_carousel
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\SlickTestimonialCarouselWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/SlickTestimonialCarouselWidget
+template: default.php
+vars:
+    attr:
+        id: testimonials
+        class: p-4 bg-dark text-white
+
+    title: testimonials
+    autoplay: false
+    autoplay_speed: 3000
+    items:
+        -
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga.
+            author: "John Doe From <cite title=\"Company 1\">Company 1</cite>"
+
+        -
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga.
+            author: "Sam Smith From <cite title=\"Company 2\">Company 2</cite>"
+
+        -
+            text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga.
+            author: "Meghan Williams From <cite title=\"Company 3\">Company 3</cite>"
+
+
+```
+
+
+
+SlickTestimonialCarouselWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title of the carousel.
+    - **example**: testimonials
+- **autoplay**
+    - **type**: bool
+    - **default_value**: false
+    - **description**: Whether to play the carousel automatically or manually.
+- **autoplay_speed**
+    - **type**: string
+    - **default_value**: 3000
+    - **description**: If the carousel plays automatically, the interval in milliseconds between two items.
+    - **example**: 3000
+- **items**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of items.
+    - **item_properties**
+        - **text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of the item. If empty, will not be displayed. It accepts html notation.
+            - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga.
+        - **author**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The author of the item. If empty, will not be displayed. It accepts html notation.
+            - **example**: John Doe From <cite title="Company 1">Company 1</cite>
 
 
 

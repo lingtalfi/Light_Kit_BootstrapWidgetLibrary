@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.20.0 -- 2019-05-14
+
+    - add SlickTestimonialCarouselWidget 
+    
 - 0.19.0 -- 2019-05-14
 
     - add NewsletterHeaderWidget 

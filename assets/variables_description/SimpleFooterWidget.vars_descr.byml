@@ -41,7 +41,7 @@ vars:
 
 
 example: <
-    name: mizuxe_right_aligned_monochrome_footer
+    name: simple_footer
     type: picasso
     active: true
     className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\SimpleFooterWidget

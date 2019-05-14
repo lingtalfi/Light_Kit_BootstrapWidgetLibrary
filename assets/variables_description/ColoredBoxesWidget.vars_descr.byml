@@ -8,16 +8,6 @@ description: <
 >
 
 vars:
-    attr:
-        type: array
-        default_value: []
-        description: The attributes to add to the widget's container tag.
-        properties: 
-            class:
-                type: string
-                default_value: py-5
-                description: The css class to add to the widget container tag.
-                example: py-5
     column_class:
         type: string
         default_value: col-md-3
@@ -26,6 +16,16 @@ vars:
             This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layout/grid/.
         >
         example: col-md-3
+    nb_boxes_per_row:
+        type: number
+        default_value: null
+        description: The number of boxes per row. If null, all boxes are put into the same row.
+        example: 3
+    row_class:
+        type: string
+        default_value: ""
+        description: The css class to apply to every row.
+        example: mb-4
     boxes:
         type: item_list
         default_value: []

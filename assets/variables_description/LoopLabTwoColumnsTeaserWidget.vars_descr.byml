@@ -5,6 +5,9 @@ description: <
     By default, the image is on the left.
     You can change this using the **img_on_left** property.
     If you don't want it rounded, set the **img_rounded** property to false.
+
+    You can also change the vertical position of the image using the "img_top_margin" property.
+
     The teaser part contains a title, a text, and a list with an arbitrary number of items with icons.
 >
 
@@ -37,15 +40,32 @@ vars:
         default_value: ""
         description: The value of the alt attribute of the img tag.
         example: Explore & Connect
+    img_top_margin:
+        type: string
+        default_value: 0px
+        description: The css margin-top value to apply to the image. This can be useful to quickly offset the image vertically for instance.
+        example: -50px
     teaser_title:
         type: string
         default_value: ""
         description: The teaser title.
         example: Explore & Connect
+    teaser_title_level:
+        type: number
+        default_value: 3
+        description: The teaser title level, from 1 to 6, corresponding to h1 to h6.
+        example: 3
+        choices:
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
     teaser_text:
         type: string
         default_value: ""
-        description: The teaser text.
+        description: The teaser text, or an array of teaser texts (each item representing a paragraph for instance).
         example: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore reiciendis, voluptate at alias laborum odit aliquidtempore perspiciatis repudiandae hic?
     teaser_items:
         type: item_list

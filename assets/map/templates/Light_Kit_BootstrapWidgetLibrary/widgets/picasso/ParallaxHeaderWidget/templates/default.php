@@ -9,19 +9,26 @@ use Ling\Kit_PicassoWidget\Widget\PicassoWidget;
 
 $backgroundUrl = $z['background_url'] ?? "";
 $backgroundHeight = $z['background_height'] ?? "200px";
+$backgroundPosition = $z['background_position'] ?? "0px 0px";
 $overlayColor = $z['overlay_color'] ?? "rgba(0,0,0,0.7)";
 $title = $z['title'] ?? "";
 $text = $z['text'] ?? "";
-$textVisibleSize = $z['text_visible_size'] ?? "md";
+$text_class = $z['text_class'] ?? "";
+
+
+$sStyle = '';
+$sStyle .= 'background-image: url(' . $backgroundUrl . '); min-height: ' . $backgroundHeight . ';';
+$sStyle .= 'background-position: ' . $backgroundPosition . ';';
 
 
 ?>
 
 
 <section class="kit-bwl-parallax_header <?php echo htmlspecialchars($this->getCssClass()); ?>"
-         style="background-image: url(<?php echo htmlspecialchars($backgroundUrl) ?>); min-height: <?php echo htmlspecialchars($backgroundHeight); ?>"
+         style="<?php echo htmlspecialchars($sStyle); ?>"
     <?php echo $this->getAttributesHtml(); ?>
 >
+
     <div class="dark-overlay" style="background: <?php echo htmlspecialchars($overlayColor); ?>">
         <div class="row">
             <div class="col">
@@ -30,7 +37,7 @@ $textVisibleSize = $z['text_visible_size'] ?? "md";
                         <h1><?php echo $title; ?></h1>
                     <?php endif; ?>
                     <?php if ('' !== $text): ?>
-                        <p class="d-none d-<?php echo htmlspecialchars($textVisibleSize); ?>-block"><?php echo $text; ?></p>
+                        <p class="<?php echo htmlspecialchars($text_class); ?>"><?php echo $text; ?></p>
                     <?php endif; ?>
                 </div>
             </div>
