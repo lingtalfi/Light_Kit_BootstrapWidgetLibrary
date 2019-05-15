@@ -4,7 +4,7 @@
 
 The ColoredBoxesWidget class
 ================
-2019-04-26 --> 2019-05-14
+2019-04-26 --> 2019-05-15
 
 
 
@@ -76,4 +76,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ColoredBoxesWidget
 
 SeeAlso
 ==============
-Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [GlozzomPricingTableWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomPricingTableWidget.md)<br>
+Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [ContactFormAndCompanyInfoWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ContactFormAndCompanyInfoWidget.md)<br>

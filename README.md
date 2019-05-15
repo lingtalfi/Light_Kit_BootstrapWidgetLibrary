@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.24.0 -- 2019-05-15
+
+    - add ContactFormAndCompanyInfoWidget
+    
 - 0.23.0 -- 2019-05-14
 
     - add BlogCardsWidget

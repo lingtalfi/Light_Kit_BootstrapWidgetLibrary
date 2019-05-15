@@ -16,6 +16,7 @@ Summary
 
 - [BlogCardsWidget](#blogcardswidget)
 - [ColoredBoxesWidget](#coloredboxeswidget)
+- [ContactFormAndCompanyInfoWidget](#contactformandcompanyinfowidget)
 - [GlozzomPricingTableWidget](#glozzompricingtablewidget)
 - [GlozzomTwoColumnsTeaserWidget](#glozzomtwocolumnsteaserwidget)
 - [IconTeaserWidget](#iconteaserwidget)
@@ -394,6 +395,220 @@ This widget uses bootstrap 4 grid system: https://getbootstrap.com/docs/4.0/layo
             - **default_value**: 
             - **description**: The css class for the icon of the box. If empty, the icon will not be displayed.
             - **example**: fas fa-box fa-3x
+
+
+
+
+
+
+
+ContactFormAndCompanyInfoWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#contactformandcompanyinfowidget-screenshots)
+- [Templates and skins](#contactformandcompanyinfowidget-templates-and-skins)
+- [Example](#contactformandcompanyinfowidget-configuration-example)
+- [Variables descriptions](#contactformandcompanyinfowidget-variables-description)
+
+
+
+ContactFormAndCompanyInfoWidget is a bootstrap 4 widget composed of two parts:
+
+- a company info block
+- a contact form
+
+
+By default, the company info is on the left.
+
+We can put it on the right using the "company_info_is_left" property.
+
+
+The company info block is composed of the following elements:
+
+- title
+- text
+- address
+- email
+- phone
+
+
+Each element is optional, and is displayed only if not empty.
+
+The form contact is composed of the following elements:
+
+- title
+- fields
+- submit button
+
+Each field has a type which is one of the following:
+
+- text
+- email
+- textarea
+
+
+
+
+
+ContactFormAndCompanyInfoWidget screenshots
+----------
+
+![Screenshot glozzom_two_columns_contact_form.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ContactFormAndCompanyInfoWidget/glozzom_two_columns_contact_form.png)
+
+
+
+
+
+ContactFormAndCompanyInfoWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: glozzom.byml
+
+
+ContactFormAndCompanyInfoWidget configuration example
+----------------
+
+```yaml
+name: contact_form_and_company_info
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ContactFormAndCompanyInfoWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ContactFormAndCompanyInfoWidget
+template: default.php
+vars:
+    attr:
+        id: contact
+        class: py-3
+
+    company_info_is_left: true
+    company_title: Get In Touch
+    company_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsam.
+    company_address: 550 Main St, Boston MA
+    company_email: test@test.com
+    company_phone: (555) 555-5555
+    form_title: Please fill out this form to contact us
+    form_action: ""
+    form_method: post
+    form_fields:
+        -
+            type: text
+            name: name
+            label: First Name
+
+        -
+            type: text
+            name: last_name
+            label: Last Name
+
+        -
+            type: email
+            name: email
+            label: Email
+
+        -
+            type: text
+            name: phone
+            label: Phone Number
+
+        -
+            type: textarea
+            name: message
+            label: Message
+
+
+    form_btn_text: Submit
+    form_btn_class: btn btn-outline-danger btn-block
+```
+
+
+
+ContactFormAndCompanyInfoWidget variables description
+-----------
+
+- **company_info_is_left**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to align the company info block on the left or on the right.
+- **company_title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The company title. If empty, will not be displayed.
+    - **example**: Get In Touch
+- **company_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The company description. If empty, will not be displayed.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ipsam.
+- **company_address**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The company address. If empty, will not be displayed.
+    - **example**: 550 Main St, Boston MA
+- **company_email**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The company email. If empty, will not be displayed.
+    - **example**: test@test.com
+- **company_phone**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The company phone number. If empty, will not be displayed.
+    - **example**: (555) 555-5555
+- **form_title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The form title. If empty, will not be displayed.
+    - **example**: Please fill out this form to contact us
+- **form_action**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The form action attribute.
+    - **example**: 
+- **form_method**
+    - **type**: string
+    - **default_value**: post
+    - **description**: The form method attribute.
+    - **example**: post
+    - **choices**
+        - post
+        - get
+- **form_fields**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of form fields.
+    - **item_properties**
+        - **type**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The type of this form field.
+            - **example**: text
+            - **choices**
+                - text
+                - email
+                - textarea
+        - **name**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The name attribute of this form field.
+            - **example**: name
+        - **label**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The label for this form field.
+            - **example**: First Name
+- **form_btn_text**
+    - **type**: string
+    - **default_value**: Submit
+    - **description**: The text of the form submit button.
+    - **example**: Submit
+- **form_btn_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the form submit button.
+    - **example**: btn btn-outline-danger btn-block
 
 
 

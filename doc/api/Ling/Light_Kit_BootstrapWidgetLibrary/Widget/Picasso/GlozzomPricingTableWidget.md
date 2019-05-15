@@ -4,7 +4,7 @@
 
 The GlozzomPricingTableWidget class
 ================
-2019-04-26 --> 2019-05-14
+2019-04-26 --> 2019-05-15
 
 
 
@@ -76,4 +76,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\GlozzomPricingTableWidget
 
 SeeAlso
 ==============
-Previous class: [ColoredBoxesWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ColoredBoxesWidget.md)<br>Next class: [GlozzomTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomTwoColumnsTeaserWidget.md)<br>
+Previous class: [ContactFormAndCompanyInfoWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ContactFormAndCompanyInfoWidget.md)<br>Next class: [GlozzomTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomTwoColumnsTeaserWidget.md)<br>

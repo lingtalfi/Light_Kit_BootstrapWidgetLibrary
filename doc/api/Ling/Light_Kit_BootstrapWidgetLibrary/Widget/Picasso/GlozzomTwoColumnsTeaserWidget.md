@@ -4,7 +4,7 @@
 
 The GlozzomTwoColumnsTeaserWidget class
 ================
-2019-04-26 --> 2019-05-14
+2019-04-26 --> 2019-05-15
 
 
 
