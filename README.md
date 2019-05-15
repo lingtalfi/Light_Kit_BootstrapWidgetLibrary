@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.26.0 -- 2019-05-15
+
+    - add BlogenIconHeaderWidget
+    
 - 0.25.0 -- 2019-05-15
 
     - add PeopleGridWidget

@@ -15,6 +15,7 @@ Summary
 =========
 
 - [BlogCardsWidget](#blogcardswidget)
+- [BlogenIconHeaderWidget](#blogeniconheaderwidget)
 - [ColoredBoxesWidget](#coloredboxeswidget)
 - [ContactFormAndCompanyInfoWidget](#contactformandcompanyinfowidget)
 - [GlozzomPricingTableWidget](#glozzompricingtablewidget)
@@ -226,6 +227,84 @@ BlogCardsWidget variables description
             - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam harum illo itaque
 iusto pariatur rem? Distinctio praesentium rerum suscipit. Ab aspernatur, itaque magnam
 officiis optio quae quam repudiandae saepe tenetur?
+
+
+
+
+
+
+
+BlogenIconHeaderWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#blogeniconheaderwidget-screenshots)
+- [Templates and skins](#blogeniconheaderwidget-templates-and-skins)
+- [Example](#blogeniconheaderwidget-configuration-example)
+- [Variables descriptions](#blogeniconheaderwidget-variables-description)
+
+
+
+BlogenIconHeaderWidget is a bootstrap 4 widget displaying a simple header.
+
+
+The header is composed of an icon and a title, both of which being only displayed if they are not empty.
+
+
+
+
+
+
+BlogenIconHeaderWidget screenshots
+----------
+
+![Screenshot blogen_monochrome_icon_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/BlogenIconHeaderWidget/blogen_monochrome_icon_header.png)
+
+
+
+
+
+BlogenIconHeaderWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: blogen.byml
+
+
+BlogenIconHeaderWidget configuration example
+----------------
+
+```yaml
+name: blogen_icon_header
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenIconHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/BlogenIconHeaderWidget
+template: default.php
+vars:
+    attr:
+        id: main-header
+        class: py-2 bg-primary text-white
+
+    icon: fas fa-cog
+    title: Dashboard
+```
+
+
+
+BlogenIconHeaderWidget variables description
+-----------
+
+- **icon**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The icon. If empty, will not be displayed.
+    - **example**: fas fa-cog
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If empty, will not be displayed.
+    - **example**: Dashboard
 
 
 
@@ -1960,11 +2039,18 @@ MainNavWidget variables description
             - **default_value**: null
             - **description**: The css class for the icon.
             - **example**: fas fa-user
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to add to this specific link item. Note: it merges with the "links_item_class" property.
+            - **example**: mr-3
         - **active**
             - **type**: bool
             - **default_value**: false
             - **description**: Whether to add the active class to the item.
             - **example**: true
+        - **children**
+            - **alias_of**: links
 - **links_align_right**
     - **type**: bool
     - **default_value**: false

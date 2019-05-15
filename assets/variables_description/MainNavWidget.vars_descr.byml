@@ -105,11 +105,19 @@ vars:
                 default_value: null
                 description: The css class for the icon.
                 example: fas fa-user
+            class:
+                type: string
+                default_value: ""
+                description: The css class to add to this specific link item. Note: it merges with the "links_item_class" property.
+                example: mr-3
             active:
                 type: bool
                 default_value: false
                 description: Whether to add the active class to the item.
                 example: true
+            children:
+                alias_of: links
+
 
     links_align_right:
         type: bool

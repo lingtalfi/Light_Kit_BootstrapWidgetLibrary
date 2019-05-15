@@ -41,12 +41,13 @@ $linksCallback = function (array $links, array $options) {
         <?php foreach ($links as $item):
             $active = $item['active'] ?? false;
             $children = $item['children'] ?? null;
+            $item_class = $item['class'] ?? '';
 
             $sActive = (true === $active) ? 'active' : '';
 
             ?>
             <?php if (is_array($children)): ?>
-            <li class="nav-item dropdown <?php echo $links_item_class; ?> <?php echo $sActive; ?>">
+            <li class="nav-item dropdown <?php echo $links_item_class; ?> <?php echo $item_class; ?> <?php echo $sActive; ?>">
                 <a href="<?php echo htmlspecialchars($item['url']); ?>"
                    class="nav-link dropdown-toggle" data-toggle="dropdown">
                     <?php if (array_key_exists("icon", $item) && $item['icon']): ?>
@@ -54,8 +55,11 @@ $linksCallback = function (array $links, array $options) {
                     <?php endif; ?>
                     <?php echo $item['text']; ?></a>
                 <div class="dropdown-menu">
-                    <?php foreach ($children as $child): ?>
-                        <a href="<?php echo htmlspecialchars($child['url']); ?>" class="dropdown-item">
+                    <?php foreach ($children as $child):
+                        $child_class = $child['class'] ?? '';
+                        ?>
+                        <a href="<?php echo htmlspecialchars($child['url']); ?>"
+                           class="dropdown-item <?php echo htmlspecialchars($child_class); ?>">
                             <?php if (array_key_exists("icon", $child) && $child['icon']): ?>
                                 <i class="<?php echo htmlspecialchars($child['icon']); ?>"></i>&nbsp;
                             <?php endif; ?>
@@ -66,7 +70,7 @@ $linksCallback = function (array $links, array $options) {
             </li>
         <?php else: ?>
 
-            <li class="nav-item <?php echo $links_item_class; ?> <?php echo $sActive; ?>">
+            <li class="nav-item <?php echo $links_item_class; ?> <?php echo $item_class; ?> <?php echo $sActive; ?>">
                 <a href="<?php echo htmlspecialchars($item['url']); ?>"
                    class="nav-link">
                     <?php if (array_key_exists("icon", $item) && $item['icon']): ?>
