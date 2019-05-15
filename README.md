@@ -48,6 +48,10 @@ Related
 History Log
 =============
 
+- 0.25.0 -- 2019-05-15
+
+    - add PeopleGridWidget
+
 - 0.24.0 -- 2019-05-15
 
     - add ContactFormAndCompanyInfoWidget
