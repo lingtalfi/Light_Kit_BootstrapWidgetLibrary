@@ -2,7 +2,7 @@
 
 
 
-The PeopleGridWidget class
+The BlogenHeaderWithModalActionButtonsWidget class
 ================
 2019-04-26 --> 2019-05-16
 
@@ -14,7 +14,7 @@ The PeopleGridWidget class
 Introduction
 ============
 
-The PeopleGridWidget class.
+The BlogenHeaderWithModalActionButtonsWidget class.
 
 
 
@@ -22,15 +22,17 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">PeopleGridWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
+class <span class="pl-k">BlogenHeaderWithModalActionButtonsWidget</span> extends PicassoWidget implements UniversalTemplateEngineInterface {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
     - protected array [PicassoWidget::$attr](#property-attr) ;
     - protected Ling\HtmlPageTools\Copilot\HtmlPageCopilot [PicassoWidget::$copilot](#property-copilot) ;
 
+- Methods
+    - public [__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithModalActionButtonsWidget/__construct.md)() : void
+
 - Inherited methods
-    - public PicassoWidget::__construct() : void
     - public PicassoWidget::getLibraries() : array
     - public PicassoWidget::setCopilot(Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
     - public PicassoWidget::renderFile(string $filePath, array $variables = []) : false | string
@@ -54,7 +56,7 @@ class <span class="pl-k">PeopleGridWidget</span> extends PicassoWidget implement
 Methods
 ==============
 
-- PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
+- [BlogenHeaderWithModalActionButtonsWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithModalActionButtonsWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
 - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
 - PicassoWidget::setCopilot &ndash; Sets the copilot.
 - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
@@ -74,9 +76,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PeopleGridWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenHeaderWithModalActionButtonsWidget
 
 
 SeeAlso
 ==============
-Previous class: [ParallaxHeaderWithVideoTriggerWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWithVideoTriggerWidget.md)<br>Next class: [PhotoGalleryWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget.md)<br>
+Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [BlogenIconHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenIconHeaderWidget.md)<br>

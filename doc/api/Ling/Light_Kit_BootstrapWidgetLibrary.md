@@ -1,6 +1,6 @@
 Ling/Light_Kit_BootstrapWidgetLibrary
 ================
-2019-04-26 --> 2019-05-15
+2019-04-26 --> 2019-05-16
 
 
 
@@ -11,6 +11,16 @@ Table of contents
 - [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md) &ndash; The BlogCardsWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
+    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
+    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
+    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
+    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [BlogenHeaderWithModalActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithModalActionButtonsWidget.md) &ndash; The BlogenHeaderWithModalActionButtonsWidget class.
+    - [BlogenHeaderWithModalActionButtonsWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithModalActionButtonsWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -19,6 +29,7 @@ Table of contents
 - [BlogenIconHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenIconHeaderWidget.md) &ndash; The BlogenIconHeaderWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -27,6 +38,7 @@ Table of contents
 - [ColoredBoxesWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ColoredBoxesWidget.md) &ndash; The ColoredBoxesWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -35,6 +47,7 @@ Table of contents
 - [ContactFormAndCompanyInfoWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ContactFormAndCompanyInfoWidget.md) &ndash; The ContactFormAndCompanyInfoWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -43,6 +56,7 @@ Table of contents
 - [GlozzomPricingTableWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomPricingTableWidget.md) &ndash; The GlozzomPricingTableWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -51,6 +65,7 @@ Table of contents
 - [GlozzomTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomTwoColumnsTeaserWidget.md) &ndash; The GlozzomTwoColumnsTeaserWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -59,6 +74,7 @@ Table of contents
 - [IconTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/IconTeaserWidget.md) &ndash; The IconTeaserWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -67,6 +83,7 @@ Table of contents
 - [LoopLabFooterWithContactUseButtonWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabFooterWithContactUseButtonWidget.md) &ndash; The LoopLabFooterWithContactUseButtonWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -75,6 +92,7 @@ Table of contents
 - [LoopLabMonoChromeHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabMonoChromeHeaderWidget.md) &ndash; The LoopLabMonoChromeHeaderWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -83,6 +101,7 @@ Table of contents
 - [LoopLabTwoColumnsSignupFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsSignupFormWidget.md) &ndash; The LoopLabTwoColumnsSignupFormWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -91,6 +110,7 @@ Table of contents
 - [LoopLabTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabTwoColumnsTeaserWidget.md) &ndash; The LoopLabTwoColumnsTeaserWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -100,6 +120,7 @@ Table of contents
     - [MainNavWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MainNavWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
@@ -107,6 +128,7 @@ Table of contents
 - [MizuxeFourColumnsOurStaffWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeFourColumnsOurStaffWidget.md) &ndash; The MizuxeFourColumnsOurStaffWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -115,6 +137,7 @@ Table of contents
 - [MizuxeNewsletterSignupHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeNewsletterSignupHeaderWidget.md) &ndash; The MizuxeNewsletterSignupHeaderWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -123,6 +146,7 @@ Table of contents
 - [MizuxeTwoColumnsContactFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsContactFormWidget.md) &ndash; The MizuxeTwoColumnsContactFormWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -131,6 +155,7 @@ Table of contents
 - [MizuxeTwoColumnsTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsTeaserWidget.md) &ndash; The MizuxeTwoColumnsTeaserWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -139,6 +164,7 @@ Table of contents
 - [NewsletterHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/NewsletterHeaderWidget.md) &ndash; The NewsletterHeaderWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -147,6 +173,7 @@ Table of contents
 - [OneColumnAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/OneColumnAccordionWidget.md) &ndash; The OneColumnAccordionWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -155,6 +182,7 @@ Table of contents
 - [ParallaxHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWidget.md) &ndash; The ParallaxHeaderWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -164,6 +192,7 @@ Table of contents
     - [ParallaxHeaderWithVideoTriggerWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWithVideoTriggerWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
@@ -171,6 +200,7 @@ Table of contents
 - [PeopleGridWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PeopleGridWidget.md) &ndash; The PeopleGridWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -179,6 +209,7 @@ Table of contents
 - [PhotoGalleryWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget.md) &ndash; The PhotoGalleryWidget class.
     - [PhotoGalleryWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
@@ -188,6 +219,7 @@ Table of contents
     - [ShowCaseCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
@@ -196,6 +228,7 @@ Table of contents
     - [SimpleFooterWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
@@ -204,6 +237,7 @@ Table of contents
     - [SlickTestimonialCarouselWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SlickTestimonialCarouselWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
     - [SlickTestimonialCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SlickTestimonialCarouselWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
@@ -211,6 +245,7 @@ Table of contents
 - [TwoColumnsAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/TwoColumnsAccordionWidget.md) &ndash; The TwoColumnsAccordionWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
     - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).

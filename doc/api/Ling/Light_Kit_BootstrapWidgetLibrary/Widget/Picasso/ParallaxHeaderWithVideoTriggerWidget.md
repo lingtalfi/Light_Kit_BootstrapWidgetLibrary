@@ -4,7 +4,7 @@
 
 The ParallaxHeaderWithVideoTriggerWidget class
 ================
-2019-04-26 --> 2019-05-15
+2019-04-26 --> 2019-05-16
 
 
 
@@ -27,6 +27,7 @@ class <span class="pl-k">ParallaxHeaderWithVideoTriggerWidget</span> extends Pic
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
     - protected array [PicassoWidget::$attr](#property-attr) ;
+    - protected Ling\HtmlPageTools\Copilot\HtmlPageCopilot [PicassoWidget::$copilot](#property-copilot) ;
 
 - Methods
     - public [prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWithVideoTriggerWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
@@ -34,6 +35,7 @@ class <span class="pl-k">ParallaxHeaderWithVideoTriggerWidget</span> extends Pic
 - Inherited methods
     - public PicassoWidget::__construct() : void
     - public PicassoWidget::getLibraries() : array
+    - public PicassoWidget::setCopilot(Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
     - public PicassoWidget::renderFile(string $filePath, array $variables = []) : false | string
     - protected PicassoWidget::getAttributesHtml(bool $excludeClass = true) : string
     - protected PicassoWidget::getCssClass() : string
@@ -57,6 +59,7 @@ Methods
 - [ParallaxHeaderWithVideoTriggerWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWithVideoTriggerWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
 - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
 - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+- PicassoWidget::setCopilot &ndash; Sets the copilot.
 - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
 - PicassoWidget::getAttributesHtml &ndash; Returns the string of html attributes defined in the widget attributes (attr property in the widget configuration array).
 - PicassoWidget::getCssClass &ndash; 
