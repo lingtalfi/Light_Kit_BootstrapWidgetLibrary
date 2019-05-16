@@ -497,12 +497,14 @@ The form is composed of:
 - some fields
 - a footer containing a submit button
 
+We can hide the footer (and the submit button inside of it) using the "show_footer" property.
 
 
 The fields of the form can have one of the following types:
 
 - text (an input text)
 - email (an input text of type email)
+- radio (an input text of type radio)
 - list (a select tag)
 - file (a file input)
 - password (an input of type password)
@@ -521,6 +523,7 @@ Properties for the fields are:
 The fields of type "list" have an extra "options" property.
 
 The fields of type "file" have an extra "file_label" property.
+The fields of type "radio" have an extra "choices" property.
 
 
 
@@ -539,7 +542,7 @@ BlogenFormWidget screenshots
 
 BlogenFormWidget templates, skins, presets
 -----------
-- **Templates**: default.php
+- **Templates**: default.php, fieldset.php
 - **Skins**: 
 - **Presets**: blogen.byml
 
@@ -666,6 +669,26 @@ BlogenFormWidget variables description
             - **default_value**: 
             - **description**: The hint for the field.
             - **example**: Max Size 3mb
+        - **choices**
+            - **type**: array
+            - **default_value**
+            - **description**: An array of value => label representing the choices for a field of type radio.
+            - **example**: 
+        - **options**
+            - **type**: array
+            - **default_value**
+            - **description**: An array of value => label representing the choices for a field of type list.
+            - **example**: 
+        - **file_label**
+            - **type**: string
+            - **default_value**: 
+            - **description**: A message to display inside the input of type file.
+            - **example**: Choose File
+- **show_footer**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the footer (containing the submit button). This might be used when you have a separate submit button provided by another widget.
+    - **example**: true
 - **footer_class**
     - **type**: string
     - **default_value**: 

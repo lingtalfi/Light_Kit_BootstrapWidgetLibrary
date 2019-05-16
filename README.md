@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 0.34.0 -- 2019-05-16
+
+    - update BlogenFormWidget, add show_form property, and radio type
+    
 - 0.33.0 -- 2019-05-16
 
     - add BlogenSidebarAvatarWithActionButtonsWidget
