@@ -18,6 +18,7 @@ Summary
 - [BlogenAdminTableWidget](#blogenadmintablewidget)
 - [BlogenHeaderWithModalActionButtonsWidget](#blogenheaderwithmodalactionbuttonswidget)
 - [BlogenIconHeaderWidget](#blogeniconheaderwidget)
+- [BlogenSearchHeaderWidget](#blogensearchheaderwidget)
 - [BlogenSidebarIconCardsWidget](#blogensidebariconcardswidget)
 - [ColoredBoxesWidget](#coloredboxeswidget)
 - [ContactFormAndCompanyInfoWidget](#contactformandcompanyinfowidget)
@@ -392,7 +393,7 @@ vars:
 
     pagination_always_visible: false
     pagination_nb_pages: 1
-    pagination_link_format: "#"
+    pagination_link_format: /?page={page}
     pagination_selected_page: 1
     pagination_show_prev: true
     pagination_show_next: true
@@ -861,6 +862,107 @@ BlogenIconHeaderWidget variables description
     - **default_value**: 
     - **description**: The title. If empty, will not be displayed.
     - **example**: Dashboard
+
+
+
+
+
+
+
+BlogenSearchHeaderWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#blogensearchheaderwidget-screenshots)
+- [Templates and skins](#blogensearchheaderwidget-templates-and-skins)
+- [Example](#blogensearchheaderwidget-configuration-example)
+- [Variables descriptions](#blogensearchheaderwidget-variables-description)
+
+
+
+BlogenSearchHeaderWidget is a bootstrap 4 widget representing a search header.
+
+It's composed of a search form with a submit button.
+
+
+
+
+
+
+BlogenSearchHeaderWidget screenshots
+----------
+
+![Screenshot blogen_search_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/BlogenSearchHeaderWidget/blogen_search_header.png)
+
+
+
+
+
+BlogenSearchHeaderWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: blogen.byml
+
+
+BlogenSearchHeaderWidget configuration example
+----------------
+
+```yaml
+name: blogen_search_header
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSearchHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/BlogenSearchHeaderWidget
+template: default.php
+vars:
+    attr:
+        id: search
+        class: py-4 mb-4 bg-light
+
+    form_action: ""
+    form_method: post
+    name: search
+    label: Search Posts...
+    btn_text: Search
+    btn_class: btn btn-primary
+```
+
+
+
+BlogenSearchHeaderWidget variables description
+-----------
+
+- **form_action**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the action attribute of the search form.
+    - **example**: 
+- **form_method**
+    - **type**: string
+    - **default_value**: post
+    - **description**: The value of the method attribute of the search form.
+    - **example**: post
+- **name**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The name of the search form input.
+    - **example**: search
+- **label**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The label associated with the search form input.
+    - **example**: Search Posts...
+- **btn_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the search form submit button.
+    - **example**: Search
+- **btn_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the search form submit button.
+    - **example**: btn btn-primary
 
 
 

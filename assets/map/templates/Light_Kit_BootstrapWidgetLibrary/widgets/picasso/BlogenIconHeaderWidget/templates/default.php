@@ -22,7 +22,7 @@ $title = $z['title'] ?? "";
             <div class="col-md-6">
                 <h1>
                     <?php if ($icon): ?>
-                        <i class="<?php echo htmlspecialchars($icon); ?>"></i>&nbsp;
+                        <i class="<?php echo htmlspecialchars($icon); ?>"></i>
                     <?php endif; ?>
                     <?php if ($title): ?>
                         <?php echo $title; ?>

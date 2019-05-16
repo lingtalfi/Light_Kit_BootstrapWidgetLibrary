@@ -186,7 +186,7 @@ example: <
             
         pagination_always_visible: false
         pagination_nb_pages: 1
-        pagination_link_format: "#"
+        pagination_link_format: /?page={page}
         pagination_selected_page: 1
         pagination_show_prev: true
         pagination_show_next: true

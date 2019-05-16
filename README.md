@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 0.30.0 -- 2019-05-16
+
+    - add BlogenIconHeaderWidget
+    
 - 0.29.0 -- 2019-05-16
 
     - add BlogenSidebarIconCardsWidget

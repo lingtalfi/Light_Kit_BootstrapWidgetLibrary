@@ -51,7 +51,7 @@ $linksCallback = function (array $links, array $options) {
                 <a href="<?php echo htmlspecialchars($item['url']); ?>"
                    class="nav-link dropdown-toggle" data-toggle="dropdown">
                     <?php if (array_key_exists("icon", $item) && $item['icon']): ?>
-                        <i class="<?php echo htmlspecialchars($item['icon']); ?>"></i>&nbsp;
+                        <i class="<?php echo htmlspecialchars($item['icon']); ?>"></i>
                     <?php endif; ?>
                     <?php echo $item['text']; ?></a>
                 <div class="dropdown-menu">
@@ -61,7 +61,7 @@ $linksCallback = function (array $links, array $options) {
                         <a href="<?php echo htmlspecialchars($child['url']); ?>"
                            class="dropdown-item <?php echo htmlspecialchars($child_class); ?>">
                             <?php if (array_key_exists("icon", $child) && $child['icon']): ?>
-                                <i class="<?php echo htmlspecialchars($child['icon']); ?>"></i>&nbsp;
+                                <i class="<?php echo htmlspecialchars($child['icon']); ?>"></i>
                             <?php endif; ?>
                             <?php echo $child['text']; ?></a>
                         </a>
@@ -74,7 +74,7 @@ $linksCallback = function (array $links, array $options) {
                 <a href="<?php echo htmlspecialchars($item['url']); ?>"
                    class="nav-link">
                     <?php if (array_key_exists("icon", $item) && $item['icon']): ?>
-                        <i class="<?php echo htmlspecialchars($item['icon']); ?>"></i>&nbsp;
+                        <i class="<?php echo htmlspecialchars($item['icon']); ?>"></i>
                     <?php endif; ?>
                     <?php echo $item['text']; ?></a>
             </li>
