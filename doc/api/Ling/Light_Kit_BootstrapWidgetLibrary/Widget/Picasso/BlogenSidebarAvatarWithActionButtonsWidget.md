@@ -2,7 +2,7 @@
 
 
 
-The BlogenSidebarIconCardsWidget class
+The BlogenSidebarAvatarWithActionButtonsWidget class
 ================
 2019-04-26 --> 2019-05-16
 
@@ -14,7 +14,7 @@ The BlogenSidebarIconCardsWidget class
 Introduction
 ============
 
-The BlogenSidebarIconCardsWidget class.
+The BlogenSidebarAvatarWithActionButtonsWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">BlogenSidebarIconCardsWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
+class <span class="pl-k">BlogenSidebarAvatarWithActionButtonsWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -74,9 +74,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSidebarIconCardsWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSidebarAvatarWithActionButtonsWidget
 
 
 SeeAlso
 ==============
-Previous class: [BlogenSidebarAvatarWithActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSidebarAvatarWithActionButtonsWidget.md)<br>Next class: [ColoredBoxesWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ColoredBoxesWidget.md)<br>
+Previous class: [BlogenSearchHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSearchHeaderWidget.md)<br>Next class: [BlogenSidebarIconCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSidebarIconCardsWidget.md)<br>

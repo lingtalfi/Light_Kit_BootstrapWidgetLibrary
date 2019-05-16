@@ -21,6 +21,7 @@ Summary
 - [BlogenHeaderWithModalActionButtonsWidget](#blogenheaderwithmodalactionbuttonswidget)
 - [BlogenIconHeaderWidget](#blogeniconheaderwidget)
 - [BlogenSearchHeaderWidget](#blogensearchheaderwidget)
+- [BlogenSidebarAvatarWithActionButtonsWidget](#blogensidebaravatarwithactionbuttonswidget)
 - [BlogenSidebarIconCardsWidget](#blogensidebariconcardswidget)
 - [ColoredBoxesWidget](#coloredboxeswidget)
 - [ContactFormAndCompanyInfoWidget](#contactformandcompanyinfowidget)
@@ -1309,6 +1310,127 @@ BlogenSearchHeaderWidget variables description
     - **default_value**: 
     - **description**: The css class to apply to the search form submit button.
     - **example**: btn btn-primary
+
+
+
+
+
+
+
+BlogenSidebarAvatarWithActionButtonsWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#blogensidebaravatarwithactionbuttonswidget-screenshots)
+- [Templates and skins](#blogensidebaravatarwithactionbuttonswidget-templates-and-skins)
+- [Example](#blogensidebaravatarwithactionbuttonswidget-configuration-example)
+- [Variables descriptions](#blogensidebaravatarwithactionbuttonswidget-variables-description)
+
+
+
+BlogenSidebarAvatarWithActionButtonsWidget is a bootstrap 4 widget representing a sidebar avatar image, with some action buttons.
+
+
+The widget is composed of:
+
+- a title
+- an image
+- an arbitrary number of action buttons
+
+If any of the element is empty, it will not be displayed.
+
+
+
+
+
+
+
+
+BlogenSidebarAvatarWithActionButtonsWidget screenshots
+----------
+
+![Screenshot blogen_sidebar_avatar_with_action_buttons.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/BlogenSidebarAvatarWithActionButtonsWidget/blogen_sidebar_avatar_with_action_buttons.png)
+
+
+
+
+
+BlogenSidebarAvatarWithActionButtonsWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: blogen.byml
+
+
+BlogenSidebarAvatarWithActionButtonsWidget configuration example
+----------------
+
+```yaml
+name: blogen_sidebar_avatar_with_action_buttons
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSidebarAvatarWithActionButtonsWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/BlogenSidebarAvatarWithActionButtonsWidget
+template: default.php
+vars:
+    title: Your Avatar
+    img_src: /plugins/Light_Kit_Demo/blogen/img/avatar.png
+    img_alt: my_avatar
+    buttons:
+        -
+            class: btn btn-primary btn-block
+            url: "#"
+            text: Edit Image
+
+        -
+            class: btn btn-danger btn-block
+            url: "#"
+            text: Delete Image
+
+
+```
+
+
+
+BlogenSidebarAvatarWithActionButtonsWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If empty, will not be displayed.
+    - **example**: Your Avatar
+- **img_src**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The src attribute of the avatar image. If empty, the avatar will not be displayed.
+    - **example**: /plugins/Light_Kit_Demo/blogen/img/avatar.png
+- **img_alt**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The alt attribute of the avatar.
+    - **example**: my_avatar
+- **buttons**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of buttons.
+    - **item_properties**
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to this button.
+            - **example**: btn btn-primary btn-block
+        - **url**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The url of this button.
+            - **example**: /?page=random
+        - **text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of this button.
+            - **example**: Edit Image
 
 
 

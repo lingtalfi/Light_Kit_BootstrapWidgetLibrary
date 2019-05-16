@@ -79,4 +79,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSearchHeaderWidget
 
 SeeAlso
 ==============
-Previous class: [BlogenIconHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenIconHeaderWidget.md)<br>Next class: [BlogenSidebarIconCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSidebarIconCardsWidget.md)<br>
+Previous class: [BlogenIconHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenIconHeaderWidget.md)<br>Next class: [BlogenSidebarAvatarWithActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSidebarAvatarWithActionButtonsWidget.md)<br>
