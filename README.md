@@ -43,11 +43,17 @@ Summary
 Related
 =========
 - [Light_Kit_Demo](https://github.com/lingtalfi/Light_Kit_Demo/): a planet showing some demos made with Light_Kit_BootstrapWidgetLibrary. 
+- [Kit_PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget): A type of widget for the kit system. 
+ 
 
 
 History Log
 =============
 
+- 0.27.1 -- 2019-05-16
+
+    - cleaning doc
+    
 - 0.27.0 -- 2019-05-16
 
     - add BlogenHeaderWithModalActionButtonsWidget

@@ -16,7 +16,7 @@ Description
 ================
 
 
-public [SlickTestimonialCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SlickTestimonialCarouselWidget/prepare.md)(array &$widgetConf, Ling\HtmlPageTools\Copilot\HtmlPageCopilot $copilot) : void
+public [SlickTestimonialCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SlickTestimonialCarouselWidget/prepare.md)(array &$widgetConf, [Ling\HtmlPageTools\Copilot\HtmlPageCopilot](https://github.com/lingtalfi/HtmlPageTools/blob/master/doc/api/Ling/HtmlPageTools/Copilot/HtmlPageCopilot.md) $copilot) : void
 
 
 
