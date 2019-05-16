@@ -2,7 +2,7 @@
 
 
 
-The BlogCardsWidget class
+The BlogenAdminTableWidget class
 ================
 2019-04-26 --> 2019-05-16
 
@@ -14,7 +14,7 @@ The BlogCardsWidget class
 Introduction
 ============
 
-The BlogCardsWidget class.
+The BlogenAdminTableWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">BlogCardsWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
+class <span class="pl-k">BlogenAdminTableWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -74,9 +74,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogCardsWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenAdminTableWidget
 
 
 SeeAlso
 ==============
-Next class: [BlogenAdminTableWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenAdminTableWidget.md)<br>
+Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [BlogenHeaderWithModalActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithModalActionButtonsWidget.md)<br>

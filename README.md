@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 0.28.0 -- 2019-05-16
+
+    - add BlogenAdminTableWidget
+    
 - 0.27.1 -- 2019-05-16
 
     - cleaning doc
