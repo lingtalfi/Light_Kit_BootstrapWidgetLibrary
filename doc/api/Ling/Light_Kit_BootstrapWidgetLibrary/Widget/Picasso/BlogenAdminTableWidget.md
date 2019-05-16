@@ -79,4 +79,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenAdminTableWidget
 
 SeeAlso
 ==============
-Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [BlogenHeaderWithActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithActionButtonsWidget.md)<br>
+Previous class: [BlogCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogCardsWidget.md)<br>Next class: [BlogenFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenFormWidget.md)<br>

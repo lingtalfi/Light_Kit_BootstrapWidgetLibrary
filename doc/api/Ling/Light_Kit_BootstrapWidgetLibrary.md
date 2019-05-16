@@ -26,8 +26,17 @@ Table of contents
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [BlogenFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenFormWidget.md) &ndash; The BlogenFormWidget class.
+    - [BlogenFormWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenFormWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
+    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
+    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
+    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
+    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
 - [BlogenHeaderWithActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithActionButtonsWidget.md) &ndash; The BlogenHeaderWithActionButtonsWidget class.
-    - [BlogenHeaderWithActionButtonsWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenHeaderWithActionButtonsWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
     - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).

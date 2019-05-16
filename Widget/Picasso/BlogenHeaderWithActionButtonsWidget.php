@@ -13,16 +13,4 @@ use Ling\Kit_PicassoWidget\Widget\PicassoWidget;
 class BlogenHeaderWithActionButtonsWidget extends PicassoWidget
 {
 
-    /**
-     * @overrides
-     */
-    public function __construct()
-    {
-        parent::__construct();
-        $this->registerLibrary("ckeditor", [], [
-            'https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js',
-        ]);
-    }
-
-
 }
