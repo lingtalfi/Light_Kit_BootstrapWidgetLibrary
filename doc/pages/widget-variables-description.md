@@ -16,6 +16,7 @@ Summary
 
 - [BlogCardsWidget](#blogcardswidget)
 - [BlogenAdminTableWidget](#blogenadmintablewidget)
+- [BlogenHeaderWithActionButtonsWidget](#blogenheaderwithactionbuttonswidget)
 - [BlogenHeaderWithModalActionButtonsWidget](#blogenheaderwithmodalactionbuttonswidget)
 - [BlogenIconHeaderWidget](#blogeniconheaderwidget)
 - [BlogenSearchHeaderWidget](#blogensearchheaderwidget)
@@ -467,6 +468,139 @@ will have an erroneous table). Html code is accepted (so that you can create cus
     - **default_value**: Next
     - **description**: The text for the next page button.
     - **example**: Next
+
+
+
+
+
+
+
+BlogenHeaderWithActionButtonsWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#blogenheaderwithactionbuttonswidget-screenshots)
+- [Templates and skins](#blogenheaderwithactionbuttonswidget-templates-and-skins)
+- [Example](#blogenheaderwithactionbuttonswidget-configuration-example)
+- [Variables descriptions](#blogenheaderwithactionbuttonswidget-variables-description)
+
+
+
+BlogenHeaderWithActionButtonsWidget is a bootstrap 4 widget representing a header with some action buttons, and a back link.
+
+
+Each action button is composed of:
+
+- a text
+- an icon
+
+
+The text and the icon are only displayed if not empty.
+
+We can choose the size and responsiveness of each button using the "column_class" property, which uses a bootstrap 4 grid system css class.
+
+More info at: https://getbootstrap.com/docs/4.0/layout/grid/.
+
+
+
+
+
+
+
+
+BlogenHeaderWithActionButtonsWidget screenshots
+----------
+
+![Screenshot blogen_header_with_back_link_and_action_buttons-alt.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/BlogenHeaderWithActionButtonsWidget/blogen_header_with_back_link_and_action_buttons-alt.png)
+
+![Screenshot blogen_header_with_back_link_and_action_buttons-alt2.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/BlogenHeaderWithActionButtonsWidget/blogen_header_with_back_link_and_action_buttons-alt2.png)
+
+![Screenshot blogen_header_with_back_link_and_action_buttons.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/BlogenHeaderWithActionButtonsWidget/blogen_header_with_back_link_and_action_buttons.png)
+
+
+
+
+
+BlogenHeaderWithActionButtonsWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: blogen.byml
+
+
+BlogenHeaderWithActionButtonsWidget configuration example
+----------------
+
+```yaml
+name: blogen_header_with_action_buttons
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenHeaderWithActionButtonsWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/BlogenHeaderWithActionButtonsWidget
+template: default.php
+vars:
+    attr:
+        id: actions
+        class: py-4 mb-4 bg-light
+
+    column_class: col-md-3
+    buttons:
+        -
+            class: btn btn-light btn-block
+            icon: fas fa-arrow-left
+            url: /?page=dashboard
+            text: Back to Dashboard
+
+        -
+            class: btn btn-success btn-block
+            icon: fas fa-check
+            url: /?page=dashboard
+            text: Save Changes
+
+        -
+            class: btn btn-danger btn-block
+            icon: fas fa-trash
+            url: /?page=dashboard
+            text: Delete Post
+
+
+```
+
+
+
+BlogenHeaderWithActionButtonsWidget variables description
+-----------
+
+- **column_class**
+    - **type**: string
+    - **default_value**: col-md-3
+    - **description**: The css class to apply to each column containing a button.
+    - **example**: col-md-3
+- **buttons**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of buttons.
+    - **item_properties**
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the button.
+            - **example**: btn btn-light btn-block
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the button icon.
+            - **example**: fas fa-arrow-left
+        - **url**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The url of the button.
+            - **example**: /?page=dashboard
+        - **text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of the button.
+            - **example**: Back to Dashboard
 
 
 
