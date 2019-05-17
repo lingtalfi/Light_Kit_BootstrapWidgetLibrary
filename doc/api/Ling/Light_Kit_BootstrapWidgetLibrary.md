@@ -179,6 +179,15 @@ Table of contents
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [MizuxeContactFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeContactFormWidget.md) &ndash; The MizuxeContactFormWidget class.
+    - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
+    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
+    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
+    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
+    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
 - [MizuxeFourColumnsOurStaffWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeFourColumnsOurStaffWidget.md) &ndash; The MizuxeFourColumnsOurStaffWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
@@ -189,15 +198,6 @@ Table of contents
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
 - [MizuxeNewsletterSignupHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeNewsletterSignupHeaderWidget.md) &ndash; The MizuxeNewsletterSignupHeaderWidget class.
-    - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
-    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
-    - PicassoWidget::setCopilot &ndash; Sets the copilot.
-    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
-    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
-    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
-    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
-    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
-- [MizuxeTwoColumnsContactFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/MizuxeTwoColumnsContactFormWidget.md) &ndash; The MizuxeTwoColumnsContactFormWidget class.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
     - PicassoWidget::setCopilot &ndash; Sets the copilot.
@@ -279,11 +279,11 @@ Table of contents
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
 - [PortfolioGridMainNavHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridMainNavHeaderWidget.md) &ndash; The PortfolioGridMainNavHeaderWidget class.
+    - [PortfolioGridMainNavHeaderWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridMainNavHeaderWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
     - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
     - PicassoWidget::setCopilot &ndash; Sets the copilot.
     - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
-    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
@@ -344,6 +344,10 @@ Table of contents
 - [BlogenFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil.md) &ndash; The BlogenFormWidgetUtil class.
     - [BlogenFormWidgetUtil::printFields](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil/printFields.md) &ndash; Prints the fields of a form, as described in the BlogenFormWidget documentation.
     - [BlogenFormWidgetUtil::printFieldsAsFieldsets](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil/printFieldsAsFieldsets.md) &ndash; Prints the fields of a form, as described in the BlogenFormWidget documentation, using a fieldset based markup.
+- [MizuxeContactFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil.md) &ndash; The MizuxeContactFormWidgetUtil class.
+    - [MizuxeContactFormWidgetUtil::printForm](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil/printForm.md) &ndash; Prints the form with the title and text.
+- [PhotoGalleryWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/PhotoGalleryWidgetUtil.md) &ndash; The PhotoGalleryWidgetUtil class.
+    - [PhotoGalleryWidgetUtil::printPhotoGallery](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/PhotoGalleryWidgetUtil/printPhotoGallery.md) &ndash; Prints the photo gallery content.
 
 
 Dependencies
@@ -351,5 +355,6 @@ Dependencies
 - [Kit_PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget)
 - [HtmlPageTools](https://github.com/lingtalfi/HtmlPageTools)
 - [Bat](https://github.com/lingtalfi/Bat)
+- [BabyYaml](https://github.com/lingtalfi/BabyYaml)
 
 

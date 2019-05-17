@@ -3,6 +3,7 @@ dependencies:
         - Kit_PicassoWidget
         - HtmlPageTools
         - Bat
+        - BabyYaml
     
 
 post_install: 

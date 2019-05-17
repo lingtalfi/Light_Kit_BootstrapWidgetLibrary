@@ -17,6 +17,10 @@ $role = $z['role'] ?? "";
 $links = $z['links'] ?? [];
 
 
+// provided by the widget instance
+$_js_container_id = $z['_js_container_id'];
+
+
 ?>
 
 <header class="kit-bwl-portfoliogrid_main_nav_header <?php echo htmlspecialchars($this->getCssClass()); ?>"
@@ -45,7 +49,7 @@ $links = $z['links'] ?? [];
                     <?php echo $role; ?>
                 </div>
 
-                <div>
+                <div id="<?php echo $_js_container_id; ?>">
                     <?php if ($links): ?>
                         <div class="d-flex flex-row text-white align-items-stretch text-center">
                             <?php foreach ($links as $link): ?>

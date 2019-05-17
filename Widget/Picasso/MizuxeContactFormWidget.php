@@ -8,8 +8,8 @@ use Ling\Kit_PicassoWidget\Widget\PicassoWidget;
 
 
 /**
- * The MizuxeTwoColumnsContactFormWidget class.
+ * The MizuxeContactFormWidget class.
  */
-class MizuxeTwoColumnsContactFormWidget extends PicassoWidget {
+class MizuxeContactFormWidget extends PicassoWidget {
 
 }

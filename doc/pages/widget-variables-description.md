@@ -33,9 +33,9 @@ Summary
 - [LoopLabTwoColumnsSignupFormWidget](#looplabtwocolumnssignupformwidget)
 - [LoopLabTwoColumnsTeaserWidget](#looplabtwocolumnsteaserwidget)
 - [MainNavWidget](#mainnavwidget)
+- [MizuxeContactFormWidget](#mizuxecontactformwidget)
 - [MizuxeFourColumnsOurStaffWidget](#mizuxefourcolumnsourstaffwidget)
 - [MizuxeNewsletterSignupHeaderWidget](#mizuxenewslettersignupheaderwidget)
-- [MizuxeTwoColumnsContactFormWidget](#mizuxetwocolumnscontactformwidget)
 - [MizuxeTwoColumnsTeaserWidget](#mizuxetwocolumnsteaserwidget)
 - [NewsletterHeaderWidget](#newsletterheaderwidget)
 - [OneColumnAccordionWidget](#onecolumnaccordionwidget)
@@ -3371,6 +3371,220 @@ MainNavWidget variables description
 
 
 
+MizuxeContactFormWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#mizuxecontactformwidget-screenshots)
+- [Templates and skins](#mizuxecontactformwidget-templates-and-skins)
+- [Example](#mizuxecontactformwidget-configuration-example)
+- [Variables descriptions](#mizuxecontactformwidget-variables-description)
+
+
+
+MizuxeContactFormWidget is a bootstrap 4 widget representing a contact form.
+
+It's composed of two parts:
+- the form
+- the image
+
+The form is composed of a title, a text, some fields, and a submit button.
+
+Each form field has a type, which can be one of:
+- text: an input of type text
+- email: an input of type email
+- textarea: a textarea
+
+
+The image can be hidden using the "show_image" property.
+
+
+
+
+
+
+
+MizuxeContactFormWidget screenshots
+----------
+
+![Screenshot mizuxe_one_column_contact_form.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeContactFormWidget/mizuxe_one_column_contact_form.png)
+
+
+
+
+
+MizuxeContactFormWidget templates, skins, presets
+-----------
+- **Templates**: card.php, default.php
+- **Skins**: 
+- **Presets**: mizuxe.byml, portfoliogrid.byml
+
+
+MizuxeContactFormWidget configuration example
+----------------
+
+```yaml
+name: mizuxe_one_column_contact_form
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeContactFormWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeContactFormWidget
+template: default.php
+vars:
+    attr:
+        class: bg-light py-5
+        id: contact
+
+    show_image: true
+    image_url: img/mlogo.png
+    image_alt: our company logo
+    form_action: ""
+    form_method: post
+    form_title: Get In Touch
+    form_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
+    form_fields:
+        -
+            icon: fas fa-user
+            name: name
+            label: Name
+            type: text
+
+        -
+            icon: fas fa-envelope
+            name: email
+            label: Email
+            type: email
+
+        -
+            icon: fas fa-pencil-alt
+            name: message
+            label: Message
+            type: textarea
+
+
+    submit_btn_text: Submit
+    submit_btn_class: btn btn-primary btn-block btn-lg
+```
+
+
+
+MizuxeContactFormWidget variables description
+-----------
+
+- **attr**
+    - **type**: array
+    - **default_value**
+    - **description**: The attributes to add to the widget's container tag.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the widget container.
+            - **example**: bg-light py-5
+- **show_image**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the image.
+- **image_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the src attribute of the img tag.
+    - **example**: img/mlogo.png
+- **image_alt**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the alt attribute of the img tag.
+    - **example**: our company logo
+- **form_action**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The value of the action attribute of the form tag.
+    - **example**: 
+- **form_method**
+    - **type**: string
+    - **default_value**: post
+    - **description**: The value of the method attribute of the form tag.
+    - **example**: post
+    - **choices**
+        - get
+        - post
+- **form_title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title of the form.
+    - **example**: Get In Touch
+- **form_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the form.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
+- **form_text_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the text of the form.
+    - **example**: lead
+- **form_fields**
+    - **type**: item_list
+    - **default_value**
+    - **description**: An array of form fields.
+    - **item_properties**
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The icon for this field. If empty, the icon will not be displayed.
+            - **example**: fas fa-user
+        - **icon_wrapper_class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the element containing the icon.
+            - **example**: bg-danger text-white
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the field element.
+            - **example**: bg-dark text-white
+        - **name**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The name attribute for this field.
+            - **example**: name
+        - **label**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The label for this field. It might be displayed in a placeholder.
+            - **example**: Name
+        - **type**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The type of this form field.
+            - **example**: text
+            - **choices**
+                - text, an input of type text
+                - email, an input of type email
+                - textarea, a textarea
+        - **rows**
+            - **type**: number
+            - **default_value**: null
+            - **description**: The number of rows for the textarea element only. If null, the number of rows is not specified.
+            - **example**: 5
+- **submit_btn_text**
+    - **type**: string
+    - **default_value**: Submit
+    - **description**: The text for the submit button.
+    - **example**: Submit
+- **submit_btn_class**
+    - **type**: string
+    - **default_value**: btn btn-primary btn-block btn-lg
+    - **description**: The css class to apply to the submit button.
+    - **example**: btn btn-primary btn-block btn-lg
+
+
+
+
+
+
+
 MizuxeFourColumnsOurStaffWidget
 ==============
 
@@ -3741,200 +3955,6 @@ MizuxeNewsletterSignupHeaderWidget variables description
     - **default_value**: Subscribe
     - **description**: The text of the button.
     - **example**: Subscribe
-
-
-
-
-
-
-
-MizuxeTwoColumnsContactFormWidget
-==============
-
-[Back to top](#summary)
-
-- [Screenshots](#mizuxetwocolumnscontactformwidget-screenshots)
-- [Templates and skins](#mizuxetwocolumnscontactformwidget-templates-and-skins)
-- [Example](#mizuxetwocolumnscontactformwidget-configuration-example)
-- [Variables descriptions](#mizuxetwocolumnscontactformwidget-variables-description)
-
-
-
-MizuxeTwoColumnsContactFormWidget is a bootstrap 4 widget representing a contact form.
-
-It's composed of two parts:
-- the form
-- the image
-
-The form is composed of a title, a text, some fields, and a submit button.
-
-Each form field has a type, which can be one of:
-- text: an input of type text
-- email: an input of type email
-- textarea: a textarea
-
-
-The image can be hidden using the "show_image" property.
-
-
-
-
-
-
-
-MizuxeTwoColumnsContactFormWidget screenshots
-----------
-
-![Screenshot mizuxe_one_column_contact_form.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeTwoColumnsContactFormWidget/mizuxe_one_column_contact_form.png)
-
-
-
-
-
-MizuxeTwoColumnsContactFormWidget templates, skins, presets
------------
-- **Templates**: default.php
-- **Skins**: 
-- **Presets**: 
-
-
-MizuxeTwoColumnsContactFormWidget configuration example
-----------------
-
-```yaml
-name: mizuxe_one_column_contact_form
-type: picasso
-active: true
-className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsContactFormWidget
-widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeTwoColumnsContactFormWidget
-template: default.php
-vars:
-    attr:
-        class: bg-light py-5
-        id: contact
-
-    show_image: true
-    image_url: img/mlogo.png
-    image_alt: our company logo
-    form_action: ""
-    form_method: post
-    form_title: Get In Touch
-    form_text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
-    form_fields:
-        -
-            icon: fas fa-user
-            name: name
-            label: Name
-            type: text
-
-        -
-            icon: fas fa-envelope
-            name: email
-            label: Email
-            type: email
-
-        -
-            icon: fas fa-pencil-alt
-            name: message
-            label: Message
-            type: textarea
-
-
-    submit_btn_text: Submit
-    submit_btn_class: btn btn-primary btn-block btn-lg
-```
-
-
-
-MizuxeTwoColumnsContactFormWidget variables description
------------
-
-- **attr**
-    - **type**: array
-    - **default_value**
-    - **description**: The attributes to add to the widget's container tag.
-    - **properties**
-        - **class**
-            - **type**: string
-            - **default_value**: 
-            - **description**: The css class to apply to the widget container.
-            - **example**: bg-light py-5
-- **show_image**
-    - **type**: bool
-    - **default_value**: true
-    - **description**: Whether to show the image.
-- **image_url**
-    - **type**: string
-    - **default_value**: 
-    - **description**: The value of the src attribute of the img tag.
-    - **example**: img/mlogo.png
-- **image_alt**
-    - **type**: string
-    - **default_value**: 
-    - **description**: The value of the alt attribute of the img tag.
-    - **example**: our company logo
-- **form_action**
-    - **type**: string
-    - **default_value**: 
-    - **description**: The value of the action attribute of the form tag.
-    - **example**: 
-- **form_method**
-    - **type**: string
-    - **default_value**: post
-    - **description**: The value of the method attribute of the form tag.
-    - **example**: post
-    - **choices**
-        - get
-        - post
-- **form_title**
-    - **type**: string
-    - **default_value**: 
-    - **description**: The title of the form.
-    - **example**: Get In Touch
-- **form_text**
-    - **type**: string
-    - **default_value**: 
-    - **description**: The text of the form.
-    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
-- **form_fields**
-    - **type**: item_list
-    - **default_value**
-    - **description**: An array of form fields.
-    - **item_properties**
-        - **icon**
-            - **type**: string
-            - **default_value**: 
-            - **description**: The icon for this field. If empty, the icon will not be displayed.
-            - **example**: fas fa-user
-        - **name**
-            - **type**: string
-            - **default_value**: 
-            - **description**: The name attribute for this field.
-            - **example**: name
-        - **label**
-            - **type**: string
-            - **default_value**: 
-            - **description**: The label for this field. It might be displayed in a placeholder.
-            - **example**: Name
-        - **type**
-            - **type**: string
-            - **default_value**: 
-            - **description**: The type of this form field.
-            - **example**: text
-            - **choices**
-                - text, an input of type text
-                - email, an input of type email
-                - textarea, a textarea
-- **submit_btn_text**
-    - **type**: string
-    - **default_value**: Submit
-    - **description**: The text for the submit button.
-    - **example**: Submit
-- **submit_btn_class**
-    - **type**: string
-    - **default_value**: btn btn-primary btn-block btn-lg
-    - **description**: The css class to apply to the submit button.
-    - **example**: btn btn-primary btn-block btn-lg
 
 
 
@@ -4878,9 +4898,9 @@ PhotoGalleryWidget screenshots
 
 PhotoGalleryWidget templates, skins, presets
 -----------
-- **Templates**: default.php
+- **Templates**: default.php, no-container.php
 - **Skins**: 
-- **Presets**: glozzom.byml
+- **Presets**: glozzom.byml, portfoliogrid-nogutters.byml
 
 
 PhotoGalleryWidget configuration example
@@ -4897,38 +4917,32 @@ vars:
     attr:
         id: gallery
         class: py-5
-
     title: Photo Gallery
+    title_class: text-center
+    title_level: 1
     text: Check out our photos
+    text_class: text-center
     column_class: col-md-4
     nb_photos_per_row: 3
-    photo_height: 560
-    photo_width: 560
     photos:
         -
             url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/photo-1.jpg
             alt: photo-1
-
         -
             url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/photo-2.jpg
             alt: photo-2
-
         -
             url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/photo-3.jpg
             alt: photo-3
-
         -
             url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/photo-4.jpg
             alt: photo-4
-
         -
             url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/photo-5.jpg
             alt: photo-5
-
         -
             url: /plugins/Light_Kit_BootstrapWidgetLibrary/glozzom/img/photo-6.jpg
             alt: photo-6
-
 
 ```
 
@@ -4942,16 +4956,38 @@ PhotoGalleryWidget variables description
     - **default_value**: 
     - **description**: The title of the photo gallery. If empty, it will not be displayed.
     - **example**: Photo Gallery
+- **title_level**
+    - **type**: number
+    - **default_value**: 1
+    - **description**: The importance level of the title, from 1 (the most important) to 6 (the least important).
+    - **example**: 3
+- **title_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the title of the photo gallery.
+    - **example**: text-center
 - **text**
     - **type**: string
     - **default_value**: 
     - **description**: The text of the photo gallery. If empty, it will not be displayed.
     - **example**: Check out our photos
+- **text_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the text of the photo gallery.
+    - **example**: text-center
 - **column_class**
     - **type**: string
     - **default_value**: col-md-4
     - **description**: The css class to apply to the columns containing the photos. You should use bootstrap 4 grid classes.
     - **example**: col-md-4
+- **row_class**
+    - **type**: string
+    - **default_value**: mb-4
+    - **description**: The css class to apply to the rows.
+    - **example**
+        - mb-4
+        - no-gutters
 - **nb_photos_per_row**
     - **type**: string
     - **default_value**: 3

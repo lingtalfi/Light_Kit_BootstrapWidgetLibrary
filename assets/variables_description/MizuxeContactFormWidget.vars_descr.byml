@@ -1,6 +1,6 @@
-name: MizuxeTwoColumnsContactFormWidget
+name: MizuxeContactFormWidget
 description: <
-MizuxeTwoColumnsContactFormWidget is a bootstrap 4 widget representing a contact form.
+MizuxeContactFormWidget is a bootstrap 4 widget representing a contact form.
 
 It's composed of two parts:
 - the form
@@ -67,6 +67,11 @@ vars:
         default_value: ""
         description: The text of the form.
         example: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ea!
+    form_text_class:
+        type: string
+        default_value: ""
+        description: The css class to apply to the text of the form.
+        example: lead
     form_fields:
         type: item_list
         default_value: []
@@ -77,6 +82,16 @@ vars:
                 default_value: ""
                 description: The icon for this field. If empty, the icon will not be displayed.
                 example: fas fa-user
+            icon_wrapper_class:
+                type: string
+                default_value: ""
+                description: The css class to apply to the element containing the icon.
+                example: bg-danger text-white
+            class:
+                type: string
+                default_value: ""
+                description: The css class to apply to the field element.
+                example: bg-dark text-white
             name:
                 type: string
                 default_value: ""
@@ -96,6 +111,11 @@ vars:
                     - text, an input of type text
                     - email, an input of type email
                     - textarea, a textarea
+            rows:
+                type: number
+                default_value: null
+                description: The number of rows for the textarea element only. If null, the number of rows is not specified.
+                example: 5
 
 
     submit_btn_text:
@@ -114,8 +134,8 @@ example: <
     name: mizuxe_one_column_contact_form
     type: picasso
     active: true
-    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeTwoColumnsContactFormWidget
-    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeTwoColumnsContactFormWidget
+    className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\MizuxeContactFormWidget
+    widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/MizuxeContactFormWidget
     template: default.php
     vars:
         attr:

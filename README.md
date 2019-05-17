@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 0.39.0 -- 2019-05-17
+
+    - rename MizuxeTwoColumnsContactFormWidget to MizuxeContactFormWidget
+    
 - 0.38.0 -- 2019-05-17
 
     - add PortfolioGridThreeColumnsCardInfoWidget

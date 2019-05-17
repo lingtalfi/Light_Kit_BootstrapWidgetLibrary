@@ -52,4 +52,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\Util\BlogenFormWidgetUtil
 
 SeeAlso
 ==============
-Previous class: [TwoColumnsAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/TwoColumnsAccordionWidget.md)<br>
+Previous class: [TwoColumnsAccordionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/TwoColumnsAccordionWidget.md)<br>Next class: [MizuxeContactFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil.md)<br>
