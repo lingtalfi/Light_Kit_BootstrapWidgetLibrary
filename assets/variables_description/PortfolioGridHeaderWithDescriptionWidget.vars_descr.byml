@@ -24,7 +24,7 @@ example: <
     template: default.php
     vars: 
         attr: 
-            class: bg-primary text-white
+            class: bg-primary text-white py-5
         
         title: Welcome To My Page
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?

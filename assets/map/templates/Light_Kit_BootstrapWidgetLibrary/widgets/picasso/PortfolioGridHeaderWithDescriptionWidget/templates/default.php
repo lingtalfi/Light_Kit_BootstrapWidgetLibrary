@@ -14,7 +14,7 @@ $description = $z['description'] ?? "";
 
 ?>
 
-<div class="kit-bwl-portfoliogrid_header_with_description card card-body py-5 <?php echo htmlspecialchars($this->getCssClass()); ?>"
+<div class="kit-bwl-portfoliogrid_header_with_description card card-body <?php echo htmlspecialchars($this->getCssClass()); ?>"
     <?php echo $this->getAttributesHtml(); ?>
 >
     <?php if ($title): ?>

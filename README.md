@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 0.37.0 -- 2019-05-17
+
+    - add ProgressBarWidget
+    
 - 0.36.0 -- 2019-05-17
 
     - add PortfolioGridHeaderWithDescriptionWidget

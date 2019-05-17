@@ -45,6 +45,7 @@ Summary
 - [PhotoGalleryWidget](#photogallerywidget)
 - [PortfolioGridHeaderWithDescriptionWidget](#portfoliogridheaderwithdescriptionwidget)
 - [PortfolioGridMainNavHeaderWidget](#portfoliogridmainnavheaderwidget)
+- [ProgressBarWidget](#progressbarwidget)
 - [ShowCaseCarouselWidget](#showcasecarouselwidget)
 - [SimpleFooterWidget](#simplefooterwidget)
 - [SlickTestimonialCarouselWidget](#slicktestimonialcarouselwidget)
@@ -5022,7 +5023,7 @@ widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/PortfolioG
 template: default.php
 vars:
     attr:
-        class: bg-primary text-white
+        class: bg-primary text-white py-5
 
     title: Welcome To My Page
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?
@@ -5238,6 +5239,140 @@ PortfolioGridMainNavHeaderWidget variables description
             - **default_value**: 
             - **description**: The css class to apply to the link.
             - **example**: bg-primary
+
+
+
+
+
+
+
+ProgressBarWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#progressbarwidget-screenshots)
+- [Templates and skins](#progressbarwidget-templates-and-skins)
+- [Example](#progressbarwidget-configuration-example)
+- [Variables descriptions](#progressbarwidget-variables-description)
+
+
+
+ProgressBarWidget is a bootstrap 4 widget displaying progress bars.
+
+
+It's composed of the following elements:
+
+- title
+- description
+- progress bars
+
+
+Each progress bar is composed of:
+
+- a text
+- a bar
+
+
+
+
+
+
+ProgressBarWidget screenshots
+----------
+
+![Screenshot portfoliogrid_progress_bars.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ProgressBarWidget/portfoliogrid_progress_bars.png)
+
+
+
+
+
+ProgressBarWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: portfoliogrid.byml
+
+
+ProgressBarWidget configuration example
+----------------
+
+```yaml
+name: progress_bar
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ProgressBarWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ProgressBarWidget
+template: default.php
+vars:
+    attr:
+        class: py-5
+
+    title: Welcome To My Page
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?
+    progress_bars:
+        -
+            text: HTML 5
+            percent: 100
+            class: bg-success
+
+        -
+            text: CSS 3
+            percent: 100
+            class: bg-success
+
+        -
+            text: JavaScript
+            percent: 90
+            class: bg-success
+
+        -
+            text: PHP
+            percent: 80
+            class: bg-success
+
+        -
+            text: Python
+            percent: 70
+            class: bg-success
+
+
+```
+
+
+
+ProgressBarWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If empty, will not be displayed.
+    - **example**: Welcome To My Page
+- **description**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The description. If empty, will not be displayed.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?
+- **progress_bars**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of progress bars.
+    - **item_properties**
+        - **text**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of the progress bar.
+            - **example**: HTML 5
+        - **percent**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The percent of the progress bar.
+            - **example**: 100
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the progress bar.
+            - **example**: bg-success
 
 
 
