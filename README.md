@@ -4,12 +4,6 @@ Light_Kit_BootstrapWidgetLibrary
 
 
 
-WORK IN PROGRESS, COME BACK IN A FEW MONTHS...
-
-
-
-
-
 A bootstrap widget library for the [Light_Kit](https://github.com/lingtalfi/Light_Kit) planet. 
 
 
@@ -36,6 +30,7 @@ Summary
 - Pages
     - [Conception notes](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/pages/conception-notes.md)
     - [Widget Documentation](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/pages/widget-variables-description.md)
+    - [How to create a widget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/pages/how-to-create-a-widget.md)
 
 
 
@@ -50,6 +45,10 @@ Related
 History Log
 =============
 
+- 0.40.0 -- 2019-05-17
+
+    - add FooterWithButtonWidget
+    
 - 0.39.0 -- 2019-05-17
 
     - rename MizuxeTwoColumnsContactFormWidget to MizuxeContactFormWidget

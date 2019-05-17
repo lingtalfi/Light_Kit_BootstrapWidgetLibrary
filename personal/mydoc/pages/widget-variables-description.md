@@ -25,6 +25,7 @@ Summary
 - [BlogenSidebarIconCardsWidget](#blogensidebariconcardswidget)
 - [ColoredBoxesWidget](#coloredboxeswidget)
 - [ContactFormAndCompanyInfoWidget](#contactformandcompanyinfowidget)
+- [FooterWithButtonWidget](#footerwithbuttonwidget)
 - [GlozzomPricingTableWidget](#glozzompricingtablewidget)
 - [GlozzomTwoColumnsTeaserWidget](#glozzomtwocolumnsteaserwidget)
 - [IconTeaserWidget](#iconteaserwidget)
@@ -1997,6 +1998,100 @@ ContactFormAndCompanyInfoWidget variables description
 
 
 
+FooterWithButtonWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#footerwithbuttonwidget-screenshots)
+- [Templates and skins](#footerwithbuttonwidget-templates-and-skins)
+- [Example](#footerwithbuttonwidget-configuration-example)
+- [Variables descriptions](#footerwithbuttonwidget-variables-description)
+
+
+
+FooterWithButtonWidget is a bootstrap 4 widget for a footer with just a button inside of it.
+
+
+
+
+
+
+FooterWithButtonWidget screenshots
+----------
+
+![Screenshot portfoliogrid_footer_with_download_button.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/FooterWithButtonWidget/portfoliogrid_footer_with_download_button.png)
+
+
+
+
+
+FooterWithButtonWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: portfoliogrid.byml
+
+
+FooterWithButtonWidget configuration example
+----------------
+
+```yaml
+name: footer_with_button
+type: picasso
+active: true
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\FooterWithButtonWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/FooterWithButtonWidget
+template: default.php
+vars:
+    attr:
+        id: main-footer
+        class: p-5 bg-dark text-white
+
+    column_class: col-md-6
+    icon: fas fa-cloud
+    button_class: btn btn-outline-light
+    button_url: "#"
+    button_text: Download Resume
+```
+
+
+
+FooterWithButtonWidget variables description
+-----------
+
+- **column_class**
+    - **type**: string
+    - **default_value**: col-md-6
+    - **description**: The css class to apply to the column containing the button.
+    - **example**: col-md-6
+- **icon**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The icon inside the button. If empty, will not be displayed.
+    - **example**: fas fa-cloud
+- **button_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class to apply to the button.
+    - **example**: btn btn-outline-light
+- **button_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url of the button.
+    - **example**: #
+- **button_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the button. If empty, will not be displayed.
+    - **example**: Download Resume
+
+
+
+
+
+
+
 GlozzomPricingTableWidget
 ==============
 
@@ -3409,6 +3504,8 @@ MizuxeContactFormWidget screenshots
 ----------
 
 ![Screenshot mizuxe_one_column_contact_form.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeContactFormWidget/mizuxe_one_column_contact_form.png)
+
+![Screenshot portfoliogrid_contact_form.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/MizuxeContactFormWidget/portfoliogrid_contact_form.png)
 
 
 
