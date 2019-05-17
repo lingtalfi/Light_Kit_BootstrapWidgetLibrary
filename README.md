@@ -45,6 +45,11 @@ Related
 History Log
 =============
 
+
+- 1.0.0 -- 2019-05-17
+
+    - hello version 1
+    
 - 0.40.0 -- 2019-05-17
 
     - add FooterWithButtonWidget
