@@ -2,11 +2,11 @@
 
 
 /**
- * @var $this PicassoWidget
+ * @var $this PortfolioGridMainNavHeaderWidget
  */
 
 
-use Ling\Kit_PicassoWidget\Widget\PicassoWidget;
+use Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PortfolioGridMainNavHeaderWidget;
 
 $use_accordion = $z['use_accordion'] ?? true;
 $photo_url = $z['photo_url'] ?? "";
@@ -69,3 +69,4 @@ $links = $z['links'] ?? [];
         </div>
     </div>
 </header>
+

@@ -13,6 +13,13 @@ description: <
 
     We can disable the accordion system with the "use_accordion" property.
 
+    If the accordion system is used, I recommend to use a special layout
+    which contains as many zones as there are accordion links.
+    Then the id attribute of the zones should correspond to the accordion links urls.
+
+    Other implementation of the accordion are possible, of course.
+
+
 
 
 >

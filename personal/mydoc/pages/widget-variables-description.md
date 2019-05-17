@@ -43,6 +43,7 @@ Summary
 - [ParallaxHeaderWithVideoTriggerWidget](#parallaxheaderwithvideotriggerwidget)
 - [PeopleGridWidget](#peoplegridwidget)
 - [PhotoGalleryWidget](#photogallerywidget)
+- [PortfolioGridHeaderWithDescriptionWidget](#portfoliogridheaderwithdescriptionwidget)
 - [PortfolioGridMainNavHeaderWidget](#portfoliogridmainnavheaderwidget)
 - [ShowCaseCarouselWidget](#showcasecarouselwidget)
 - [SimpleFooterWidget](#simplefooterwidget)
@@ -4976,6 +4977,79 @@ PhotoGalleryWidget variables description
 
 
 
+PortfolioGridHeaderWithDescriptionWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#portfoliogridheaderwithdescriptionwidget-screenshots)
+- [Templates and skins](#portfoliogridheaderwithdescriptionwidget-templates-and-skins)
+- [Example](#portfoliogridheaderwithdescriptionwidget-configuration-example)
+- [Variables descriptions](#portfoliogridheaderwithdescriptionwidget-variables-description)
+
+
+
+PortfolioGridHeaderWithDescriptionWidget is a bootstrap 4 widget representing a header with a title and a description.
+
+
+
+
+
+PortfolioGridHeaderWithDescriptionWidget screenshots
+----------
+
+![Screenshot portfoliogrid_monochrome_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/PortfolioGridHeaderWithDescriptionWidget/portfoliogrid_monochrome_header.png)
+
+
+
+
+
+PortfolioGridHeaderWithDescriptionWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: portfoliogrid.byml
+
+
+PortfolioGridHeaderWithDescriptionWidget configuration example
+----------------
+
+```yaml
+name: portfoliogrid_header_with_description
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PortfolioGridHeaderWithDescriptionWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/PortfolioGridHeaderWithDescriptionWidget
+template: default.php
+vars:
+    attr:
+        class: bg-primary text-white
+
+    title: Welcome To My Page
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?
+```
+
+
+
+PortfolioGridHeaderWithDescriptionWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title. If empty, will not be displayed.
+    - **example**: Welcome To My Page
+- **description**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The description. If empty, will not be displayed.
+    - **example**: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident?
+
+
+
+
+
+
+
 PortfolioGridMainNavHeaderWidget
 ==============
 
@@ -5000,6 +5074,13 @@ The header contains the following element:
 
 
 We can disable the accordion system with the "use_accordion" property.
+
+If the accordion system is used, I recommend to use a special layout
+which contains as many zones as there are accordion links.
+Then the id attribute of the zones should correspond to the accordion links urls.
+
+Other implementation of the accordion are possible, of course.
+
 
 
 
