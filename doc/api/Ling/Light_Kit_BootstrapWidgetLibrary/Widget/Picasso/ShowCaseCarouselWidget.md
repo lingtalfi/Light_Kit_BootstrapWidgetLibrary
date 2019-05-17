@@ -4,7 +4,7 @@
 
 The ShowCaseCarouselWidget class
 ================
-2019-04-26 --> 2019-05-16
+2019-04-26 --> 2019-05-17
 
 
 
@@ -81,4 +81,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ShowCaseCarouselWidget
 
 SeeAlso
 ==============
-Previous class: [PhotoGalleryWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget.md)<br>Next class: [SimpleFooterWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md)<br>
+Previous class: [PortfolioGridMainNavHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridMainNavHeaderWidget.md)<br>Next class: [SimpleFooterWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SimpleFooterWidget.md)<br>

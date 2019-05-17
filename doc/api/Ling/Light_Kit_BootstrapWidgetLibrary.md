@@ -1,6 +1,6 @@
 Ling/Light_Kit_BootstrapWidgetLibrary
 ================
-2019-04-26 --> 2019-05-16
+2019-04-26 --> 2019-05-17
 
 
 
@@ -269,6 +269,24 @@ Table of contents
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [PortfolioGridHeaderWithDescriptionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridHeaderWithDescriptionWidget.md) &ndash; The PortfolioGridHeaderWithDescriptionWidget class.
+    - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
+    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
+    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
+    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
+    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [PortfolioGridMainNavHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridMainNavHeaderWidget.md) &ndash; The PortfolioGridMainNavHeaderWidget class.
+    - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
+    - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
+    - PicassoWidget::setCopilot &ndash; Sets the copilot.
+    - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
+    - PicassoWidget::prepare &ndash; Prepares the widget according to the given widget configuration.
+    - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
+    - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
+    - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
 - [ShowCaseCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget.md) &ndash; The ShowCaseCarouselWidget class.
     - [ShowCaseCarouselWidget::prepare](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget/prepare.md) &ndash; Prepares the widget according to the given widget configuration.
     - PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
@@ -305,6 +323,9 @@ Table of contents
     - ZephyrTemplateEngine::render &ndash; Parses the template identified by $resourceId and returns the interpreted template (the template with the variables injected in it).
     - ZephyrTemplateEngine::getErrors &ndash; Returns the errors of this instance.
     - ZephyrTemplateEngine::setDirectory &ndash; Sets the directory.
+- [BlogenFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil.md) &ndash; The BlogenFormWidgetUtil class.
+    - [BlogenFormWidgetUtil::printFields](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil/printFields.md) &ndash; Prints the fields of a form, as described in the BlogenFormWidget documentation.
+    - [BlogenFormWidgetUtil::printFieldsAsFieldsets](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil/printFieldsAsFieldsets.md) &ndash; Prints the fields of a form, as described in the BlogenFormWidget documentation, using a fieldset based markup.
 
 
 Dependencies

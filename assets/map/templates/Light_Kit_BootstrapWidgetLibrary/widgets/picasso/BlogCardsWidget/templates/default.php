@@ -18,7 +18,7 @@ $cardsCpt = 0;
 
 ?>
 
-<section class="kit-bwl-blog_cards <?php echo htmlspecialchars($this->getCssClass()); ?>"
+<section class="kit-bwl-blog_cards default <?php echo htmlspecialchars($this->getCssClass()); ?>"
     <?php echo $this->getAttributesHtml(); ?>
 >
     <div class="container">

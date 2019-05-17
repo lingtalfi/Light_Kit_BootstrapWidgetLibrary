@@ -2,7 +2,7 @@
 
 
 
-The PeopleGridWidget class
+The PortfolioGridHeaderWithDescriptionWidget class
 ================
 2019-04-26 --> 2019-05-17
 
@@ -14,7 +14,7 @@ The PeopleGridWidget class
 Introduction
 ============
 
-The PeopleGridWidget class.
+The PortfolioGridHeaderWithDescriptionWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">PeopleGridWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
+class <span class="pl-k">PortfolioGridHeaderWithDescriptionWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -74,9 +74,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PeopleGridWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PortfolioGridHeaderWithDescriptionWidget
 
 
 SeeAlso
 ==============
-Previous class: [ParallaxHeaderWithVideoTriggerWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ParallaxHeaderWithVideoTriggerWidget.md)<br>Next class: [PhotoGalleryWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget.md)<br>
+Previous class: [PhotoGalleryWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget.md)<br>Next class: [PortfolioGridMainNavHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridMainNavHeaderWidget.md)<br>

@@ -4,7 +4,7 @@
 
 The TwoColumnsAccordionWidget class
 ================
-2019-04-26 --> 2019-05-16
+2019-04-26 --> 2019-05-17
 
 
 
@@ -79,4 +79,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\TwoColumnsAccordionWidget
 
 SeeAlso
 ==============
-Previous class: [SlickTestimonialCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SlickTestimonialCarouselWidget.md)<br>
+Previous class: [SlickTestimonialCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/SlickTestimonialCarouselWidget.md)<br>Next class: [BlogenFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/BlogenFormWidgetUtil.md)<br>

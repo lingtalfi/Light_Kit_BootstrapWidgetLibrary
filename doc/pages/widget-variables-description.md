@@ -43,6 +43,7 @@ Summary
 - [ParallaxHeaderWithVideoTriggerWidget](#parallaxheaderwithvideotriggerwidget)
 - [PeopleGridWidget](#peoplegridwidget)
 - [PhotoGalleryWidget](#photogallerywidget)
+- [PortfolioGridMainNavHeaderWidget](#portfoliogridmainnavheaderwidget)
 - [ShowCaseCarouselWidget](#showcasecarouselwidget)
 - [SimpleFooterWidget](#simplefooterwidget)
 - [SlickTestimonialCarouselWidget](#slicktestimonialcarouselwidget)
@@ -495,9 +496,10 @@ The form is composed of:
 
 - a title
 - some fields
-- a footer containing a submit button
+- a submit button
 
-We can hide the footer (and the submit button inside of it) using the "show_footer" property.
+
+We can hide the submit button using the "show_submit_button" property.
 
 
 The fields of the form can have one of the following types:
@@ -523,6 +525,7 @@ Properties for the fields are:
 The fields of type "list" have an extra "options" property.
 
 The fields of type "file" have an extra "file_label" property.
+
 The fields of type "radio" have an extra "choices" property.
 
 
@@ -542,9 +545,9 @@ BlogenFormWidget screenshots
 
 BlogenFormWidget templates, skins, presets
 -----------
-- **Templates**: default.php, fieldset.php
+- **Templates**: default.php, fieldset.php, login.php
 - **Skins**: 
-- **Presets**: blogen.byml
+- **Presets**: blogen_details.byml, blogen_profile.byml
 
 
 BlogenFormWidget configuration example
@@ -621,6 +624,14 @@ BlogenFormWidget variables description
     - **default_value**: 
     - **description**: The css class to apply to the title.
     - **example**: bg-primary text-white
+- **form_column_class**
+    - **type**: string
+    - **default_value**: col
+    - **description**: The css class to apply to the column containing the form.
+We can use this to shape the form's width and responsiveness.
+You can use bootstrap 4 grid css classes.
+More on that at: https://getbootstrap.com/docs/4.0/layout/grid/
+    - **example**: col-md-6
 - **form_action**
     - **type**: string
     - **default_value**: 
@@ -684,15 +695,15 @@ BlogenFormWidget variables description
             - **default_value**: 
             - **description**: A message to display inside the input of type file.
             - **example**: Choose File
-- **show_footer**
+- **show_submit_button**
     - **type**: bool
     - **default_value**: true
-    - **description**: Whether to show the footer (containing the submit button). This might be used when you have a separate submit button provided by another widget.
+    - **description**: Whether to show the submit button.
     - **example**: true
-- **footer_class**
+- **submit_button_wrapper_class**
     - **type**: string
     - **default_value**: 
-    - **description**: The css class to apply to the footer of the form.
+    - **description**: The css class to apply to the element wrapping the submit button (if any, depends on the template).
     - **example**: text-right
 - **submit_btn_text**
     - **type**: string
@@ -4958,6 +4969,194 @@ PhotoGalleryWidget variables description
             - **default_value**: 
             - **description**: The value of the alt attribute for the photo.
             - **example**: photo-1
+
+
+
+
+
+
+
+PortfolioGridMainNavHeaderWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#portfoliogridmainnavheaderwidget-screenshots)
+- [Templates and skins](#portfoliogridmainnavheaderwidget-templates-and-skins)
+- [Example](#portfoliogridmainnavheaderwidget-configuration-example)
+- [Variables descriptions](#portfoliogridmainnavheaderwidget-variables-description)
+
+
+
+PortfolioGridMainNavHeaderWidget is a bootstrap 4 widget representing the main navigation header for a portfolio website.
+
+The header contains the following element:
+
+- the photo of the candidate on the left
+- a zone on the right on the photo, containing:
+    - the name and social icons links (facebook, twitter, ...)
+    - the role of the candidate
+    - the links to the page, which by default use the accordion system
+
+
+We can disable the accordion system with the "use_accordion" property.
+
+
+
+
+
+
+
+
+PortfolioGridMainNavHeaderWidget screenshots
+----------
+
+![Screenshot portfoliogrid_main_nav_header.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/PortfolioGridMainNavHeaderWidget/portfoliogrid_main_nav_header.png)
+
+
+
+
+
+PortfolioGridMainNavHeaderWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css
+- **Presets**: portfoliogrid.byml
+
+
+PortfolioGridMainNavHeaderWidget configuration example
+----------------
+
+```yaml
+name: portfoliogrid_main_nav_header
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PortfolioGridMainNavHeaderWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/PortfolioGridMainNavHeaderWidget
+template: default.php
+vars:
+    attr:
+        id: main-header
+
+    use_accordion: true
+    photo_url: /plugins/Light_Kit_Demo/portfoliogrid/img/person1.jpg
+    photo_alt: John Doe
+    name: John Doe
+    social_icons:
+        -
+            url: http://twitter.com
+            icon: fab fa-twitter
+
+        -
+            url: http://facebook.com
+            icon: fab fa-facebook
+
+        -
+            url: http://instagram.com
+            icon: fab fa-instagram
+
+        -
+            url: http://github.com
+            icon: fab fa-github
+
+
+    role: Experienced Full Stack Web Developer
+    links:
+        -
+            label: Home
+            icon: fas fa-home fa-2x d-block
+            url: "#home"
+            class: bg-primary
+
+        -
+            label: Resume
+            icon: fas fa-graduation-cap fa-2x d-block
+            url: "#resume"
+            class: bg-success
+
+        -
+            label: Work
+            icon: fas fa-folder-open fa-2x d-block
+            url: "#work"
+            class: bg-warning
+
+        -
+            label: Contact
+            icon: fas fa-envelope fa-2x d-block
+            url: "#contact"
+            class: bg-danger
+
+
+```
+
+
+
+PortfolioGridMainNavHeaderWidget variables description
+-----------
+
+- **use_accordion**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to make links use accordion.
+- **photo_url**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url of the photo.
+    - **example**: /plugins/Light_Kit_Demo/portfoliogrid/img/person1.jpg
+- **photo_alt**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The alt attribute of the photo.
+    - **example**: John Doe
+- **name**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The name.
+    - **example**: John Doe
+- **social_icons**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of social icons.
+    - **item_properties**
+        - **url**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The url of the social icon.
+            - **example**: http://twitter.com
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the social icon.
+            - **example**: fab fa-twitter
+- **role**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The role.
+    - **example**: Experienced Full Stack Web Developer
+- **links**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The array of links. If you use the accordion system, you must prefix links with the hash symbol (#)
+    - **item_properties**
+        - **label**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The text of the link.
+            - **example**: Home
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class for the icon of the link.
+            - **example**: fas fa-home fa-2x d-block
+        - **url**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The url of the link.
+            - **example**: #home
+        - **class**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The css class to apply to the link.
+            - **example**: bg-primary
 
 
 

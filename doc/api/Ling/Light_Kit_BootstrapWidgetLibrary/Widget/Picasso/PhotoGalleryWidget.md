@@ -4,7 +4,7 @@
 
 The PhotoGalleryWidget class
 ================
-2019-04-26 --> 2019-05-16
+2019-04-26 --> 2019-05-17
 
 
 
@@ -81,4 +81,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PhotoGalleryWidget
 
 SeeAlso
 ==============
-Previous class: [PeopleGridWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PeopleGridWidget.md)<br>Next class: [ShowCaseCarouselWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ShowCaseCarouselWidget.md)<br>
+Previous class: [PeopleGridWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PeopleGridWidget.md)<br>Next class: [PortfolioGridHeaderWithDescriptionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridHeaderWithDescriptionWidget.md)<br>

@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 0.35.0 -- 2019-05-17
+
+    - add PortfolioGridHeaderWithDescriptionWidget
+    
 - 0.34.0 -- 2019-05-16
 
     - update BlogenFormWidget, add show_form property, and radio type

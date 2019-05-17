@@ -2,6 +2,11 @@
 
 
 /**
+ * The peculiarity of this template is that the submit button is inside the form tag.
+ */
+
+
+/**
  * @var $this PicassoWidget
  */
 
@@ -18,11 +23,14 @@ $form_method = $z['form_method'] ?? "";
 $form_fields = $z['form_fields'] ?? [];
 $show_submit_button = $z['show_submit_button'] ?? true;
 $submit_button_wrapper_class = $z['submit_button_wrapper_class'] ?? '';
-$submit_btn_text = $z['submit_btn_text'] ?? 'Submit';
+$submit_btn_text = $z['submit_btn_text'] ?? '';
 $submit_btn_class = $z['submit_btn_class'] ?? '';
 
 
-$prefix = StringTool::getUniqueCssId("blogen_form_id-")
+$prefix = StringTool::getUniqueCssId("blogen_form_id-");
+
+
+
 
 ?>
 
@@ -41,21 +49,17 @@ $prefix = StringTool::getUniqueCssId("blogen_form_id-")
                     <div class="card-body">
                         <form action="<?php echo htmlspecialchars($form_action); ?>"
                               method="<?php echo htmlspecialchars($form_method); ?>">
+                            <?php BlogenFormWidgetUtil::printFields($this->copilot, $form_fields, $prefix); ?>
 
-                            <?php BlogenFormWidgetUtil::printFieldsAsFieldsets($this->copilot, $form_fields, $prefix); ?>
+
+
+
+                            <?php if (true === $show_submit_button): ?>
+                                <input type="submit" value="<?php echo htmlspecialchars($submit_btn_text); ?>"
+                                       class="<?php echo htmlspecialchars($submit_btn_class); ?>">
+                            <?php endif; ?>
                         </form>
                     </div>
-                    <?php if (true === $show_submit_button): ?>
-                        <div class="card-footer <?php echo htmlspecialchars($submit_button_wrapper_class); ?>">
-                            <?php if ($submit_btn_text): ?>
-                                <input type="submit" class="<?php echo htmlspecialchars($submit_btn_class); ?>"
-                                       data-dismiss="modal"
-                                       value="<?php echo htmlspecialchars($submit_btn_text); ?>"
-                                >
-                            <?php endif; ?>
-                        </div>
-                    <?php endif; ?>
-
                 </div>
             </div>
         </div>
