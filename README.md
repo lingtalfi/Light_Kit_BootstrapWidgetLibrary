@@ -46,6 +46,10 @@ History Log
 =============
 
 
+- 1.2.0 -- 2019-07-15
+
+    - add ZeroAdminHeaderNewMessagesIconLinkWidget
+    
 - 1.1.0 -- 2019-07-15
 
     - add ZeroAdminHeaderWidget
