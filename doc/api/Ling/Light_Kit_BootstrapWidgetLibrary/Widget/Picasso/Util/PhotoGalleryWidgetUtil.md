@@ -4,7 +4,7 @@
 
 The PhotoGalleryWidgetUtil class
 ================
-2019-04-26 --> 2019-05-17
+2019-04-26 --> 2019-07-15
 
 
 
@@ -50,4 +50,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\Util\PhotoGalleryWidgetUtil
 
 SeeAlso
 ==============
-Previous class: [MizuxeContactFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil.md)<br>
+Previous class: [MizuxeContactFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil.md)<br>Next class: [ZeroAdminHeaderNewMessagesIconLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderNewMessagesIconLinkWidget.md)<br>
