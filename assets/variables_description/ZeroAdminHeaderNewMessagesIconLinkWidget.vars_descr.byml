@@ -37,7 +37,7 @@ vars:
         description: The format of the header text. Using %s as the placeholder for the number of messages.
         example: You have %s messages
     model:
-        type: string
+        type: array
         default_value: none
         description: The array of messages. The example below uses the lazy reference resolver system from Light_Kit.
         example: (::METHOD_CALL::)Ling\Light_Kit_Admin\DataExtractor\MessagesDataExtractor->extractNewest(5)
