@@ -46,6 +46,10 @@ History Log
 =============
 
 
+- 1.4.0 -- 2019-07-15
+
+    - add ZeroAdminHeaderProfileDropdownLinkWidget
+    
 - 1.3.0 -- 2019-07-15
 
     - add ZeroAdminHeaderNewNotificationsIconLinkWidget
