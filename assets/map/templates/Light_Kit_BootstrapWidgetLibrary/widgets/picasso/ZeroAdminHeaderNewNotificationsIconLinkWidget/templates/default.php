@@ -31,7 +31,7 @@ $header_text = sprintf($header_text_format, $nbItems);
 ?>
 
 
-<li class="nav-item dropdown d-none d-md-inline-block pb-1 <?php echo htmlspecialchars($this->getCssClass()); ?>" <?php echo $this->getAttributesHtml(); ?>>
+<li class="kit-bwl-zeroadmin_new_notifications nav-item dropdown d-none d-md-inline-block pb-1 <?php echo htmlspecialchars($this->getCssClass()); ?>" <?php echo $this->getAttributesHtml(); ?>>
     <a class="nav-link" data-toggle="dropdown" href="#navlink" role="button" aria-haspopup="true"
        aria-expanded="true">
         <i class="<?php echo htmlspecialchars($icon); ?>"></i>

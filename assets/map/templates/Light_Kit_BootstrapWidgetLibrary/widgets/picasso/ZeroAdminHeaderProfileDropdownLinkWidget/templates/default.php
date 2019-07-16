@@ -22,7 +22,7 @@ $links = $z['links'] ?? [];
 ?>
 
 
-<li class="nav-item dropdown <?php echo htmlspecialchars($this->getCssClass()); ?>" <?php echo $this->getAttributesHtml(); ?>>
+<li class="nav-item dropdown kit-bwl-zeroadmin_profile_dropdown <?php echo htmlspecialchars($this->getCssClass()); ?>" <?php echo $this->getAttributesHtml(); ?>>
     <a class="nav-link nav-link" data-toggle="dropdown" href="#nowhere" role="button"
        aria-haspopup="true"
        aria-expanded="false">

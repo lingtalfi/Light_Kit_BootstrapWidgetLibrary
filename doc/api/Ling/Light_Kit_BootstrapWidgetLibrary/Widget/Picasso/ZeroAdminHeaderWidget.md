@@ -4,7 +4,7 @@
 
 The ZeroAdminHeaderWidget class
 ================
-2019-04-26 --> 2019-07-15
+2019-04-26 --> 2019-07-16
 
 
 
@@ -91,4 +91,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminHeaderWidget
 
 SeeAlso
 ==============
-Previous class: [ZeroAdminHeaderProfileDropdownLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderProfileDropdownLinkWidget.md)<br>
+Previous class: [ZeroAdminHeaderProfileDropdownLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderProfileDropdownLinkWidget.md)<br>Next class: [ZeroAdminSidebarWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminSidebarWidget.md)<br>
