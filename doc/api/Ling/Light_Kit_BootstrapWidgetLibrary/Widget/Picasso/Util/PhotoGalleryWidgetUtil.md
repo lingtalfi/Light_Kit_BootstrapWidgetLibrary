@@ -50,4 +50,4 @@ Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\Util\PhotoGalleryWidgetUtil
 
 SeeAlso
 ==============
-Previous class: [MizuxeContactFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil.md)<br>Next class: [ZeroAdminHeaderNewMessagesIconLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderNewMessagesIconLinkWidget.md)<br>
+Previous class: [MizuxeContactFormWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/MizuxeContactFormWidgetUtil.md)<br>Next class: [ZeroAdminBreadcrumbWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminBreadcrumbWidget.md)<br>

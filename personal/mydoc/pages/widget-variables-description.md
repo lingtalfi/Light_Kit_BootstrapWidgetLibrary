@@ -52,6 +52,7 @@ Summary
 - [SimpleFooterWidget](#simplefooterwidget)
 - [SlickTestimonialCarouselWidget](#slicktestimonialcarouselwidget)
 - [TwoColumnsAccordionWidget](#twocolumnsaccordionwidget)
+- [ZeroAdminBreadcrumbWidget](#zeroadminbreadcrumbwidget)
 - [ZeroAdminHeaderNewMessagesIconLinkWidget](#zeroadminheadernewmessagesiconlinkwidget)
 - [ZeroAdminHeaderNewNotificationsIconLinkWidget](#zeroadminheadernewnotificationsiconlinkwidget)
 - [ZeroAdminHeaderProfileDropdownLinkWidget](#zeroadminheaderprofiledropdownlinkwidget)
@@ -6356,6 +6357,150 @@ libero provident quis saepe voluptatum.
 
 
 
+ZeroAdminBreadcrumbWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#zeroadminbreadcrumbwidget-screenshots)
+- [Templates and skins](#zeroadminbreadcrumbwidget-templates-and-skins)
+- [Example](#zeroadminbreadcrumbwidget-configuration-example)
+- [Variables descriptions](#zeroadminbreadcrumbwidget-variables-description)
+
+
+
+ZeroAdminBreadcrumbWidget is a bootstrap 4 widget representing a breadcrumb in the style of the
+zeroadmin theme (https://www.templatemonster.com/admin-templates/zero-admin-template-82792.html).
+
+The widget is composed of two parts
+- a left part, with the breadcrumb links
+- a right part, with optional extra links
+
+
+The breadcrumb links structure is the following (from left to right):
+
+- first element (plain text)
+- (inner) breadcrumb links
+- last element (plain text)
+
+The optional extra links can have an icon.
+
+
+
+
+
+ZeroAdminBreadcrumbWidget screenshots
+----------
+
+![Screenshot zeroadmin-breadcrumb-widget-in-context.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminBreadcrumbWidget/zeroadmin-breadcrumb-widget-in-context.png)
+
+![Screenshot zeroadmin-breadcrumb-widget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminBreadcrumbWidget/zeroadmin-breadcrumb-widget.png)
+
+
+
+
+
+ZeroAdminBreadcrumbWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css, default.scss
+- **Presets**: 
+
+
+ZeroAdminBreadcrumbWidget configuration example
+----------------
+
+```yaml
+name: zeroadmin_breadcrumb
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminBreadcrumbWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminBreadcrumbWidget
+template: default.php
+vars:
+    first_element_text: Home
+    breadcrumb_links:
+        -
+            url: (::ROUTE::)/dashboard
+            text: Admin
+
+
+    last_element_text: Dashboard
+    extra_links:
+        -
+            url: (::ROUTE::)/pages/e-product-edit
+            text: Edit Page
+            icon: fas fa-edit
+
+        -
+            url: (::ROUTE::)/pages/u-profile
+            text: Profile
+            icon: far fa-address-card
+
+        -
+            url: (::ROUTE::)/plugins/plotly
+            text: Stats
+            icon: fas fa-chart-line
+
+
+```
+
+
+
+ZeroAdminBreadcrumbWidget variables description
+-----------
+
+- **first_element_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the first element of the breadcrumb.
+    - **example**: Home
+- **breadcrumb_links**
+    - **type**: item_list
+    - **default_value**
+    - **description**: The links in the middle of the breadcrumb.
+    - **item_properties**
+        - **url**
+            - **type**: string
+            - **default_value**: (mandatory)
+            - **description**: The url of the link.
+            - **example**: (::ROUTE::)/dashboard
+        - **text**
+            - **type**: string
+            - **default_value**: (mandatory)
+            - **description**: The text of the link.
+            - **example**: Admin
+- **last_element_text**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The text of the last element of the breadcrumb.
+    - **example**: Dashboard
+- **extra_links**
+    - **type**: item_list
+    - **default_value**
+    - **description**: Some extra plain links.
+    - **item_properties**
+        - **url**
+            - **type**: string
+            - **default_value**: (mandatory)
+            - **description**: The url of the link.
+            - **example**: (::ROUTE::)/pages/e-product-edit
+        - **text**
+            - **type**: string
+            - **default_value**: (mandatory)
+            - **description**: The text of the link.
+            - **example**: Edit Page
+        - **icon**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The icon class. If empty, the icon will not be displayed.
+            - **example**: fas fa-edit
+
+
+
+
+
+
+
 ZeroAdminHeaderNewMessagesIconLinkWidget
 ==============
 
@@ -6911,6 +7056,8 @@ The sidebar is composed of links, each of which having:
 
 ZeroAdminSidebarWidget screenshots
 ----------
+
+![Screenshot zeroadmin-sidebar-widget-in-context.gif](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminSidebarWidget/zeroadmin-sidebar-widget-in-context.gif)
 
 ![Screenshot zeroadmin-sidebar-widget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminSidebarWidget/zeroadmin-sidebar-widget.png)
 

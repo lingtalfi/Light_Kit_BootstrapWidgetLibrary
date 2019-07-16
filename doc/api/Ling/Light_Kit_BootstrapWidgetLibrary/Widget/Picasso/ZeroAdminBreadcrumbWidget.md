@@ -2,7 +2,7 @@
 
 
 
-The ZeroAdminHeaderNewMessagesIconLinkWidget class
+The ZeroAdminBreadcrumbWidget class
 ================
 2019-04-26 --> 2019-07-16
 
@@ -14,7 +14,7 @@ The ZeroAdminHeaderNewMessagesIconLinkWidget class
 Introduction
 ============
 
-The ZeroAdminHeaderNewMessagesIconLinkWidget class.
+The ZeroAdminBreadcrumbWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">ZeroAdminHeaderNewMessagesIconLinkWidget</span> extends EasyLightPicassoWidget implements KitPageRendererAwareInterface, [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php), WidgetConfAwarePicassoWidgetInterface {
+class <span class="pl-k">ZeroAdminBreadcrumbWidget</span> extends EasyLightPicassoWidget implements KitPageRendererAwareInterface, [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php), WidgetConfAwarePicassoWidgetInterface {
 
 - Inherited properties
     - protected Ling\Kit\PageRenderer\KitPageRendererInterface [EasyLightPicassoWidget::$kitPageRenderer](#property-kitPageRenderer) ;
@@ -86,9 +86,9 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminHeaderNewMessagesIconLinkWidget
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminBreadcrumbWidget
 
 
 SeeAlso
 ==============
-Previous class: [ZeroAdminBreadcrumbWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminBreadcrumbWidget.md)<br>Next class: [ZeroAdminHeaderNewNotificationsIconLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderNewNotificationsIconLinkWidget.md)<br>
+Previous class: [PhotoGalleryWidgetUtil](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/Util/PhotoGalleryWidgetUtil.md)<br>Next class: [ZeroAdminHeaderNewMessagesIconLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderNewMessagesIconLinkWidget.md)<br>

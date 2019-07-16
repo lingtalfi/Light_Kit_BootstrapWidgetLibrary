@@ -46,6 +46,10 @@ History Log
 =============
 
 
+- 1.6.0 -- 2019-07-16
+
+    - add ZeroAdminBreadcrumbWidget
+    
 - 1.5.0 -- 2019-07-16
 
     - add ZeroAdminSidebarWidget
