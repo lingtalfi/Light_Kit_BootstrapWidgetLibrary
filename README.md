@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.8.1 -- 2019-07-24
+
+    - update widget documentation with screenshot names.
+    
 - 1.8.0 -- 2019-07-24
 
     - add ZeroAdminNotificationAlertWidget
