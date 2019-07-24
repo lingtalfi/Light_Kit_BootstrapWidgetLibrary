@@ -2,7 +2,7 @@
 
 
 
-The PhotoGalleryWidget class
+The ZeroAdminNotificationAlertWidget class
 ================
 2019-04-26 --> 2019-07-24
 
@@ -14,7 +14,7 @@ The PhotoGalleryWidget class
 Introduction
 ============
 
-The PhotoGalleryWidget class.
+The ZeroAdminNotificationAlertWidget class.
 
 
 
@@ -22,17 +22,22 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">PhotoGalleryWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
+class <span class="pl-k">ZeroAdminNotificationAlertWidget</span> extends EasyLightPicassoWidget implements KitPageRendererAwareInterface, [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php), WidgetConfAwarePicassoWidgetInterface {
 
 - Inherited properties
+    - protected Ling\Kit\PageRenderer\KitPageRendererInterface [EasyLightPicassoWidget::$kitPageRenderer](#property-kitPageRenderer) ;
+    - protected array [WidgetConfAwarePicassoWidget::$widgetConf](#property-widgetConf) ;
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
     - protected array [PicassoWidget::$attr](#property-attr) ;
     - protected [Ling\HtmlPageTools\Copilot\HtmlPageCopilot](https://github.com/lingtalfi/HtmlPageTools/blob/master/doc/api/Ling/HtmlPageTools/Copilot/HtmlPageCopilot.md) [PicassoWidget::$copilot](#property-copilot) ;
 
-- Methods
-    - public [__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget/__construct.md)() : void
-
 - Inherited methods
+    - public EasyLightPicassoWidget::__construct() : void
+    - public EasyLightPicassoWidget::setKitPageRenderer(Ling\Kit\PageRenderer\KitPageRendererInterface $renderer) : void
+    - public EasyLightPicassoWidget::getKitPageRenderer() : Ling\Kit\PageRenderer\KitPageRendererInterface | null
+    - protected EasyLightPicassoWidget::getContainer() : Ling\Light\ServiceContainer\LightServiceContainerInterface
+    - public WidgetConfAwarePicassoWidget::setWidgetConf(array $widgetConf) : void
+    - public WidgetConfAwarePicassoWidget::getWidgetConf() : array
     - public PicassoWidget::getLibraries() : array
     - public PicassoWidget::setCopilot([Ling\HtmlPageTools\Copilot\HtmlPageCopilot](https://github.com/lingtalfi/HtmlPageTools/blob/master/doc/api/Ling/HtmlPageTools/Copilot/HtmlPageCopilot.md) $copilot) : void
     - public PicassoWidget::renderFile(string $filePath, array $variables = []) : false | string
@@ -56,7 +61,12 @@ class <span class="pl-k">PhotoGalleryWidget</span> extends [PicassoWidget](https
 Methods
 ==============
 
-- [PhotoGalleryWidget::__construct](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PhotoGalleryWidget/__construct.md) &ndash; Builds the PicassoWidget instance.
+- EasyLightPicassoWidget::__construct &ndash; Builds the EasyPicassoWidget instance.
+- EasyLightPicassoWidget::setKitPageRenderer &ndash; Sets the KitPageRenderer instance.
+- EasyLightPicassoWidget::getKitPageRenderer &ndash; 
+- EasyLightPicassoWidget::getContainer &ndash; Returns a light service container instance.
+- WidgetConfAwarePicassoWidget::setWidgetConf &ndash; Sets the widget configuration.
+- WidgetConfAwarePicassoWidget::getWidgetConf &ndash; Returns the widget configuration.
 - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
 - PicassoWidget::setCopilot &ndash; Sets the copilot.
 - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
@@ -76,11 +86,11 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PhotoGalleryWidget<br>
-See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\PhotoGalleryWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/PhotoGalleryWidget.php)
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminNotificationAlertWidget<br>
+See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminNotificationAlertWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/ZeroAdminNotificationAlertWidget.php)
 
 
 
 SeeAlso
 ==============
-Previous class: [PeopleGridWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PeopleGridWidget.md)<br>Next class: [PortfolioGridHeaderWithDescriptionWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/PortfolioGridHeaderWithDescriptionWidget.md)<br>
+Previous class: [ZeroAdminHeroGraphWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeroGraphWidget.md)<br>Next class: [ZeroAdminSidebarWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminSidebarWidget.md)<br>

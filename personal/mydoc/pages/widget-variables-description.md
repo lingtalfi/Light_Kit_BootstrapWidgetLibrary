@@ -57,6 +57,7 @@ Summary
 - [ZeroAdminHeaderNewNotificationsIconLinkWidget](#zeroadminheadernewnotificationsiconlinkwidget)
 - [ZeroAdminHeaderProfileDropdownLinkWidget](#zeroadminheaderprofiledropdownlinkwidget)
 - [ZeroAdminHeaderWidget](#zeroadminheaderwidget)
+- [ZeroAdminNotificationAlertWidget](#zeroadminnotificationalertwidget)
 - [ZeroAdminSidebarWidget](#zeroadminsidebarwidget)
 - [ZeroAdminStatSummaryIconWidget](#zeroadminstatsummaryiconwidget)
 
@@ -7015,6 +7016,99 @@ ZeroAdminHeaderWidget variables description
             - **default_value**: 
             - **description**: The icon of the link, or an empty string if the link doesn't use an icon.
             - **example**: fas fa-user
+
+
+
+
+
+
+
+ZeroAdminNotificationAlertWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#zeroadminnotificationalertwidget-screenshots)
+- [Templates and skins](#zeroadminnotificationalertwidget-templates-and-skins)
+- [Example](#zeroadminnotificationalertwidget-configuration-example)
+- [Variables descriptions](#zeroadminnotificationalertwidget-variables-description)
+
+
+
+ZeroAdmin NotificationAlert is a bootstrap 4 widget representing a notification alert for an admin website based on the zeroadmin theme (https://www.templatemonster.com/admin-templates/zero-admin-template-82792.html).
+An alert is composed of the following:
+- the title
+- the body
+
+We can decide whether the alert is dismissible.
+
+We can also set the alert class (to change the color of the alert for instance).
+
+For more info about alerts, please refer to the [bootstrap documentation for alerts](https://getbootstrap.com/docs/4.3/components/alerts/).
+
+
+
+
+
+
+ZeroAdminNotificationAlertWidget screenshots
+----------
+
+![Screenshot ZeroAdminNotificationAlertWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminNotificationAlertWidget/ZeroAdminNotificationAlertWidget.png)
+
+![Screenshot ZeroAdminNotificationAlertWidget_in_context.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminNotificationAlertWidget/ZeroAdminNotificationAlertWidget_in_context.png)
+
+
+
+
+
+ZeroAdminNotificationAlertWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: 
+
+
+ZeroAdminNotificationAlertWidget configuration example
+----------------
+
+```yaml
+name: zeroadmin_notification_alert
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminNotificationAlertWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminNotificationAlertWidget
+template: default.php
+vars:
+    alert_class: alert-primary
+    title: Well done!
+    body: A simple primary alert—check it out!
+    is_dismissible: true
+```
+
+
+
+ZeroAdminNotificationAlertWidget variables description
+-----------
+
+- **alert_class**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The alert class.
+    - **example**: alert-primary
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title of the alert.
+    - **example**: Well done!
+- **body**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The html content of the alert representing the body.
+    - **example**: A simple primary alert—check it out!
+- **is_dismissible**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether the alert to be dismissible.
 
 
 

@@ -4,7 +4,7 @@
 
 The BlogenSidebarIconCardsWidget class
 ================
-2019-04-26 --> 2019-07-18
+2019-04-26 --> 2019-07-24
 
 
 

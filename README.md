@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.8.0 -- 2019-07-24
+
+    - add ZeroAdminNotificationAlertWidget
+
 - 1.7.1 -- 2019-07-18
 
     - update docTools documentation, add links to source code for classes and methods
