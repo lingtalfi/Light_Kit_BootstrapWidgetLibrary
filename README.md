@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.11.1 -- 2019-07-25
+
+    - fix ZeroAdminLoginFormWidget template not showing the hidden var
+
 - 1.11.0 -- 2019-07-25
 
     - update ZeroAdminLoginFormWidget, add error_no_match_show, error_no_match_body, and value to the form fields

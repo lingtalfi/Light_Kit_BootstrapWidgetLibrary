@@ -50,6 +50,10 @@ $use_link_forgot_password = $z['use_link_forgot_password'] ?? true;
                 <div class="card p-4">
                     <form action="<?php echo htmlspecialchars($form_action); ?>"
                           method="<?php echo htmlspecialchars($form_method); ?>">
+
+
+                        <input type="hidden" name="<?php echo htmlspecialchars($hidden_var); ?>" value="any"/>
+
                         <div class="card-body">
                             <?php if ($title): ?>
                                 <h1><?php echo $title; ?></h1>
