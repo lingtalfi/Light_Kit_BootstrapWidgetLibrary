@@ -19,6 +19,22 @@ $delay = $z['delay'] ?? 30000;
 $delay = (int)$delay;
 
 $sDismiss = (true === $is_dismissible) ? "alert-dismissible fade show" : "";
+switch ($icon_color) {
+    case "success":
+        $icon_color = "#28a745";
+        break;
+    case "info":
+        $icon_color = "#007bff";
+        break;
+    case "warning":
+        $icon_color = "#ffc107";
+        break;
+    case "error":
+        $icon_color = "#dc3545";
+        break;
+    default:
+        break;
+}
 
 
 $hasHeader = (

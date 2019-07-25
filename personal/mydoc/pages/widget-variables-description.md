@@ -7202,6 +7202,11 @@ ZeroAdminNotificationToastWidget variables description
     - **type**: string
     - **default_value**: 
     - **description**: The css color for the icon. Note: the "color" css property will be used.
+We can also use the following special color codes:
+- success (green)
+- info (blue)
+- warning (yellow/orange)
+- error (red)
     - **example**: 
 - **body**
     - **type**: string
