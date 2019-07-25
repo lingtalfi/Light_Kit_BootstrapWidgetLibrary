@@ -7053,7 +7053,9 @@ The login form consists of:
 ZeroAdminLoginFormWidget screenshots
 ----------
 
-Image 1: ZeroAdminLoginFormWidget.png<br>![Screenshot ZeroAdminLoginFormWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget.png)
+Image 1: ZeroAdminLoginFormWidget-with-error.png<br>![Screenshot ZeroAdminLoginFormWidget-with-error.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget-with-error.png)
+
+Image 2: ZeroAdminLoginFormWidget.png<br>![Screenshot ZeroAdminLoginFormWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget.png)
 
 
 
@@ -7085,16 +7087,15 @@ vars:
         icon: fas fa-user
         name: username
         label: Username
-
     field_password:
         icon: fas fa-lock
         name: password
         label: Password
-
+    error_no_match_show: false
+    error_no_match_body: <strong>Nope!</strong> The provided credentials don't match an user in our database.
     btn_submit:
         class: btn btn-primary px-4
         text: Login
-
     use_link_forgot_password: true
     link_forgot_password:
         link: (::ROUTE::)/pages/b-forgot-password
@@ -7153,6 +7154,11 @@ in guessing which form was posted.
             - **default_value**: Username
             - **description**: The label/placeholder to use for this field.
             - **example**: Username
+        - **value**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The value of this field.
+            - **example**: Maurice
 - **field_password**
     - **type**: array
     - **default_value**
@@ -7173,6 +7179,20 @@ in guessing which form was posted.
             - **default_value**: Password
             - **description**: The label/placeholder to use for this field.
             - **example**: Password
+        - **value**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The value of this field.
+            - **example**: MauricePassword
+- **error_no_match_show**
+    - **type**: bool
+    - **default_value**: false
+    - **description**: Whether to show the "error no match" error.
+- **error_no_match_body**
+    - **type**: string
+    - **default_value**: <strong>Nope!</strong> The provided credentials don't match an user in our database.
+    - **description**: The html body for the "error no match" error.
+    - **example**: <strong>Nope!</strong> The provided credentials don't match an user in our database.
 - **btn_submit**
     - **type**: array
     - **default_value**

@@ -14,15 +14,19 @@ $form_action = $z['form_action'] ?? "";
 $hidden_var = $z['hidden_var'] ?? "zeroadmin_login_form";
 $title = $z['title'] ?? "Login";
 $subtitle = $z['subtitle'] ?? "Sign In to your account";
+$error_no_match_show = $z['error_no_match_show'] ?? false;
+$error_no_match_body = $z['error_no_match_body'] ?? "<strong>Nope!</strong> The provided credentials don't match an user in our database.";
 $field_username = $z['field_username'] ?? [
         "icon" => "fas fa-user",
         "name" => "username",
         "label" => "Username",
+        "value" => "",
     ];
 $field_password = $z['field_password'] ?? [
         "icon" => "fas fa-lock",
         "name" => "password",
         "label" => "Password",
+        "value" => "",
     ];
 $btn_submit = $z['btn_submit'] ?? [
         "class" => "btn btn-primary px-4",
@@ -54,6 +58,17 @@ $use_link_forgot_password = $z['use_link_forgot_password'] ?? true;
                                 <p class="text-muted"><?php echo $subtitle; ?></p>
                             <?php endif; ?>
 
+
+                            <?php if (true === $error_no_match_show): ?>
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <?php echo $error_no_match_body; ?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            <?php endif; ?>
+
+
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -62,7 +77,9 @@ $use_link_forgot_password = $z['use_link_forgot_password'] ?? true;
                                 </div>
                                 <input class="form-control" type="text"
                                        name="<?php echo htmlspecialchars($field_username['name']); ?>"
-                                       placeholder="<?php echo htmlspecialchars($field_username['label']); ?>">
+                                       placeholder="<?php echo htmlspecialchars($field_username['label']); ?>"
+                                       value="<?php echo htmlspecialchars($field_username['value']); ?>"
+                                >
                             </div>
                             <div class="input-group mb-4">
                                 <div class="input-group-prepend">
@@ -72,7 +89,9 @@ $use_link_forgot_password = $z['use_link_forgot_password'] ?? true;
                                 </div>
                                 <input class="form-control" type="password"
                                        name="<?php echo htmlspecialchars($field_password['name']); ?>"
-                                       placeholder="<?php echo htmlspecialchars($field_password['label']); ?>">
+                                       placeholder="<?php echo htmlspecialchars($field_password['label']); ?>"
+                                       value="<?php echo htmlspecialchars($field_password['value']); ?>"
+                                >
                             </div>
                             <div class="row">
                                 <div class="col-6">

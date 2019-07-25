@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.11.0 -- 2019-07-25
+
+    - update ZeroAdminLoginFormWidget, add error_no_match_show, error_no_match_body, and value to the form fields
+    
 - 1.10.0 -- 2019-07-25
 
     - add ZeroAdminLoginFormWidget

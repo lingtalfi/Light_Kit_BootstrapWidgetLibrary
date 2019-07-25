@@ -59,6 +59,11 @@ vars:
                 default_value: Username
                 description: The label/placeholder to use for this field.
                 example: Username
+            value:
+                type: string
+                default_value: ""
+                description: The value of this field.
+                example: Maurice
     field_password:
         type: array
         default_value: []
@@ -79,6 +84,20 @@ vars:
                 default_value: Password
                 description: The label/placeholder to use for this field.
                 example: Password
+            value:
+                type: string
+                default_value: ""
+                description: The value of this field.
+                example: MauricePassword
+    error_no_match_show:
+        type: bool
+        default_value: false
+        description: Whether to show the "error no match" error.
+    error_no_match_body:
+        type: string
+        default_value: <strong>Nope!</strong> The provided credentials don't match an user in our database.
+        description: The html body for the "error no match" error.
+        example: <strong>Nope!</strong> The provided credentials don't match an user in our database.
     btn_submit:
         type: array
         default_value: []
@@ -123,28 +142,27 @@ example: <
     className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminLoginFormWidget
     widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminLoginFormWidget
     template: default.php
-    vars: 
+    vars:
         form_method: post
         form_action: ""
         title: Login
         subtitle: Sign In to your account
         hidden_var: zeroadmin_login_form
-        field_username: 
+        field_username:
             icon: fas fa-user
             name: username
             label: Username
-        
-        field_password: 
+        field_password:
             icon: fas fa-lock
             name: password
             label: Password
-        
-        btn_submit: 
+        error_no_match_show: false
+        error_no_match_body: <strong>Nope!</strong> The provided credentials don't match an user in our database.
+        btn_submit:
             class: btn btn-primary px-4
             text: Login
-        
         use_link_forgot_password: true
-        link_forgot_password: 
+        link_forgot_password:
             link: (::ROUTE::)/pages/b-forgot-password
             text: Forgot password?
         
