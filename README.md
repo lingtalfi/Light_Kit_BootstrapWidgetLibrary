@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.9.0 -- 2019-07-25
+
+    - add ZeroAdminNotificationToastWidget
+    
 - 1.8.1 -- 2019-07-24
 
     - update widget documentation with screenshot names.
