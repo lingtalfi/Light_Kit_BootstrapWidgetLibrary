@@ -4,7 +4,7 @@
 
 The ZeroAdminNotificationAlertWidget class
 ================
-2019-04-26 --> 2019-07-24
+2019-04-26 --> 2019-07-25
 
 
 
@@ -93,4 +93,4 @@ See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\Zer
 
 SeeAlso
 ==============
-Previous class: [ZeroAdminHeroGraphWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeroGraphWidget.md)<br>Next class: [ZeroAdminSidebarWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminSidebarWidget.md)<br>
+Previous class: [ZeroAdminHeroGraphWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeroGraphWidget.md)<br>Next class: [ZeroAdminNotificationToastWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminNotificationToastWidget.md)<br>

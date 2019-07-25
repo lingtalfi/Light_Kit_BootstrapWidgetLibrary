@@ -58,6 +58,7 @@ Summary
 - [ZeroAdminHeaderProfileDropdownLinkWidget](#zeroadminheaderprofiledropdownlinkwidget)
 - [ZeroAdminHeaderWidget](#zeroadminheaderwidget)
 - [ZeroAdminNotificationAlertWidget](#zeroadminnotificationalertwidget)
+- [ZeroAdminNotificationToastWidget](#zeroadminnotificationtoastwidget)
 - [ZeroAdminSidebarWidget](#zeroadminsidebarwidget)
 - [ZeroAdminStatSummaryIconWidget](#zeroadminstatsummaryiconwidget)
 
@@ -7109,6 +7110,118 @@ ZeroAdminNotificationAlertWidget variables description
     - **type**: bool
     - **default_value**: true
     - **description**: Whether the alert to be dismissible.
+
+
+
+
+
+
+
+ZeroAdminNotificationToastWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#zeroadminnotificationtoastwidget-screenshots)
+- [Templates and skins](#zeroadminnotificationtoastwidget-templates-and-skins)
+- [Example](#zeroadminnotificationtoastwidget-configuration-example)
+- [Variables descriptions](#zeroadminnotificationtoastwidget-variables-description)
+
+
+
+ZeroAdmin ToastAlert is a bootstrap 4 widget representing a notification toast for an admin website based on the zeroadmin theme (https://www.templatemonster.com/admin-templates/zero-admin-template-82792.html).
+A toast is composed of the following:
+- the title
+- the icon
+- the body
+- the time string (for instance "11 mins ago")
+
+We can decide whether the toast is dismissible.
+For the icon, we can set the class, and the font color.
+
+Also we can specify the delay after which the toast disappears.
+
+
+
+
+
+
+ZeroAdminNotificationToastWidget screenshots
+----------
+
+Image 1: ZeroAdminNotificationToast.png<br>![Screenshot ZeroAdminNotificationToast.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminNotificationToastWidget/ZeroAdminNotificationToast.png)
+
+Image 2: ZeroAdminNotificationToast_in_context.png<br>![Screenshot ZeroAdminNotificationToast_in_context.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminNotificationToastWidget/ZeroAdminNotificationToast_in_context.png)
+
+
+
+
+
+ZeroAdminNotificationToastWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: 
+
+
+ZeroAdminNotificationToastWidget configuration example
+----------------
+
+```yaml
+name: zeroadmin_notification_toast
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminNotificationToastWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminNotificationToastWidget
+template: default.php
+vars:
+    title: Bootstrap
+    icon: fas fa-square
+    icon_color: "#007bff"
+    body: Hello, world! This is a toast message.
+    time_string: 11 mins ago
+    is_dismissible: true
+    delay: 30000
+```
+
+
+
+ZeroAdminNotificationToastWidget variables description
+-----------
+
+- **title**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The title of the toast. It empty, it will not be displayed.
+    - **example**: Bootstrap
+- **icon**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css class for the icon. If empty, the icon will not be displayed.
+    - **example**: fas fa-square
+- **icon_color**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The css color for the icon. Note: the "color" css property will be used.
+    - **example**: 
+- **body**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The body of the toast. You can use html.
+    - **example**: Hello, world! This is a toast message.
+- **time_string**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The time string to display in the header (next to the title). If empty, it will not be displayed.
+    - **example**: 11 mins ago
+- **is_dismissible**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether the toast is dismissible.
+- **delay**
+    - **type**: string
+    - **default_value**: 30000
+    - **description**: The delay before the toast disappears.
+    - **example**: 30000
 
 
 
