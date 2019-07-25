@@ -2,7 +2,7 @@
 
 
 
-The ZeroAdminNotificationAlertWidget class
+The ZeroAdminLoginFormWidget class
 ================
 2019-04-26 --> 2019-07-25
 
@@ -14,7 +14,7 @@ The ZeroAdminNotificationAlertWidget class
 Introduction
 ============
 
-The ZeroAdminNotificationAlertWidget class.
+The ZeroAdminLoginFormWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">ZeroAdminNotificationAlertWidget</span> extends EasyLightPicassoWidget implements KitPageRendererAwareInterface, [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php), WidgetConfAwarePicassoWidgetInterface {
+class <span class="pl-k">ZeroAdminLoginFormWidget</span> extends EasyLightPicassoWidget implements KitPageRendererAwareInterface, [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php), WidgetConfAwarePicassoWidgetInterface {
 
 - Inherited properties
     - protected Ling\Kit\PageRenderer\KitPageRendererInterface [EasyLightPicassoWidget::$kitPageRenderer](#property-kitPageRenderer) ;
@@ -86,11 +86,11 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminNotificationAlertWidget<br>
-See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminNotificationAlertWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/ZeroAdminNotificationAlertWidget.php)
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminLoginFormWidget<br>
+See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminLoginFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/ZeroAdminLoginFormWidget.php)
 
 
 
 SeeAlso
 ==============
-Previous class: [ZeroAdminLoginFormWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminLoginFormWidget.md)<br>Next class: [ZeroAdminNotificationToastWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminNotificationToastWidget.md)<br>
+Previous class: [ZeroAdminHeroGraphWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeroGraphWidget.md)<br>Next class: [ZeroAdminNotificationAlertWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminNotificationAlertWidget.md)<br>

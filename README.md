@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.10.0 -- 2019-07-25
+
+    - add ZeroAdminLoginFormWidget
+
 - 1.9.1 -- 2019-07-25
 
     - update ZeroAdminNotificationToastWidget, now understand color codes

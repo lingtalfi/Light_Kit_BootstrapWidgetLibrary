@@ -57,6 +57,7 @@ Summary
 - [ZeroAdminHeaderNewNotificationsIconLinkWidget](#zeroadminheadernewnotificationsiconlinkwidget)
 - [ZeroAdminHeaderProfileDropdownLinkWidget](#zeroadminheaderprofiledropdownlinkwidget)
 - [ZeroAdminHeaderWidget](#zeroadminheaderwidget)
+- [ZeroAdminLoginFormWidget](#zeroadminloginformwidget)
 - [ZeroAdminNotificationAlertWidget](#zeroadminnotificationalertwidget)
 - [ZeroAdminNotificationToastWidget](#zeroadminnotificationtoastwidget)
 - [ZeroAdminSidebarWidget](#zeroadminsidebarwidget)
@@ -7017,6 +7018,197 @@ ZeroAdminHeaderWidget variables description
             - **default_value**: 
             - **description**: The icon of the link, or an empty string if the link doesn't use an icon.
             - **example**: fas fa-user
+
+
+
+
+
+
+
+ZeroAdminLoginFormWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#zeroadminloginformwidget-screenshots)
+- [Templates and skins](#zeroadminloginformwidget-templates-and-skins)
+- [Example](#zeroadminloginformwidget-configuration-example)
+- [Variables descriptions](#zeroadminloginformwidget-variables-description)
+
+
+
+ZeroAdminLoginFormWidget is a bootstrap 4 widget representing a login form.
+The login form consists of:
+- a title
+- a subtitle
+- a username field
+- a password field
+- a login button
+- a forgot password link
+
+
+
+
+
+ZeroAdminLoginFormWidget screenshots
+----------
+
+Image 1: ZeroAdminLoginFormWidget.png<br>![Screenshot ZeroAdminLoginFormWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget.png)
+
+
+
+
+
+ZeroAdminLoginFormWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css, default.scss
+- **Presets**: 
+
+
+ZeroAdminLoginFormWidget configuration example
+----------------
+
+```yaml
+name: zeroadmin_login_form
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminLoginFormWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminLoginFormWidget
+template: default.php
+vars:
+    form_method: post
+    form_action: ""
+    title: Login
+    subtitle: Sign In to your account
+    hidden_var: zeroadmin_login_form
+    field_username:
+        icon: fas fa-user
+        name: username
+        label: Username
+
+    field_password:
+        icon: fas fa-lock
+        name: password
+        label: Password
+
+    btn_submit:
+        class: btn btn-primary px-4
+        text: Login
+
+    use_link_forgot_password: true
+    link_forgot_password:
+        link: (::ROUTE::)/pages/b-forgot-password
+        text: Forgot password?
+
+```
+
+
+
+ZeroAdminLoginFormWidget variables description
+-----------
+
+- **form_method**
+    - **type**: string
+    - **default_value**: post
+    - **description**: The http method to send the form. Possible values are: "post" and "get".
+    - **example**: post
+- **form_action**
+    - **type**: string
+    - **default_value**: 
+    - **description**: The url the form data should be redirected to when the form is submitted.
+    - **example**: /login_form
+- **title**
+    - **type**: string
+    - **default_value**: Login
+    - **description**: The title of the form.
+    - **example**: Login
+- **subtitle**
+    - **type**: string
+    - **default_value**: Sign In to your account
+    - **description**: The subtitle of the form.
+    - **example**: Sign In to your account
+- **hidden_var**
+    - **type**: string
+    - **default_value**: zeroadmin_login_form
+    - **description**: The key of an additional variable passed along with the form data, to help the application
+in guessing which form was posted.
+    - **example**: zeroadmin_login_form
+- **field_username**
+    - **type**: array
+    - **default_value**
+    - **description**: The username field.
+    - **properties**
+        - **icon**
+            - **type**: string
+            - **default_value**: fas fa-user
+            - **description**: The css class for the icon of this field.
+            - **example**: fas fa-user
+        - **name**
+            - **type**: string
+            - **default_value**: username
+            - **description**: The html name attribute for the input of this field.
+            - **example**: username
+        - **label**
+            - **type**: string
+            - **default_value**: Username
+            - **description**: The label/placeholder to use for this field.
+            - **example**: Username
+- **field_password**
+    - **type**: array
+    - **default_value**
+    - **description**: The password field.
+    - **properties**
+        - **icon**
+            - **type**: string
+            - **default_value**: fas fa-lock
+            - **description**: The css class for the icon of this field.
+            - **example**: fas fa-lock
+        - **name**
+            - **type**: string
+            - **default_value**: password
+            - **description**: The html name attribute for the input of this field.
+            - **example**: password
+        - **label**
+            - **type**: string
+            - **default_value**: Password
+            - **description**: The label/placeholder to use for this field.
+            - **example**: Password
+- **btn_submit**
+    - **type**: array
+    - **default_value**
+    - **description**: The submit button info.
+    - **properties**
+        - **class**
+            - **type**: string
+            - **default_value**: btn btn-primary px-4
+            - **description**: The css class to apply to the submit button.
+            - **example**: btn btn-primary px-4
+        - **text**
+            - **type**: string
+            - **default_value**: Login
+            - **description**: The text of the submit button.
+            - **example**: Login
+- **use_link_forgot_password**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the "forgot password" link.
+- **link_forgot_password**
+    - **type**: array
+    - **default_value**
+    - **description**: The forgot password link.
+    - **properties**
+        - **link**
+            - **type**: string
+            - **default_value**: 
+            - **description**: The url of the link.
+            - **example**
+                - (::ROUTE::)/pages/b-forgot-password
+                - /forgot-password
+        - **text**
+            - **type**: string
+            - **default_value**: Forgot password?
+            - **description**: The text of the "forgot password" link.
+            - **example**: Forgot password?
 
 
 
