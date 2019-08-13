@@ -107,7 +107,7 @@ $use_link_forgot_password = $z['use_link_forgot_password'] ?? true;
                                 <?php if ($use_link_forgot_password): ?>
                                     <div class="col-6 text-right">
                                         <a href="<?php echo htmlspecialchars($link_forgot_password['link']); ?>"
-                                           class="btn btn-link px-0" type="button">
+                                           class="btn btn-link px-0">
                                             <?php echo $link_forgot_password['text']; ?>
                                         </a>
                                     </div>

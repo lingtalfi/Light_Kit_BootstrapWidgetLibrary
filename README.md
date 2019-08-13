@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.13.0 -- 2019-08-13
+
+    - add ZeroAdminBigNotificationWidget
+    
 - 1.12.0 -- 2019-07-30
 
     - add ChloroformWidget

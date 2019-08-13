@@ -53,6 +53,7 @@ Summary
 - [SimpleFooterWidget](#simplefooterwidget)
 - [SlickTestimonialCarouselWidget](#slicktestimonialcarouselwidget)
 - [TwoColumnsAccordionWidget](#twocolumnsaccordionwidget)
+- [ZeroAdminBigNotificationWidget](#zeroadminbignotificationwidget)
 - [ZeroAdminBreadcrumbWidget](#zeroadminbreadcrumbwidget)
 - [ZeroAdminHeaderNewMessagesIconLinkWidget](#zeroadminheadernewmessagesiconlinkwidget)
 - [ZeroAdminHeaderNewNotificationsIconLinkWidget](#zeroadminheadernewnotificationsiconlinkwidget)
@@ -6432,6 +6433,114 @@ libero provident quis saepe voluptatum.
             - **type**: bool
             - **default_value**: false
             - **description**: Whether to open the item by default (when the page loads).
+
+
+
+
+
+
+
+ZeroAdminBigNotificationWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#zeroadminbignotificationwidget-screenshots)
+- [Templates and skins](#zeroadminbignotificationwidget-templates-and-skins)
+- [Example](#zeroadminbignotificationwidget-configuration-example)
+- [Variables descriptions](#zeroadminbignotificationwidget-variables-description)
+
+
+
+ZeroAdminBigNotificationWidget is a bootstrap 4 widget representing a big notification.
+It is meant to be the only notification on the screen.
+
+We can set a title, an icon and a text, and specify a css class to add.
+
+The default styles includes some coloring classes:
+- **.big-notif-success**
+- **.big-notif-info**
+- **.big-notif-warning**
+- **.big-notif-error**
+
+
+
+
+
+ZeroAdminBigNotificationWidget screenshots
+----------
+
+Image 1: ZeroAdminBigNotificationWidget-in-context.png<br>![Screenshot ZeroAdminBigNotificationWidget-in-context.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminBigNotificationWidget/ZeroAdminBigNotificationWidget-in-context.png)
+
+Image 2: ZeroAdminBigNotificationWidget.png<br>![Screenshot ZeroAdminBigNotificationWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminBigNotificationWidget/ZeroAdminBigNotificationWidget.png)
+
+
+
+
+
+ZeroAdminBigNotificationWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css, default.scss
+- **Presets**: 
+
+
+ZeroAdminBigNotificationWidget configuration example
+----------------
+
+```yaml
+name: zeroadmin_bignotification
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminBigNotificationWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminBigNotificationWidget
+template: default.php
+_descr: <
+    ZeroAdminBigNotificationWidget is a bootstrap 4 widget representing a big notification.
+    It is meant to be the only notification on the screen.
+
+    We can set a title, an icon and a text, and specify a css class to add.
+
+    The default styles includes some coloring classes:
+    - **.big-notif-success**
+    - **.big-notif-info**
+    - **.big-notif-warning**
+    - **.big-notif-error**
+
+
+
+>
+vars:
+    container_class: big-notif-warning
+    icon: far fa-grimace
+    title: Oops!
+    text: Something went wrong...
+```
+
+
+
+ZeroAdminBigNotificationWidget variables description
+-----------
+
+- **container_class**
+    - **type**: string
+    - **default_value**: big-notif-warning
+    - **description**: The css class to apply to the notification container class.
+    - **example**: big-notif-warning
+- **icon**
+    - **type**: string
+    - **default_value**: far fa-grimace
+    - **description**: The css class of the icon. If empty, the icon will not be displayed.
+    - **example**: far fa-grimace
+- **title**
+    - **type**: string
+    - **default_value**: Oops!
+    - **description**: The title. If empty, the title will not be displayed.
+    - **example**: Oops!
+- **text**
+    - **type**: string
+    - **default_value**: Something went wrong...
+    - **description**: The text. If empty, the text will not be displayed.
+    - **example**: Something went wrong...
 
 
 
