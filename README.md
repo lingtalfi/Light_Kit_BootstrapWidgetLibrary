@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.13.1 -- 2019-08-13
+
+    - fix ZeroAdminBigNotificationWidget example typo
+    
 - 1.13.0 -- 2019-08-13
 
     - add ZeroAdminBigNotificationWidget

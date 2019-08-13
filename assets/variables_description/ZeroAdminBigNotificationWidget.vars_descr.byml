@@ -41,21 +41,6 @@ example: <
     className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminBigNotificationWidget
     widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminBigNotificationWidget
     template: default.php
-    _descr: <
-        ZeroAdminBigNotificationWidget is a bootstrap 4 widget representing a big notification.
-        It is meant to be the only notification on the screen.
-    
-        We can set a title, an icon and a text, and specify a css class to add.
-    
-        The default styles includes some coloring classes:
-        - **.big-notif-success**
-        - **.big-notif-info**
-        - **.big-notif-warning**
-        - **.big-notif-error**
-    
-    
-    
-    >
     vars: 
         container_class: big-notif-warning
         icon: far fa-grimace
