@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.14.1 -- 2019-10-29
+
+    - fix typo 
+    
 - 1.14.0 -- 2019-10-29
 
     - add LightRealistWidget 
