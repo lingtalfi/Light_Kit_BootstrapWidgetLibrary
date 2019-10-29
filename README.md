@@ -45,6 +45,14 @@ Related
 History Log
 =============
 
+- 1.14.0 -- 2019-10-29
+
+    - add LightRealistWidget 
+    
+- 1.13.2 -- 2019-09-04
+
+    - fix widgets using copilot from constructor 
+    
 - 1.13.2 -- 2019-09-04
 
     - fix widgets using copilot from constructor 

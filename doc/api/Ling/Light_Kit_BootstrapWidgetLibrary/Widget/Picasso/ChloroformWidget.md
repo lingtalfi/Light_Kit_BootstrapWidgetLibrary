@@ -4,7 +4,7 @@
 
 The ChloroformWidget class
 ================
-2019-04-26 --> 2019-09-04
+2019-04-26 --> 2019-10-29
 
 
 
@@ -43,11 +43,11 @@ class <span class="pl-k">ChloroformWidget</span> extends [EasyLightPicassoWidget
     - public WidgetConfAwarePicassoWidget::getWidgetConf() : array
     - public PicassoWidget::getLibraries() : array
     - public PicassoWidget::setCopilot([Ling\HtmlPageTools\Copilot\HtmlPageCopilot](https://github.com/lingtalfi/HtmlPageTools/blob/master/doc/api/Ling/HtmlPageTools/Copilot/HtmlPageCopilot.md) $copilot) : void
-    - public PicassoWidget::renderFile(string $filePath, array $variables = []) : false | string
-    - protected PicassoWidget::getAttributesHtml(bool $excludeClass = true) : string
+    - public PicassoWidget::renderFile(string $filePath, ?array $variables = []) : false | string
+    - protected PicassoWidget::getAttributesHtml(?bool $excludeClass = true) : string
     - protected PicassoWidget::getCssClass() : string
     - protected PicassoWidget::registerLibrary(string $libraryName, array $css, array $js) : void
-    - public ZephyrTemplateEngine::render(string $resourceId, array $variables = []) : false | string
+    - public ZephyrTemplateEngine::render(string $resourceId, ?array $variables = []) : false | string
     - public ZephyrTemplateEngine::getErrors() : array
     - public ZephyrTemplateEngine::setDirectory(string $directory) : void
     - protected ZephyrTemplateEngine::interpret(string $___path, array $z) : false | string
