@@ -45,6 +45,11 @@ Related
 History Log
 =============
 
+- 1.15.0 -- 2019-10-29
+
+    - update ChloroformWidget, now you can opt in the helium assets
+    - update ChloroformWidget, add helium light template
+    
 - 1.14.1 -- 2019-10-29
 
     - fix typo 

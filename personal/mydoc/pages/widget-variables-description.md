@@ -1663,7 +1663,7 @@ Image 1: Chloroform.png<br>![Screenshot Chloroform.png](https://lingtalfi.com/im
 
 ChloroformWidget templates, skins, presets
 -----------
-- **Templates**: default.php
+- **Templates**: default.php, helium_light.php
 - **Skins**: 
 - **Presets**: 
 
