@@ -13,6 +13,7 @@ use Ling\Light_Realist\Rendering\RealistListRendererInterface;
 /**
  * @var $renderer RealistListRendererInterface
  */
+
 $renderer = $z['renderer'] ?? null;
 $requestDeclarationId = $z['request_declaration_id'] ?? null;
 
