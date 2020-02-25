@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 
+2019-04-26 -> 2020-02-25
 
 
 
@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.15.2 -- 2020-02-25
+
+    - fix ZeroAdminSidebarWidget not displaying the is_active/is_opened status of menu items
+    
 - 1.15.1 -- 2019-11-07
 
     - fix ZeroAdminHeaderWidget html typo

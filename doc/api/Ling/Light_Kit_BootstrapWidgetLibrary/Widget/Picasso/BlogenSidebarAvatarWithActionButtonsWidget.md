@@ -4,7 +4,7 @@
 
 The BlogenSidebarAvatarWithActionButtonsWidget class
 ================
-2019-04-26 --> 2019-11-07
+2019-04-26 --> 2020-02-25
 
 
 
