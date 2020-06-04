@@ -203,6 +203,8 @@ I then copy paste that prototype and put it here:
   
 - my_app/universe/Ling/Light_Kit_BootstrapWidgetLibrary/assets/variables_description/IconTeaserWidget.vars_descr.byml
 
+(don't forget to remove the prototype extension).
+
 I then paste my previous description (the one created in the page configuration file) instead of the generated one.
 
 And then I don't forget to remove the **_descr** property from the page configuration file (it served its purpose). 

@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.17.1 -- 2020-06-04
+
+    - update how-to-create-widget-document 
+    
 - 1.17.0 -- 2020-06-04
 
     - add ZeroAdminForgottenPasswordWidget 
