@@ -188,7 +188,7 @@ copy-pasting has always proven being very useful).
 
 
 
-7. Then I create the description file, using this little code (which needs to be adapted depending on the page I'm working on):
+7. Then I create the description file, starting with this little code (which needs to be adapted depending on the page I'm working on):
 
  ```php
  //$pageConfFile = "/komin/jin_site_demo/config/kit/pages/Light_Kit_Demo/looplab/looplab_home.byml";
@@ -197,6 +197,9 @@ copy-pasting has always proven being very useful).
  //$o->generate($pageConfFile, $outputDir);
  //az();
  ```
+ 
+ 
+And then filling the fields by hand.
  
 I put that code at the top of my index.php, and uncomment it just to create the description prototype in /tmp/assets;
 I then copy paste that prototype and put it here:

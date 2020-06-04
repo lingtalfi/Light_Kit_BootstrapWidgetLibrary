@@ -11,6 +11,8 @@ $title = $z['title'] ?? "Forgot password";
 $description = $z['description'] ?? "Enter your email address and your password will be reset and emailed to you.";
 $btnText = $z['btnText'] ?? "Send new password";
 $inputPlaceholder = $z['inputPlaceholder'] ?? "Email";
+$formMethod = $z['formMethod'] ?? "POST";
+$formAction = $z['formAction'] ?? "";
 
 
 ?>
@@ -34,14 +36,17 @@ $inputPlaceholder = $z['inputPlaceholder'] ?? "Email";
                         <div class="row">
 
                             <div class="col-lg-12">
-                                <form class="m-t" role="form" method="post" action="/?p=pages/b-forgot-password">
+                                <form class="m-t" role="form" method="<?php echo htmlspecialchars($z['formMethod']); ?>"
+                                      action="<?php echo htmlspecialchars($z['formAction']); ?>"
+                                >
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fas fa-envelope"></i>
                             </span>
                                         </div>
-                                        <input class="form-control" type="text" placeholder="<?php echo htmlspecialchars($inputPlaceholder); ?>">
+                                        <input class="form-control" type="text"
+                                               placeholder="<?php echo htmlspecialchars($inputPlaceholder); ?>">
                                     </div>
 
                                     <button type="submit"
