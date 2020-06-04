@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2020-02-25
+2019-04-26 -> 2020-06-04
 
 
 
@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.16.0 -- 2020-06-04
+
+    - adapt HasDualPaneWidget to Light_AjaxHandler v2
+    
 - 1.15.2 -- 2020-02-25
 
     - fix ZeroAdminSidebarWidget not displaying the is_active/is_opened status of menu items
