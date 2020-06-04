@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.17.0 -- 2020-06-04
+
+    - add ZeroAdminForgottenPasswordWidget 
+    
 - 1.16.0 -- 2020-06-04
 
     - adapt HasDualPaneWidget to Light_AjaxHandler v2

@@ -1,6 +1,6 @@
 Bootstrap Widget Library
 =============
-2019-05-01
+2019-05-01 -> 2020-06-04
 
 
 
@@ -56,6 +56,7 @@ Summary
 - [TwoColumnsAccordionWidget](#twocolumnsaccordionwidget)
 - [ZeroAdminBigNotificationWidget](#zeroadminbignotificationwidget)
 - [ZeroAdminBreadcrumbWidget](#zeroadminbreadcrumbwidget)
+- [ZeroAdminForgottenPasswordWidget](#zeroadminforgottenpasswordwidget)
 - [ZeroAdminHeaderNewMessagesIconLinkWidget](#zeroadminheadernewmessagesiconlinkwidget)
 - [ZeroAdminHeaderNewNotificationsIconLinkWidget](#zeroadminheadernewnotificationsiconlinkwidget)
 - [ZeroAdminHeaderProfileDropdownLinkWidget](#zeroadminheaderprofiledropdownlinkwidget)
@@ -6754,6 +6755,100 @@ ZeroAdminBreadcrumbWidget variables description
             - **default_value**: 
             - **description**: The icon class. If empty, the icon will not be displayed.
             - **example**: fas fa-edit
+
+
+
+
+
+
+
+ZeroAdminForgottenPasswordWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#zeroadminforgottenpasswordwidget-screenshots)
+- [Templates and skins](#zeroadminforgottenpasswordwidget-templates-and-skins)
+- [Example](#zeroadminforgottenpasswordwidget-configuration-example)
+- [Variables descriptions](#zeroadminforgottenpasswordwidget-variables-description)
+
+
+
+ZeroAdminForgottenPasswordWidget is a bootstrap 4 widget that displays a form to reset your password.
+
+
+
+
+
+ZeroAdminForgottenPasswordWidget screenshots
+----------
+
+Image 1: ZeroAdminForgottenPasswordWidget.png<br>![Screenshot ZeroAdminForgottenPasswordWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminForgottenPasswordWidget/ZeroAdminForgottenPasswordWidget.png)
+
+
+
+
+
+ZeroAdminForgottenPasswordWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: default.css, default.scss
+- **Presets**: 
+
+
+ZeroAdminForgottenPasswordWidget configuration example
+----------------
+
+```yaml
+name: zeroadmin_forgotten_password
+type: picasso
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminForgottenPasswordWidget
+widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminForgottenPasswordWidget
+template: default.php
+vars:
+    form_method: post
+    form_action: ""
+    title: Login
+    description: Enter your email address and your password will be reset and emailed to you.
+    btnText: Send new password
+    inputPlaceholder: Email
+```
+
+
+
+ZeroAdminForgottenPasswordWidget variables description
+-----------
+
+- **form_method**
+    - **type**: string
+    - **default_value**: post
+    - **description**: todo: here
+    - **example**: post
+- **form_action**
+    - **type**: string
+    - **default_value**: 
+    - **description**: todo: here
+    - **example**: 
+- **title**
+    - **type**: string
+    - **default_value**: Login
+    - **description**: todo: here
+    - **example**: Login
+- **description**
+    - **type**: string
+    - **default_value**: Enter your email address and your password will be reset and emailed to you.
+    - **description**: todo: here
+    - **example**: Enter your email address and your password will be reset and emailed to you.
+- **btnText**
+    - **type**: string
+    - **default_value**: Send new password
+    - **description**: todo: here
+    - **example**: Send new password
+- **inputPlaceholder**
+    - **type**: string
+    - **default_value**: Email
+    - **description**: todo: here
+    - **example**: Email
 
 
 
