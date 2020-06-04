@@ -93,4 +93,4 @@ See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\Zer
 
 SeeAlso
 ==============
-Previous class: [ZeroAdminBreadcrumbWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminBreadcrumbWidget.md)<br>Next class: [ZeroAdminHeaderNewNotificationsIconLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderNewNotificationsIconLinkWidget.md)<br>
+Previous class: [ZeroAdminForgottenPasswordWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminForgottenPasswordWidget.md)<br>Next class: [ZeroAdminHeaderNewNotificationsIconLinkWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/ZeroAdminHeaderNewNotificationsIconLinkWidget.md)<br>
