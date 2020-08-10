@@ -2,7 +2,7 @@
 
 
 
-The BlogenSidebarAvatarWithActionButtonsWidget class
+The HelloWorldWidget class
 ================
 2019-04-26 --> 2020-08-10
 
@@ -14,7 +14,7 @@ The BlogenSidebarAvatarWithActionButtonsWidget class
 Introduction
 ============
 
-The BlogenSidebarAvatarWithActionButtonsWidget class.
+The HelloWorldWidget class.
 
 
 
@@ -22,7 +22,7 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">BlogenSidebarAvatarWithActionButtonsWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
+class <span class="pl-k">HelloWorldWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
 
 - Inherited properties
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
@@ -74,11 +74,11 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSidebarAvatarWithActionButtonsWidget<br>
-See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\BlogenSidebarAvatarWithActionButtonsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/BlogenSidebarAvatarWithActionButtonsWidget.php)
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\HelloWorldWidget<br>
+See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\HelloWorldWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/HelloWorldWidget.php)
 
 
 
 SeeAlso
 ==============
-Previous class: [BlogenSearchHeaderWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSearchHeaderWidget.md)<br>Next class: [BlogenSidebarIconCardsWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/BlogenSidebarIconCardsWidget.md)<br>
+Previous class: [HasDualPaneWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/HasDualPaneWidget.md)<br>Next class: [IconTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/IconTeaserWidget.md)<br>

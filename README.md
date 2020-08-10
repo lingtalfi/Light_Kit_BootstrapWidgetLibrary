@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2020-06-04
+2019-04-26 -> 2020-08-10
 
 
 
@@ -44,6 +44,10 @@ Related
 
 History Log
 =============
+
+- 1.18.0 -- 2020-08-10
+
+    - add HelloWorldWidget
 
 - 1.17.2 -- 2020-06-04
 
