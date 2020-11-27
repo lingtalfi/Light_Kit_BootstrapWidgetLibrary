@@ -1,6 +1,6 @@
 Bootstrap Widget Library
 =============
-2019-05-01 -> 2020-08-10
+2019-05-01 -> 2020-11-27
 
 
 
@@ -6747,24 +6747,24 @@ vars:
     first_element_text: Home
     breadcrumb_links:
         -
-            url: (::ROUTE::)/dashboard
+            url: ::(@reverse_router->getUrl(/dashboard))::
             text: Admin
 
 
     last_element_text: Dashboard
     extra_links:
         -
-            url: (::ROUTE::)/pages/e-product-edit
+            url: ::(@reverse_router->getUrl(/pages/e-product-edit))::
             text: Edit Page
             icon: fas fa-edit
 
         -
-            url: (::ROUTE::)/pages/u-profile
+            url: ::(@reverse_router->getUrl(/pages/u-profile))::
             text: Profile
             icon: far fa-address-card
 
         -
-            url: (::ROUTE::)/plugins/plotly
+            url: ::(@reverse_router->getUrl(/plugins/plotly))::
             text: Stats
             icon: fas fa-chart-line
 
@@ -6790,7 +6790,7 @@ ZeroAdminBreadcrumbWidget variables description
             - **type**: string
             - **default_value**: (mandatory)
             - **description**: The url of the link.
-            - **example**: (::ROUTE::)/dashboard
+            - **example**: ::(@reverse_router->getUrl(/dashboard))::
         - **text**
             - **type**: string
             - **default_value**: (mandatory)
@@ -6810,7 +6810,7 @@ ZeroAdminBreadcrumbWidget variables description
             - **type**: string
             - **default_value**: (mandatory)
             - **description**: The url of the link.
-            - **example**: (::ROUTE::)/pages/e-product-edit
+            - **example**: ::(@reverse_router->getUrl(/pages/e-product-edit))::
         - **text**
             - **type**: string
             - **default_value**: (mandatory)
@@ -7005,8 +7005,8 @@ vars:
     icon: fas fa-envelope
     badge: badge badge-pill badge-warning
     header_text_format: You have %s messages
-    model: (::METHOD_CALL::)Ling\Light_Kit_Admin\DataExtractor\MessagesDataExtractor->extractNewest(5)
-    view_all_link: (::ROUTE::)/pages/m-inbox
+    model: ::(Ling\Light_Kit_Admin\DataExtractor\MessagesDataExtractor->extractNewest(5))::
+    view_all_link: ::(@reverse_router->getUrl(/pages/m-inbox))::
     view_all_text: Read All Messages
     view_all_icon: fas fa-envelope
 ```
@@ -7035,13 +7035,13 @@ ZeroAdminHeaderNewMessagesIconLinkWidget variables description
     - **type**: array
     - **default_value**: none
     - **description**: The array of messages. The example below uses the lazy reference resolver system from Light_Kit.
-    - **example**: (::METHOD_CALL::)Ling\Light_Kit_Admin\DataExtractor\MessagesDataExtractor->extractNewest(5)
+    - **example**: ::(Ling\Light_Kit_Admin\DataExtractor\MessagesDataExtractor->extractNewest(5))::
 - **view_all_link**
     - **type**: string
     - **default_value**: 
     - **description**: The url leading to all the messages. If empty, the "view all" link will not be displayed.
 The example below uses the lazy reference resolver system from Light_Kit.
-    - **example**: (::ROUTE::)/pages/m-inbox
+    - **example**: ::(@reverse_router->getUrl(/pages/m-inbox))::
 - **view_all_text**
     - **type**: string
     - **default_value**: Read All
@@ -7120,8 +7120,8 @@ vars:
     icon: fas fa-bell
     badge: badge badge-pill badge-danger
     header_text_format: You have %s notifications
-    model: (::METHOD_CALL::)Ling\Light_Kit_Admin\DataExtractor\NotificationsDataExtractor->extractNewest(5)
-    view_all_link: (::ROUTE::)/pages/u-issue-tracker
+    model: ::(Ling\Light_Kit_Admin\DataExtractor\NotificationsDataExtractor->extractNewest(5))::
+    view_all_link: ::(@reverse_router->getUrl(/pages/u-issue-tracker))::
     view_all_text: View All notifications
 ```
 
@@ -7149,13 +7149,13 @@ ZeroAdminHeaderNewNotificationsIconLinkWidget variables description
     - **type**: array
     - **default_value**: none
     - **description**: The array of notifications. The example below uses the lazy reference resolver system from Light_Kit.
-    - **example**: (::METHOD_CALL::)Ling\Light_Kit_Admin\DataExtractor\NotificationsDataExtractor->extractNewest(5)
+    - **example**: ::(Ling\Light_Kit_Admin\DataExtractor\NotificationsDataExtractor->extractNewest(5))::
 - **view_all_link**
     - **type**: string
     - **default_value**: 
     - **description**: The url leading to all the notifications. If empty, the "view all" link will not be displayed.
 The example below uses the lazy reference resolver system from Light_Kit.
-    - **example**: (::ROUTE::)/pages/u-issue-tracker
+    - **example**: ::(@reverse_router->getUrl(/pages/u-issue-tracker))::
 - **view_all_text**
     - **type**: string
     - **default_value**: View All notifications
@@ -7232,29 +7232,29 @@ vars:
     pseudo: ${pseudo}
     links:
         -
-            url: (::ROUTE::)/pages/u-profile
+            url: ::(@reverse_router->getUrl(/pages/u-profile))::
             icon: fas fa-user
             text: Profile
 
         -
-            url: (::ROUTE::)/pages/b-settings
+            url: ::(@reverse_router->getUrl(/pages/b-settings))::
             icon: fas fa-cog
             text: Settings
 
         -
-            url: (::ROUTE::)/pages/m-inbox
+            url: ::(@reverse_router->getUrl(/pages/m-inbox))::
             icon: far fa-envelope
             text: Messages
             badge_text: 7
             badge_class: badge-success
 
         -
-            url: (::ROUTE::)/pages/b-faq
+            url: ::(@reverse_router->getUrl(/pages/b-faq))::
             icon: far fa-question-circle
             text: Help
 
         -
-            url: (::ROUTE::)/pages/b-login
+            url: ::(@reverse_router->getUrl(/pages/b-login))::
             icon: fas fa-sign-out-alt
             text: Logout
 
@@ -7293,7 +7293,7 @@ The following example uses the dynamic variable system provided by Light_Kit.
             - **default_value**: 
             - **description**: The url of the link.
 The following example uses the lazy reference resolver system provided by Light_Kit.
-            - **example**: (::ROUTE::)/pages/u-profile
+            - **example**: ::(@reverse_router->getUrl(/pages/u-profile))::
         - **icon**
             - **type**: string
             - **default_value**: 
@@ -7388,17 +7388,17 @@ vars:
     sidebar_toggler_id: header-navbar-toggler
     plain_links:
         -
-            url: (::ROUTE::)/dashboard
+            url: ::(@reverse_router->getUrl(/dashboard))::
             text: Dashboard
             icon: fas fa-user
 
         -
-            url: (::ROUTE::)/pages/u-contacts
+            url: ::(@reverse_router->getUrl(/pages/u-contacts))::
             text: Users
             icon: ""
 
         -
-            url: (::ROUTE::)/pages/b-settings
+            url: ::(@reverse_router->getUrl(/pages/b-settings))::
             text: Settings
             icon: ""
 
@@ -7534,7 +7534,7 @@ vars:
         text: Login
     use_link_forgot_password: true
     link_forgot_password:
-        link: (::ROUTE::)/pages/b-forgot-password
+        link: ::(@reverse_router->getUrl(/pages/b-forgot-password))::
         text: Forgot password?
 
 ```
@@ -7658,7 +7658,7 @@ in guessing which form was posted.
             - **default_value**: 
             - **description**: The url of the link.
             - **example**
-                - (::ROUTE::)/pages/b-forgot-password
+                - ::(@reverse_router->getUrl(/pages/b-forgot-password))::
                 - /forgot-password
         - **text**
             - **type**: string
@@ -7952,120 +7952,120 @@ vars:
             is_active: true
             icon: fas fa-bars
             text: Dashboard
-            url: (::ROUTE::)/dashboard
+            url: ::(@reverse_router->getUrl(/dashboard))::
             children: []
 
         -
             icon: fas fa-pencil-alt
             text: Typography
-            url: (::ROUTE::)/typography
+            url: ::(@reverse_router->getUrl(/typography))::
 
         -
             icon: fas fa-table
             text: Tables
-            url: (::ROUTE::)/tables
+            url: ::(@reverse_router->getUrl(/tables))::
             badge_text: HOT
             badge_class: bg-danger text-white
 
         -
             icon: fas fa-bong
             text: Widgets
-            url: (::ROUTE::)/widgets
+            url: ::(@reverse_router->getUrl(/widgets))::
 
         -
             icon: fas fa-shapes
             text: Components
             children:
                 -
-                    url: (::ROUTE::)/components/alerts
+                    url: ::(@reverse_router->getUrl(/components/alerts))::
                     text: Alerts
 
                 -
-                    url: (::ROUTE::)/components/badges
+                    url: ::(@reverse_router->getUrl(/components/badges))::
                     text: Badge
 
                 -
-                    url: (::ROUTE::)/components/breadcrumb
+                    url: ::(@reverse_router->getUrl(/components/breadcrumb))::
                     text: Breadcrumb
 
                 -
-                    url: (::ROUTE::)/components/buttons
+                    url: ::(@reverse_router->getUrl(/components/buttons))::
                     text: Buttons
 
                 -
-                    url: (::ROUTE::)/components/button-group
+                    url: ::(@reverse_router->getUrl(/components/button-group))::
                     text: Button group
 
                 -
-                    url: (::ROUTE::)/components/cards
+                    url: ::(@reverse_router->getUrl(/components/cards))::
                     text: Card
 
                 -
-                    url: (::ROUTE::)/components/carousel
+                    url: ::(@reverse_router->getUrl(/components/carousel))::
                     text: Carousel
 
                 -
-                    url: (::ROUTE::)/components/collapse
+                    url: ::(@reverse_router->getUrl(/components/collapse))::
                     text: Collapse
 
                 -
-                    url: (::ROUTE::)/components/dropdowns
+                    url: ::(@reverse_router->getUrl(/components/dropdowns))::
                     text: Dropdowns
 
                 -
-                    url: (::ROUTE::)/components/forms
+                    url: ::(@reverse_router->getUrl(/components/forms))::
                     text: Forms
 
                 -
-                    url: (::ROUTE::)/components/input-group
+                    url: ::(@reverse_router->getUrl(/components/input-group))::
                     text: Input group
 
                 -
-                    url: (::ROUTE::)/components/jumbotron
+                    url: ::(@reverse_router->getUrl(/components/jumbotron))::
                     text: Jumbotron
 
                 -
-                    url: (::ROUTE::)/components/list-group
+                    url: ::(@reverse_router->getUrl(/components/list-group))::
                     text: List group
 
                 -
-                    url: (::ROUTE::)/components/navs
+                    url: ::(@reverse_router->getUrl(/components/navs))::
                     text: Navs
 
                 -
-                    url: (::ROUTE::)/components/modal
+                    url: ::(@reverse_router->getUrl(/components/modal))::
                     text: Modal
 
                 -
-                    url: (::ROUTE::)/components/navbar
+                    url: ::(@reverse_router->getUrl(/components/navbar))::
                     text: Navbar
 
                 -
-                    url: (::ROUTE::)/components/pagination
+                    url: ::(@reverse_router->getUrl(/components/pagination))::
                     text: Pagination
 
                 -
-                    url: (::ROUTE::)/components/popovers
+                    url: ::(@reverse_router->getUrl(/components/popovers))::
                     text: Popovers
 
                 -
-                    url: (::ROUTE::)/components/progress
+                    url: ::(@reverse_router->getUrl(/components/progress))::
                     text: Progress
 
                 -
-                    url: (::ROUTE::)/components/scrollspy
+                    url: ::(@reverse_router->getUrl(/components/scrollspy))::
                     text: Scrollspy
 
                 -
-                    url: (::ROUTE::)/components/spinners
+                    url: ::(@reverse_router->getUrl(/components/spinners))::
                     text: Spinners
 
                 -
-                    url: (::ROUTE::)/components/toasts
+                    url: ::(@reverse_router->getUrl(/components/toasts))::
                     text: Toasts
 
                 -
-                    url: (::ROUTE::)/components/tooltips
+                    url: ::(@reverse_router->getUrl(/components/tooltips))::
                     text: Tooltips
 
 
@@ -8075,147 +8075,147 @@ vars:
             text: Plugins
             children:
                 -
-                    url: (::ROUTE::)/plugins/animate
+                    url: ::(@reverse_router->getUrl(/plugins/animate))::
                     text: Animate
 
                 -
-                    url: (::ROUTE::)/plugins/aos
+                    url: ::(@reverse_router->getUrl(/plugins/aos))::
                     text: Aos
 
                 -
-                    url: (::ROUTE::)/plugins/bootstrap-duallistbox
+                    url: ::(@reverse_router->getUrl(/plugins/bootstrap-duallistbox))::
                     text: Bootstrap Dual Listbox
 
                 -
-                    url: (::ROUTE::)/plugins/bootstrap-social
+                    url: ::(@reverse_router->getUrl(/plugins/bootstrap-social))::
                     text: Bootstrap Social
 
                 -
-                    url: (::ROUTE::)/plugins/bootstrap-responsive-tabs
+                    url: ::(@reverse_router->getUrl(/plugins/bootstrap-responsive-tabs))::
                     text: Bootstrap Responsive Tabs
 
                 -
-                    url: (::ROUTE::)/plugins/bootstrap-touchspin
+                    url: ::(@reverse_router->getUrl(/plugins/bootstrap-touchspin))::
                     text: Bootstrap Touchspin
 
                 -
-                    url: (::ROUTE::)/plugins/bootstrap-tour
+                    url: ::(@reverse_router->getUrl(/plugins/bootstrap-tour))::
                     text: Bootstrap Tour
 
                 -
-                    url: (::ROUTE::)/plugins/cleave
+                    url: ::(@reverse_router->getUrl(/plugins/cleave))::
                     text: Cleave
 
                 -
-                    url: (::ROUTE::)/plugins/clockpicker
+                    url: ::(@reverse_router->getUrl(/plugins/clockpicker))::
                     text: Clockpicker
 
                 -
-                    url: (::ROUTE::)/plugins/cropper
+                    url: ::(@reverse_router->getUrl(/plugins/cropper))::
                     text: Cropper
 
                 -
-                    url: (::ROUTE::)/plugins/datatables
+                    url: ::(@reverse_router->getUrl(/plugins/datatables))::
                     text: Datatables
 
                 -
-                    url: (::ROUTE::)/plugins/dropzone
+                    url: ::(@reverse_router->getUrl(/plugins/dropzone))::
                     text: Dropzone
 
                 -
-                    url: (::ROUTE::)/plugins/full-calendar
+                    url: ::(@reverse_router->getUrl(/plugins/full-calendar))::
                     text: Full Calendar
 
                 -
-                    url: (::ROUTE::)/plugins/googlemap
+                    url: ::(@reverse_router->getUrl(/plugins/googlemap))::
                     text: Google Map
 
                 -
-                    url: (::ROUTE::)/plugins/ion-range-slider
+                    url: ::(@reverse_router->getUrl(/plugins/ion-range-slider))::
                     text: Ion Range Slider
 
                 -
-                    url: (::ROUTE::)/plugins/jquery-countdown
+                    url: ::(@reverse_router->getUrl(/plugins/jquery-countdown))::
                     text: Jquery Countdown
 
                 -
-                    url: (::ROUTE::)/plugins/jquery-ui-sortable
+                    url: ::(@reverse_router->getUrl(/plugins/jquery-ui-sortable))::
                     text: Jquery UI Sortable
 
                 -
-                    url: (::ROUTE::)/plugins/jscookie
+                    url: ::(@reverse_router->getUrl(/plugins/jscookie))::
                     text: JsCookie
 
                 -
-                    url: (::ROUTE::)/plugins/jstree
+                    url: ::(@reverse_router->getUrl(/plugins/jstree))::
                     text: Js Tree
 
                 -
-                    url: (::ROUTE::)/plugins/knob
+                    url: ::(@reverse_router->getUrl(/plugins/knob))::
                     text: Knob
 
                 -
-                    url: (::ROUTE::)/plugins/ladda
+                    url: ::(@reverse_router->getUrl(/plugins/ladda))::
                     text: Ladda
 
                 -
-                    url: (::ROUTE::)/plugins/lightbox-ekko
+                    url: ::(@reverse_router->getUrl(/plugins/lightbox-ekko))::
                     text: Lightbox Ekko
 
                 -
-                    url: (::ROUTE::)/plugins/lightpick
+                    url: ::(@reverse_router->getUrl(/plugins/lightpick))::
                     text: Lightpick
 
                 -
-                    url: (::ROUTE::)/plugins/magnify
+                    url: ::(@reverse_router->getUrl(/plugins/magnify))::
                     text: Magnify
 
                 -
-                    url: (::ROUTE::)/plugins/nestable2
+                    url: ::(@reverse_router->getUrl(/plugins/nestable2))::
                     text: Nestable 2
 
                 -
-                    url: (::ROUTE::)/plugins/owl-carousel
+                    url: ::(@reverse_router->getUrl(/plugins/owl-carousel))::
                     text: Owl Carousel
 
                 -
-                    url: (::ROUTE::)/plugins/plotly
+                    url: ::(@reverse_router->getUrl(/plugins/plotly))::
                     text: Plotly
 
                 -
-                    url: (::ROUTE::)/plugins/pretty-checkbox
+                    url: ::(@reverse_router->getUrl(/plugins/pretty-checkbox))::
                     text: Pretty Checkbox
 
                 -
-                    url: (::ROUTE::)/plugins/prism
+                    url: ::(@reverse_router->getUrl(/plugins/prism))::
                     text: Prism
 
                 -
-                    url: (::ROUTE::)/plugins/select2
+                    url: ::(@reverse_router->getUrl(/plugins/select2))::
                     text: Select2
 
                 -
-                    url: (::ROUTE::)/plugins/slick
+                    url: ::(@reverse_router->getUrl(/plugins/slick))::
                     text: Slick
 
                 -
-                    url: (::ROUTE::)/plugins/spectrum
+                    url: ::(@reverse_router->getUrl(/plugins/spectrum))::
                     text: Spectrum
 
                 -
-                    url: (::ROUTE::)/plugins/spinkit
+                    url: ::(@reverse_router->getUrl(/plugins/spinkit))::
                     text: Spin Kit
 
                 -
-                    url: (::ROUTE::)/plugins/starrr
+                    url: ::(@reverse_router->getUrl(/plugins/starrr))::
                     text: Starrr
 
                 -
-                    url: (::ROUTE::)/plugins/summernote
+                    url: ::(@reverse_router->getUrl(/plugins/summernote))::
                     text: Summernote
 
                 -
-                    url: (::ROUTE::)/plugins/switchery
+                    url: ::(@reverse_router->getUrl(/plugins/switchery))::
                     text: Switchery
 
 
@@ -8229,31 +8229,31 @@ vars:
                     text: Basic
                     children:
                         -
-                            url: (::ROUTE::)/pages/b-404
+                            url: ::(@reverse_router->getUrl(/pages/b-404))::
                             text: Error 404
 
                         -
-                            url: (::ROUTE::)/pages/b-faq
+                            url: ::(@reverse_router->getUrl(/pages/b-faq))::
                             text: Faq
 
                         -
-                            url: (::ROUTE::)/pages/b-forgot-password
+                            url: ::(@reverse_router->getUrl(/pages/b-forgot-password))::
                             text: Forgot password
 
                         -
-                            url: (::ROUTE::)/pages/b-landpage
+                            url: ::(@reverse_router->getUrl(/pages/b-landpage))::
                             text: Landpage
 
                         -
-                            url: (::ROUTE::)/pages/b-login
+                            url: ::(@reverse_router->getUrl(/pages/b-login))::
                             text: Login
 
                         -
-                            url: (::ROUTE::)/pages/b-register
+                            url: ::(@reverse_router->getUrl(/pages/b-register))::
                             text: Register
 
                         -
-                            url: (::ROUTE::)/pages/b-settings
+                            url: ::(@reverse_router->getUrl(/pages/b-settings))::
                             text: Settings
 
 
@@ -8263,27 +8263,27 @@ vars:
                     text: E-commerce
                     children:
                         -
-                            url: (::ROUTE::)/pages/e-admin-products-list
+                            url: ::(@reverse_router->getUrl(/pages/e-admin-products-list))::
                             text: Admin products
 
                         -
-                            url: (::ROUTE::)/pages/e-cart
+                            url: ::(@reverse_router->getUrl(/pages/e-cart))::
                             text: Cart
 
                         -
-                            url: (::ROUTE::)/pages/e-invoice
+                            url: ::(@reverse_router->getUrl(/pages/e-invoice))::
                             text: Invoice
 
                         -
-                            url: (::ROUTE::)/pages/e-product
+                            url: ::(@reverse_router->getUrl(/pages/e-product))::
                             text: Product
 
                         -
-                            url: (::ROUTE::)/pages/e-products-list
+                            url: ::(@reverse_router->getUrl(/pages/e-products-list))::
                             text: Products list
 
                         -
-                            url: (::ROUTE::)/pages/e-product-edit
+                            url: ::(@reverse_router->getUrl(/pages/e-product-edit))::
                             text: Product edit
 
 
@@ -8293,27 +8293,27 @@ vars:
                     text: Messaging
                     children:
                         -
-                            url: (::ROUTE::)/pages/m-chat
+                            url: ::(@reverse_router->getUrl(/pages/m-chat))::
                             text: Chat
 
                         -
-                            url: (::ROUTE::)/pages/m-compose
+                            url: ::(@reverse_router->getUrl(/pages/m-compose))::
                             text: Compose
 
                         -
-                            url: (::ROUTE::)/pages/m-email-templates
+                            url: ::(@reverse_router->getUrl(/pages/m-email-templates))::
                             text: Email templates
 
                         -
-                            url: (::ROUTE::)/pages/m-forum
+                            url: ::(@reverse_router->getUrl(/pages/m-forum))::
                             text: Forum
 
                         -
-                            url: (::ROUTE::)/pages/m-inbox
+                            url: ::(@reverse_router->getUrl(/pages/m-inbox))::
                             text: Inbox
 
                         -
-                            url: (::ROUTE::)/pages/m-message
+                            url: ::(@reverse_router->getUrl(/pages/m-message))::
                             text: Message
 
 
@@ -8323,39 +8323,39 @@ vars:
                     text: Management
                     children:
                         -
-                            url: (::ROUTE::)/pages/u-contacts
+                            url: ::(@reverse_router->getUrl(/pages/u-contacts))::
                             text: Contacts
 
                         -
-                            url: (::ROUTE::)/pages/u-filemanager
+                            url: ::(@reverse_router->getUrl(/pages/u-filemanager))::
                             text: File manager
 
                         -
-                            url: (::ROUTE::)/pages/u-issue-tracker
+                            url: ::(@reverse_router->getUrl(/pages/u-issue-tracker))::
                             text: Issue tracker
 
                         -
-                            url: (::ROUTE::)/pages/u-profile
+                            url: ::(@reverse_router->getUrl(/pages/u-profile))::
                             text: Profile
 
                         -
-                            url: (::ROUTE::)/pages/u-project-detail
+                            url: ::(@reverse_router->getUrl(/pages/u-project-detail))::
                             text: Project details
 
                         -
-                            url: (::ROUTE::)/pages/u-project-list
+                            url: ::(@reverse_router->getUrl(/pages/u-project-list))::
                             text: Project list
 
                         -
-                            url: (::ROUTE::)/pages/u-teams
+                            url: ::(@reverse_router->getUrl(/pages/u-teams))::
                             text: Teams
 
                         -
-                            url: (::ROUTE::)/pages/u-timeline
+                            url: ::(@reverse_router->getUrl(/pages/u-timeline))::
                             text: Timeline
 
                         -
-                            url: (::ROUTE::)/pages/u-vote-list
+                            url: ::(@reverse_router->getUrl(/pages/u-vote-list))::
                             text: Vote list
 
 
@@ -8365,11 +8365,11 @@ vars:
                     text: Website Builder
                     children:
                         -
-                            url: (::ROUTE::)/pages/w-page-configure
+                            url: ::(@reverse_router->getUrl(/pages/w-page-configure))::
                             text: Page configure
 
                         -
-                            url: (::ROUTE::)/pages/w-page-edit
+                            url: ::(@reverse_router->getUrl(/pages/w-page-edit))::
                             text: Page edit
 
 
@@ -8381,11 +8381,11 @@ vars:
             text: Snippets
             children:
                 -
-                    url: (::ROUTE::)/snippets/right-sidebar
+                    url: ::(@reverse_router->getUrl(/snippets/right-sidebar))::
                     text: Right Sidebar
 
                 -
-                    url: (::ROUTE::)/snippets/sidebar
+                    url: ::(@reverse_router->getUrl(/snippets/sidebar))::
                     text: Sidebar
 
 
@@ -8440,7 +8440,7 @@ ZeroAdminSidebarWidget variables description
             - **type**: string
             - **default_value**: 
             - **description**: The url of the link (for leave nodes only).
-            - **example**: (::ROUTE::)/dashboard
+            - **example**: ::(@reverse_router->getUrl(/dashboard))::
         - **children**
             - **type**: string
             - **default_value**
@@ -8516,7 +8516,7 @@ vars:
             value_class: text-blue
             text: Orders
             link_text: View More
-            link_url: (::ROUTE::)/pages/u-project-detail
+            link_url: ::(@reverse_router->getUrl(/pages/u-project-detail))::
             icon_padding: false
 
         -
@@ -8585,7 +8585,7 @@ responsiveness of the cards.
             - **type**: string
             - **default_value**: 
             - **description**: The url of the bottom link of the card.
-            - **example**: (::ROUTE::)/pages/u-project-detail
+            - **example**: ::(@reverse_router->getUrl(/pages/u-project-detail))::
         - **icon_padding**
             - **type**: bool
             - **default_value**: true

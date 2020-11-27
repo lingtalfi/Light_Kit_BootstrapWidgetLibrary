@@ -127,7 +127,7 @@ vars:
                 default_value: ""
                 description: The url of the link.
                 example:
-                    - (::ROUTE::)/pages/b-forgot-password
+                    - ::(@reverse_router->getUrl(/pages/b-forgot-password))::
                     - /forgot-password
             text:
                 type: string
@@ -163,7 +163,7 @@ example: <
             text: Login
         use_link_forgot_password: true
         link_forgot_password:
-            link: (::ROUTE::)/pages/b-forgot-password
+            link: ::(@reverse_router->getUrl(/pages/b-forgot-password))::
             text: Forgot password?
         
 >
