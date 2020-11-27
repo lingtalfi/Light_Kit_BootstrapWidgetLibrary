@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.18.3 -- 2020-11-27
+
+    - update ZeroAdminLoginFormWidget image with new api
+    
 - 1.18.2 -- 2020-11-27
 
     - update ZeroAdminLoginFormWidget, add remember me field

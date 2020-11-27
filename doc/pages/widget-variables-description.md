@@ -7492,7 +7492,7 @@ ZeroAdminLoginFormWidget screenshots
 
 Image 1: ZeroAdminLoginFormWidget-with-error.png<br>![Screenshot ZeroAdminLoginFormWidget-with-error.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget-with-error.png)
 
-Image 2: ZeroAdminLoginFormWidget.png<br>![Screenshot ZeroAdminLoginFormWidget.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget.png)
+Image 2: ZeroAdminLoginFormWidget2.png<br>![Screenshot ZeroAdminLoginFormWidget2.png](https://lingtalfi.com/img/universe/Light_Kit_BootstrapWidgetLibrary/screenshots/ZeroAdminLoginFormWidget/ZeroAdminLoginFormWidget2.png)
 
 
 
