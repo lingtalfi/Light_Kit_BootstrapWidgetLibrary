@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.18.2 -- 2020-11-27
+
+    - update ZeroAdminLoginFormWidget, add remember me field
+    
 - 1.18.1 -- 2020-11-27
 
     - update to accommodate latest Light_Kit api

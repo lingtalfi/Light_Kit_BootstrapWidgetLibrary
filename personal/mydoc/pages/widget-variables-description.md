@@ -7479,8 +7479,9 @@ The login form consists of:
 - a subtitle
 - a username field
 - a password field
+- an optional remember me field
 - a login button
-- a forgot password link
+- an optional forgot password link
 
 
 
@@ -7527,6 +7528,10 @@ vars:
         icon: fas fa-lock
         name: password
         label: Password
+    use_remember_me: true
+    field_remember_me:
+        name: remember_me
+        label: Remember me
     error_no_match_show: false
     error_no_match_body: <strong>Nope!</strong> The provided credentials don't match an user in our database.
     btn_submit:
@@ -7620,6 +7625,26 @@ in guessing which form was posted.
             - **default_value**: 
             - **description**: The value of this field.
             - **example**: MauricePassword
+- **field_remember_me**
+    - **type**: array
+    - **default_value**
+    - **description**: The remember field.
+    - **properties**
+        - **name**
+            - **type**: string
+            - **default_value**: remember_me
+            - **description**: The html name attribute for the input of this field.
+            - **example**: remember_me
+        - **label**
+            - **type**: string
+            - **default_value**: Remember me
+            - **description**: The label/placeholder to use for this field.
+            - **example**: Remember me
+        - **value**
+            - **type**: string
+            - **default_value**: 0
+            - **description**: The value of this field. You can use 0 and 1, or false and true.
+            - **example**: 0
 - **error_no_match_show**
     - **type**: bool
     - **default_value**: false
@@ -7648,6 +7673,10 @@ in guessing which form was posted.
     - **type**: bool
     - **default_value**: true
     - **description**: Whether to show the "forgot password" link.
+- **use_remember_me**
+    - **type**: bool
+    - **default_value**: true
+    - **description**: Whether to show the "remember me" field.
 - **link_forgot_password**
     - **type**: array
     - **default_value**
