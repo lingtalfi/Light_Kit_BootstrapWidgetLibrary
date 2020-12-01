@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2020-11-27
+2019-04-26 -> 2020-12-01
 
 
 
@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.18.4 -- 2020-12-01
+
+    - update ZeroAdminForgottenPasswordWidget, add new variables, now handle multiple accounts choice and added back to login link
+    
 - 1.18.3 -- 2020-11-27
 
     - update ZeroAdminLoginFormWidget image with new api

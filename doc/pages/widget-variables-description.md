@@ -1,6 +1,6 @@
 Bootstrap Widget Library
 =============
-2019-05-01 -> 2020-11-27
+2019-05-01 -> 2020-12-01
 
 
 
@@ -6841,6 +6841,9 @@ ZeroAdminForgottenPasswordWidget
 
 
 ZeroAdminForgottenPasswordWidget is a bootstrap 4 widget that displays a form to reset your password.
+It can handle multiple accounts (if your app allows multiple accounts per email address).
+It's possible to display a success message, and a link back to a login page.
+
 
 
 
@@ -6881,6 +6884,10 @@ vars:
     inputEmailPlaceholder: Email
     inputEmailValue: ""
     inputEmailError: ""
+    hasMultipleAccounts: false
+    userIdentifiers2Labels: []
+    successMessage: null
+    backToLoginUrl: null
 ```
 
 
@@ -6934,6 +6941,31 @@ ZeroAdminForgottenPasswordWidget variables description
     - **description**: The error message pertaining to the email form control.
 If empty, it means the control doesn't have an error.
     - **example**: The email is required.
+- **hasMultipleAccounts**
+    - **type**: bool
+    - **default_value**: false
+    - **description**: Whether the email address references multiple accounts, or just one.
+    - **example**: false.
+- **userIdentifiers2Labels**
+    - **type**: array
+    - **default_value**
+    - **description**: When the user has multiple accounts (i.e. hasMultipleAccounts=true), this contains an array of
+the user accounts. It's an array of identifier => label, where identifier is the account unique identifier,
+and label is the label displayed to the user.
+    - **example**
+        - account1 => 'Main account'
+        - account2 => 'My test account'
+- **successMessage**
+    - **type**: string
+    - **default_value**: null
+    - **description**: A success message to display. If null, it won't be displayed.
+    - **example**: Your password has been reset and sent to your email address.
+- **backToLoginUrl**
+    - **type**: string
+    - **default_value**: null
+    - **description**: The url of the link to go back to the login page.
+If null, the link won't be displayed.
+    - **example**: /login
 
 
 
