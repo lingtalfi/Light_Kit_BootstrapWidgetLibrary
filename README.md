@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2020-12-01
+2019-04-26 -> 2021-02-26
 
 
 
@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.18.7 -- 2021-02-26
+
+    - fix ZeroAdminLoginFormWidget template's default values not always set 
+  
 - 1.18.6 -- 2020-12-08
 
     - Fix lpi-deps not using natsort.
