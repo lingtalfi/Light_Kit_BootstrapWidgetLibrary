@@ -16,6 +16,7 @@ $use_sidebar_toggler = $z['use_sidebar_toggler'] ?? true;
 $sidebar_toggler_id = $z['sidebar_toggler_id'] ?? "header-navbar-toggler";
 $plain_links = $z['plain_links'] ?? [];
 $icon_links = $z['icon_links'] ?? [];
+$zone_name = $z['zone_name'] ?? "SUB_zeroadmin_header";
 
 
 $container = $this->getContainer();
@@ -61,6 +62,6 @@ $reverseRouter = $container->get('reverse_router');
 
 
     <ul class="nav navbar-nav flex-row align-items-end ml-auto">
-        <?php $this->getKitPageRenderer()->printZone("SUB_zeroadmin_header"); ?>
+        <?php $this->getKitPageRenderer()->printZone($zone_name); ?>
     </ul>
 </header>

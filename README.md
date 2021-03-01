@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2021-02-26
+2019-04-26 -> 2021-03-01
 
 
 
@@ -45,6 +45,10 @@ Related
 History Log
 =============
 
+- 1.18.8 -- 2021-03-01
+
+    - update ZeroAdminHeaderWidget, now accepts zone_name variable 
+  
 - 1.18.7 -- 2021-02-26
 
     - fix ZeroAdminLoginFormWidget template's default values not always set 
