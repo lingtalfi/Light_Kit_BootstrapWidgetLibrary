@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 1.18.11 -- 2021-03-09
+
+    - update planet to adapt Ling.Light_Kit_Admin:0.12.25
+  
 - 1.18.10 -- 2021-03-09
 
     - rename template dir to include galaxy name, moved www/plugins dir to www/universe dir

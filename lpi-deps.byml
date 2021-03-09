@@ -525,3 +525,9 @@
     - Ling:Bat:1.308+
     - Ling:HtmlPageTools:2.2.3+
     - Ling:Kit_PicassoWidget:1.30.4+
+
+1.18.11: 
+    - Ling:BabyYaml:1.7.8+
+    - Ling:Bat:1.308+
+    - Ling:HtmlPageTools:2.2.3+
+    - Ling:Kit_PicassoWidget:1.30.4+

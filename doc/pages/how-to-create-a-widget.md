@@ -111,7 +111,7 @@ A typical page configuration looks like this:
 
 ```yaml
 label: Light Kit Admin Login Page
-layout: templates/Light_Kit_Admin/layouts/zeroadmin/zeroadmin_standalone_layout.php
+layout: templates/Ling.Light_Kit_Admin/layouts/zeroadmin/zeroadmin_standalone_layout.php
 layout_vars:
     page_one_id: page_one
     page_two_id: page_two
