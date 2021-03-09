@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2021-03-05
+2019-04-26 -> 2021-03-09
 
 
 
@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 1.18.10 -- 2021-03-09
+
+    - rename template dir to include galaxy name, moved www/plugins dir to www/universe dir
+  
 - 1.18.9 -- 2021-03-05
 
     - update README.md, add install alternative

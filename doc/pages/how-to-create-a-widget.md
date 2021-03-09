@@ -30,7 +30,7 @@ Here are the steps for a widget named IconTeaserWidget.
 It's an empty class.
 
 
-2. Create the template in **my_app/templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/IconTeaserWidget/templates/default.php**
+2. Create the template in **my_app/templates/Ling.Light_Kit_BootstrapWidgetLibrary/widgets/picasso/IconTeaserWidget/templates/default.php**
 And paste your html or code in it.
 
 
@@ -131,7 +131,7 @@ zones:
             name: zeroadmin_login_form
             type: picasso
             className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminLoginFormWidget
-            widgetDir: templates/Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminLoginFormWidget
+            widgetDir: templates/Ling.Light_Kit_BootstrapWidgetLibrary/widgets/picasso/ZeroAdminLoginFormWidget
             template: default.php
             vars:
                 form_method: post
