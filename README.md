@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2021-03-09
+2019-04-26 -> 2021-04-15
 
 
 
@@ -50,6 +50,10 @@ Related
 History Log
 =============
 
+- 1.18.12 -- 2021-04-15
+
+    - add FreeContentWidget
+  
 - 1.18.11 -- 2021-03-09
 
     - update planet to adapt Ling.Light_Kit_Admin:0.12.25

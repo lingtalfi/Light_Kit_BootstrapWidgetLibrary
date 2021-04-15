@@ -1,6 +1,6 @@
 Bootstrap Widget Library
 =============
-2019-05-01 -> 2021-03-09
+2019-05-01 -> 2021-04-15
 
 
 
@@ -27,6 +27,7 @@ Summary
 - [ColoredBoxesWidget](#coloredboxeswidget)
 - [ContactFormAndCompanyInfoWidget](#contactformandcompanyinfowidget)
 - [FooterWithButtonWidget](#footerwithbuttonwidget)
+- [FreeContentWidget](#freecontentwidget)
 - [GlozzomPricingTableWidget](#glozzompricingtablewidget)
 - [GlozzomTwoColumnsTeaserWidget](#glozzomtwocolumnsteaserwidget)
 - [HelloWorldWidget](#helloworldwidget)
@@ -2177,6 +2178,69 @@ FooterWithButtonWidget variables description
     - **default_value**: 
     - **description**: The text of the button. If empty, will not be displayed.
     - **example**: Download Resume
+
+
+
+
+
+
+
+FreeContentWidget
+==============
+
+[Back to top](#summary)
+
+- [Screenshots](#freecontentwidget-screenshots)
+- [Templates and skins](#freecontentwidget-templates-and-skins)
+- [Example](#freecontentwidget-configuration-example)
+- [Variables descriptions](#freecontentwidget-variables-description)
+
+
+
+FreeContentWidget is a bootstrap widget that displays whatever content you pass to it.
+
+
+
+
+
+FreeContentWidget screenshots
+----------
+
+
+
+
+
+FreeContentWidget templates, skins, presets
+-----------
+- **Templates**: default.php
+- **Skins**: 
+- **Presets**: 
+
+
+FreeContentWidget configuration example
+----------------
+
+```yaml
+name: free
+type: picasso
+id: page1-body-free
+className: Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\FreeContentWidget
+widgetDir: templates/Ling.Light_Kit_BootstrapWidgetLibrary/widgets/picasso/FreeContentWidget
+template: default.php
+vars:
+    content: ok
+```
+
+
+
+FreeContentWidget variables description
+-----------
+
+- **content**
+    - **type**: string
+    - **default_value**: ok
+    - **description**: todo: here
+    - **example**: ok
 
 
 

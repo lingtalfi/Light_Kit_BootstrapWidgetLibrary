@@ -2,7 +2,7 @@
 
 
 
-The LightRealistWidget class
+The FreeContentWidget class
 ================
 2019-04-26 --> 2021-04-15
 
@@ -14,7 +14,7 @@ The LightRealistWidget class
 Introduction
 ============
 
-The LightRealistWidget class.
+The FreeContentWidget class.
 
 
 
@@ -22,22 +22,15 @@ Class synopsis
 ==============
 
 
-class <span class="pl-k">LightRealistWidget</span> extends [EasyLightPicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/EasyLightPicassoWidget.md) implements [KitPageRendererAwareInterface](https://github.com/lingtalfi/Kit/blob/master/doc/api/Ling/Kit/PageRenderer/KitPageRendererAwareInterface.md), [WidgetConfAwarePicassoWidgetInterface](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/WidgetConfAwarePicassoWidgetInterface.md), [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
+class <span class="pl-k">FreeContentWidget</span> extends [PicassoWidget](https://github.com/lingtalfi/Kit_PicassoWidget/blob/master/doc/api/Ling/Kit_PicassoWidget/Widget/PicassoWidget.md) implements [UniversalTemplateEngineInterface](https://github.com/lingtalfi/UniversalTemplateEngine/blob/master/UniversalTemplateEngineInterface.php) {
 
 - Inherited properties
-    - protected [Ling\Kit\PageRenderer\KitPageRendererInterface](https://github.com/lingtalfi/Kit/blob/master/doc/api/Ling/Kit/PageRenderer/KitPageRendererInterface.md) [EasyLightPicassoWidget::$kitPageRenderer](#property-kitPageRenderer) ;
-    - protected array [WidgetConfAwarePicassoWidget::$widgetConf](#property-widgetConf) ;
     - protected array [PicassoWidget::$libraries](#property-libraries) ;
     - protected array [PicassoWidget::$attr](#property-attr) ;
     - protected [Ling\HtmlPageTools\Copilot\HtmlPageCopilot](https://github.com/lingtalfi/HtmlPageTools/blob/master/doc/api/Ling/HtmlPageTools/Copilot/HtmlPageCopilot.md) [PicassoWidget::$copilot](#property-copilot) ;
 
 - Inherited methods
-    - public EasyLightPicassoWidget::__construct() : void
-    - public EasyLightPicassoWidget::setKitPageRenderer([Ling\Kit\PageRenderer\KitPageRendererInterface](https://github.com/lingtalfi/Kit/blob/master/doc/api/Ling/Kit/PageRenderer/KitPageRendererInterface.md) $renderer) : void
-    - public EasyLightPicassoWidget::getKitPageRenderer() : [KitPageRendererInterface](https://github.com/lingtalfi/Kit/blob/master/doc/api/Ling/Kit/PageRenderer/KitPageRendererInterface.md) | null
-    - protected EasyLightPicassoWidget::getContainer() : Ling\Light\ServiceContainer\LightServiceContainerInterface
-    - public WidgetConfAwarePicassoWidget::setWidgetConf(array $widgetConf) : void
-    - public WidgetConfAwarePicassoWidget::getWidgetConf() : array
+    - public PicassoWidget::__construct() : void
     - public PicassoWidget::getLibraries() : array
     - public PicassoWidget::setCopilot([Ling\HtmlPageTools\Copilot\HtmlPageCopilot](https://github.com/lingtalfi/HtmlPageTools/blob/master/doc/api/Ling/HtmlPageTools/Copilot/HtmlPageCopilot.md) $copilot) : void
     - public PicassoWidget::renderFile(string $filePath, ?array $variables = []) : false | string
@@ -60,12 +53,7 @@ class <span class="pl-k">LightRealistWidget</span> extends [EasyLightPicassoWidg
 Methods
 ==============
 
-- EasyLightPicassoWidget::__construct &ndash; Builds the EasyPicassoWidget instance.
-- EasyLightPicassoWidget::setKitPageRenderer &ndash; Sets the KitPageRenderer instance.
-- EasyLightPicassoWidget::getKitPageRenderer &ndash; 
-- EasyLightPicassoWidget::getContainer &ndash; Returns a light service container instance.
-- WidgetConfAwarePicassoWidget::setWidgetConf &ndash; Sets the widget configuration.
-- WidgetConfAwarePicassoWidget::getWidgetConf &ndash; Returns the widget configuration.
+- PicassoWidget::__construct &ndash; Builds the PicassoWidget instance.
 - PicassoWidget::getLibraries &ndash; Returns the libraries of this instance.
 - PicassoWidget::setCopilot &ndash; Sets the copilot.
 - PicassoWidget::renderFile &ndash; Parses the file identified and returns its interpreted content (by injecting the variables in it).
@@ -84,11 +72,11 @@ Methods
 
 Location
 =============
-Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LightRealistWidget<br>
-See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\LightRealistWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/LightRealistWidget.php)
+Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\FreeContentWidget<br>
+See the source code of [Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\FreeContentWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/Widget/Picasso/FreeContentWidget.php)
 
 
 
 SeeAlso
 ==============
-Previous class: [IconTeaserWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/IconTeaserWidget.md)<br>Next class: [LoopLabFooterWithContactUseButtonWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/LoopLabFooterWithContactUseButtonWidget.md)<br>
+Previous class: [FooterWithButtonWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/FooterWithButtonWidget.md)<br>Next class: [GlozzomPricingTableWidget](https://github.com/lingtalfi/Light_Kit_BootstrapWidgetLibrary/blob/master/doc/api/Ling/Light_Kit_BootstrapWidgetLibrary/Widget/Picasso/GlozzomPricingTableWidget.md)<br>

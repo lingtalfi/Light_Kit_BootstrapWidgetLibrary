@@ -6,9 +6,9 @@
  */
 
 
+use Ling\CheapLogger\CheapLogger;
 use Ling\Light_BMenu\Tool\LightBMenuTool;
 use Ling\Light_Kit_BootstrapWidgetLibrary\Widget\Picasso\ZeroAdminSidebarWidget;
-
 
 $links = $z['links'] ?? [];
 
@@ -18,7 +18,6 @@ $reverseRouter = $container->get('reverse_router');
 
 
 $currentUri = $container->getLight()->getHttpRequest()->getUri();
-
 
 $uniqueIdCpt = 1;
 
@@ -37,7 +36,6 @@ function display_sidebar_link(array $item, string $currentUri)
     $sActive = ($is_active) ? "active" : "";
 
     $children = $item['children'] ?? [];
-
 
 
     ?>

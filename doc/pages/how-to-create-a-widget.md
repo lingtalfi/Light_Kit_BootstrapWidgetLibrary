@@ -94,7 +94,7 @@ $boxes = $z['boxes'] ?? [];
 
 
 
-3. Open the kit page configuration file (for instance **my_app/config/data/Light_Kit_Demo/kit/glozzom/glozzom_home.byml**), and add the widget to the page,
+3. Open the kit page configuration file (for instance **my_app/config/data/Ling.Light_Kit_Demo/Ling.Light_Kit/glozzom/glozzom_home.byml**), and add the widget to the page,
     so that you can have a preview of the widget while creating it.
     
     I often start with a prototype that I already have, so that I have a precise idea of how the widget look.
@@ -193,10 +193,10 @@ copy-pasting has always proven being very useful).
 
 
 
-7. Then I create the description file, starting with this little code (which needs to be adapted depending on the page I'm working on):
+7. Then I create the description file, starting with this little code (which needs to be adapted depending on the page you're working on):
 
  ```php
- //$pageConfFile = "/komin/jin_site_demo/config/kit/pages/Light_Kit_Demo/looplab/looplab_home.byml";
+ //$pageConfFile = "/komin/jin_site_demo/config/Ling.Light_Kit/pages/Light_Kit_Demo/looplab/looplab_home.byml";
  //$outputDir = "/tmp/assets";
  //$o = new VariableDescriptionFileGeneratorUtil();
  //$o->generate($pageConfFile, $outputDir);

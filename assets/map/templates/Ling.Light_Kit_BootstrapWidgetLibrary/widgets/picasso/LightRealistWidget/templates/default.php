@@ -27,6 +27,7 @@ if (null === $renderer) {
          * @var $realist LightRealistService
          */
         $realist = $container->get('realist');
+
         $renderer = $realist->getListRendererByRequestId($requestDeclarationId);
     } else {
         throw new \RuntimeException("Bad LightRealistWidget widget configuration: missing the property renderer or request_declaration_id from " . __FILE__ . ".");
