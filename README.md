@@ -1,6 +1,6 @@
 Light_Kit_BootstrapWidgetLibrary
 ===========
-2019-04-26 -> 2021-06-21
+2019-04-26 -> 2021-06-28
 
 
 
@@ -86,6 +86,10 @@ Related
 
 History Log
 =============
+  
+- 1.18.15 -- 2021-06-28
+
+    - fix api wrong reference to Ling.Light_Logger
   
 - 1.18.14 -- 2021-06-21
 

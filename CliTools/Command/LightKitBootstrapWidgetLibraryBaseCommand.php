@@ -12,7 +12,7 @@ use Ling\CliTools\Output\OutputInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerAwareInterface;
 use Ling\Light\ServiceContainer\LightServiceContainerInterface;
 use Ling\Light_Cli\CliTools\Program\LightCliCommandInterface;
-use Ling\Light_Logger\LightLoggerService;
+use Ling\Light_Logger\Service\LightLoggerService;
 use Ling\Light_Kit_BootstrapWidgetLibrary\CliTools\Program\LightKitBootstrapWidgetLibraryApplication;
 use Ling\Light_Kit_BootstrapWidgetLibrary\Exception\LightKitBootstrapWidgetLibraryException;
 use Ling\Light_Kit_BootstrapWidgetLibrary\Helper\LightKitBootstrapWidgetLibraryHelper;
